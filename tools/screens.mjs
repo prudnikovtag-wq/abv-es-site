@@ -7,11 +7,20 @@
 // Безопасность: запросы к formsubmit.co (отправка заявок на почту) и к
 // Яндекс.Метрике блокируются — тесты не шлют письма и не портят статистику.
 
-import { chromium } from "playwright";
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { execSync } from "node:child_process";
+
+// playwright: из node_modules проекта, иначе — установленный глобально.
+let chromium;
+try {
+  ({ chromium } = await import("playwright"));
+} catch {
+  const g = execSync("npm root -g").toString().trim();
+  ({ chromium } = await import(pathToFileURL(path.join(g, "playwright", "index.mjs")).href));
+}
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "out", "screens");
@@ -56,7 +65,7 @@ for (const page of pages) {
     const tab = await ctx.newPage();
     const issues = [];
     tab.on("pageerror", (e) => issues.push(`ошибка JS: ${e.message}`));
-    tab.on("console", (m) => { if (m.type() === "error" && !/ERR_FAILED|blocked/i.test(m.text())) issues.push(`console: ${m.text()}`); });
+    tab.on("console", (m) => { if (m.type() === "error" && !/ERR_FAILED|ERR_TUNNEL|ERR_NAME_NOT_RESOLVED|ERR_PROXY|ERR_INTERNET|blocked/i.test(m.text())) issues.push(`console: ${m.text()}`); });
     tab.on("response", (r) => { if (r.url().startsWith(base) && r.status() >= 400) issues.push(`не загрузился ${r.status()}: ${r.url().replace(base, "/")}`); });
     try {
       await tab.goto(base + page, { waitUntil: "networkidle", timeout: 30000 });

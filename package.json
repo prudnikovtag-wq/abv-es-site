@@ -1,0 +1,9 @@
+{
+  "name": "abv-es-site-tools",
+  "private": true,
+  "type": "module",
+  "description": "Инструменты проверки сайта (не загружается на хостинг)",
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}

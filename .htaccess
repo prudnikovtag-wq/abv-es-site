@@ -4,3 +4,14 @@ RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 # Конец редиректа
 
+# Старые адреса карточек товаров -> tovar-<артикул>.html
+# Раньше в корне лежали страницы /<артикул>.html, а в их canonical стояли адреса /sklad/<артикул>.html.
+# Эти страницы удалены, рабочие карточки — /tovar-<артикул>.html.
+# Артикул: начинается с цифры, дальше только A-Z и цифры — обычные страницы сайта начинаются с букв и не затрагиваются.
+# Переадресуем только если такая карточка есть (в RewriteCond $1 — артикул из следующей RewriteRule).
+RewriteCond %{DOCUMENT_ROOT}/tovar-$1.html -f
+RewriteRule ^([0-9][A-Z0-9]+)\.html$ /tovar-$1.html [R=301,L]
+RewriteCond %{DOCUMENT_ROOT}/tovar-$1.html -f
+RewriteRule ^sklad/([0-9][A-Z0-9]+)\.html$ /tovar-$1.html [R=301,L]
+# Конец переадресации старых карточек
+

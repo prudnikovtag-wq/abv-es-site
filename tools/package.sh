@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Готовит пакет «ОТДАТЬ» — только те файлы, которые изменились с версии,
-# которая сейчас лежит на сайте (метка git `na-saite`).
+# которая сейчас лежит на сайте (ветка git `na-saite`).
 #
 # Запуск:  bash tools/package.sh
 # Результат: out/otdat-ГГГГ-ММ-ДД/  — файлы в тех же папках, что и на хостинге,
@@ -9,7 +9,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 if ! git rev-parse -q --verify na-saite >/dev/null; then
-  echo "Нет метки na-saite — непонятно, что сейчас на сайте. Сначала: git tag na-saite <коммит>" >&2
+  echo "Нет ветки na-saite — непонятно, что сейчас на сайте. Выполните: git fetch origin na-saite:na-saite" >&2
   exit 1
 fi
 

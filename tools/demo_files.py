@@ -2,6 +2,11 @@
 """Собирает список файлов для демо-ссылки (Artifact) по одной или нескольким страницам.
 
 Запуск:  python3 tools/demo_files.py index.html [contacts.html ...]
+         python3 tools/demo_files.py --copy index.html   ← рекомендуемый способ
+
+С --copy файлы копируются в out/demo/ (пути сохраняются), а из HTML вырезается
+счётчик Яндекс.Метрики — чтобы просмотры демо не попадали в статистику сайта.
+Тогда публиковать: file_path = out/demo/<страница>, files = напечатанный JSON, root = out/demo.
 Печатает JSON {"опубликованный/путь": "путь/в/репозитории"} — его передают в
 параметр files при публикации демо. Берёт саму страницу и все локальные файлы,
 на которые она ссылается (CSS, JS, картинки), плюс картинки и шрифты из url() в CSS.
@@ -44,9 +49,15 @@ def css_refs(css_rel):
             yield resolve(css_rel, m.group(1))
 
 
+METRIKA = re.compile(r"<!--\s*Yandex\.Metrika counter\s*-->.*?<!--\s*/Yandex\.Metrika counter\s*-->", re.S | re.I)
+
+
 def main():
+    args = sys.argv[1:]
+    copy = "--copy" in args
+    args = [a for a in args if a != "--copy"]
     files = {}
-    for page in sys.argv[1:]:
+    for page in args:
         page = page.lstrip("./")
         files[page] = page
         for ref in local_refs(page):
@@ -56,6 +67,37 @@ def main():
                     for sub in css_refs(ref):
                         if os.path.isfile(os.path.join(ROOT, sub)):
                             files[sub] = sub
+    if copy:
+        import shutil
+        out = os.path.join(ROOT, "out", "demo")
+        shutil.rmtree(out, ignore_errors=True)
+        for rel in files:
+            dst = os.path.join(out, rel)
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            if rel.lower().endswith((".html", ".htm")):
+                with open(os.path.join(ROOT, rel), encoding="utf-8", errors="replace") as fh:
+                    html = METRIKA.sub("<!-- Метрика убрана в демо -->", fh.read())
+                with open(dst, "w", encoding="utf-8") as fh:
+                    fh.write(html)
+            elif rel.lower().endswith(".svg"):
+                # Хостинг демо не принимает SVG с <!DOCTYPE> — для показа он не нужен.
+                with open(os.path.join(ROOT, rel), encoding="utf-8", errors="replace") as fh:
+                    svg = re.sub(r"<!DOCTYPE[^>\[]*(\[.*?\])?\s*>", "", fh.read(), flags=re.S | re.I)
+                with open(dst, "w", encoding="utf-8") as fh:
+                    fh.write(svg)
+            elif rel.lower().endswith((".js", ".css")):
+                # Часть файлов сайта в windows-1251 (например, menu.js) — демо требует UTF-8.
+                raw = open(os.path.join(ROOT, rel), "rb").read()
+                try:
+                    text = raw.decode("utf-8")
+                except UnicodeDecodeError:
+                    text = raw.decode("cp1251")
+                with open(dst, "w", encoding="utf-8", newline="") as fh:
+                    fh.write(text)
+            else:
+                shutil.copy2(os.path.join(ROOT, rel), dst)
+        # пути для параметра files: относительно out/demo (root)
+        files = {k: k for k in files}
     print(json.dumps(files, ensure_ascii=False, indent=1))
 
 

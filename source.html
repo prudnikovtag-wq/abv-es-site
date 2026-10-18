@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="ru">
+    <head>
+        <!-- загрузка стилей и шрифтов-->
+        <!-- кодировка UTF-8 -->
+        <meta charset="utf-8"/>
+        <!-- совместимость с браузером и кодировка UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- размер пропорционален экрану устройства, пользователь не может масштабировать пальцами -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- заголовок страницы -->
+        <title>Сервисный центр АБВ</title>
+        <!-- description отражается в результатах поиска -->
+        <meta name="description" content="Сервисный центр АБВ"/>
+        <meta name="author" content="АБВ"/>
+        <meta name="color-scheme" content="light only">
+        <!-- установка фавиконки -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+        <link href="css/style.css?v=20261017" rel="stylesheet"/>
+        <link href="css/media800.css?v=20261017" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@300..800&display=swap">
+    </head>     
+    <body>
+        <!-- верхнее меню -->
+        <section style="display: flex; flex-direction: column;" data-pgc-define="headmenu" data-pgc-define-name="headmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block"> <img loading="lazy" decoding="async" src="images/footer_logo.png" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="height: 100%;">
+                        <div class="items-in-line">
+                            <div class="menu-items"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer;">
+                                    <p id="topddmenu" onclick="postavkaclickfull()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="ddmenu" class="dropdown-content" style="width: 300px;">
+                                        <a href="oborudovanieabb1.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html"> <p class="dropdown-item">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob">
+                            <div class="menu-items-mob"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                    <p id="postavkam" onclick="postavkaclick()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="postavka" style="display: flex; flex-direction: column; width: fit-content; max-width: calc(100% - 60px); margin: 0 auto 10px; background-color: transparent; row-gap: 8px; padding: 12px 24px; align-items: center; position: relative; z-index: 5; pointer-events: auto;">
+                                        <a href="oborudovanieabb1.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable">
+                            <a href="tel:88002503392"><p style="font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 700;">8 (800) 250 33 92</p></a>
+                            <a href="https://wa.me/79168114328"> <div style="display: flex; margin-bottom: 10px; align-items: center; justify-content: center;">
+                                    <img loading="lazy" decoding="async" src="images/whatsapp.svg" style="width: 20px; margin-right: 10px;"/>
+                                    <p style="margin-bottom: 0;">+7 (916) 811-43-28</p>
+                                </div> </a>
+                            <a href="mailto:info@abv-es.ru"> <div style="display: flex; margin-bottom: 10px; align-items: center; justify-content: center;">
+                                    <img loading="lazy" decoding="async" src="images/email.svg" style="width: 20px; margin-right: 10px;"/>
+                                    <p style="margin-bottom: 0;">info@abv-es.ru</p>
+                                </div> </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Нижнее меню -->
+        <section style="display: flex; flex-direction: column;" data-pgc-define="footmenu" data-pgc-define-name="footmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block2"> <img loading="lazy" decoding="async" src="images/big_logo.svg" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="height: 100%;">
+                        <div class="items-in-line" style="visibility: hidden;">
+                            <div class="menu-items"><a href="#about"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div id="botddmenu" class="dropdown" style="cursor: pointer;">
+                                    <p class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА <img loading="lazy" decoding="async" src="images/down.svg" style="width: 10px; margin-left: 5px;"/></p>
+                                    <!-- вручную задаю ширину ниспадающего меню -->
+                                    <div id="bddmenu" class="dropdown-content" style="width: 300px;">
+                                        <!-- первый элемент меню -->
+                                        <a href="sklad-yacheiki.html"> <p class="dropdown-item">Склад</p> </a>
+                                        <!-- второй элемент меню -->
+                                        <a href="sklad-trans.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <!-- третий элемент меню -->
+                                        <a href="sklad-trans.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                    </div>
+                                </div>
+                                <a href="#resource"><p class="main-menu">УСЛУГИ</p></a><a href="#busines"><p class="main-menu">ПРОЕКТЫ</p></a><a href="#shipment"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="#diagnostic"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob" style="display: none;">
+                            <div class="menu-items-mob"><a href="#about"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center;">
+                                    <p class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА <img loading="lazy" decoding="async" src="images/down.svg" style="width: 10px; margin-left: 5px;"/></p>
+                                    <!-- первый элемент меню -->
+                                    <a href="sklad-yacheiki.html"> <p>Склад</p> </a>
+                                    <!-- второй элемент меню -->
+                                    <a href="sklad-trans.html"> <p style="text-align: center;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                    <!-- третий элемент меню -->
+                                    <a href="sklad-trans.html"> <p style="text-align: center;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                </div>
+                                <a href="#resource"><p class="main-menu">УСЛУГИ</p></a><a href="#busines"><p class="main-menu">ПРОЕКТЫ</p></a><a href="#shipment"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="#diagnostic"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="lable">
+                            <a href="tel:88002503392"><p style="font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 700;">8 (800) 250 33 92</p></a>
+                            <a href="https://wa.me/79168114328"> <div style="display: flex; margin-bottom: 10px; align-items: center; justify-content: center;">
+                                    <img loading="lazy" decoding="async" src="images/whatsapp.svg" style="width: 20px; margin-right: 10px;"/>
+                                    <p style="margin-bottom: 0;">+7 (916) 811-43-28</p>
+                                </div> </a>
+                            <a href="mailto:info@abv-es.ru"> <div style="display: flex; margin-bottom: 10px; align-items: center; justify-content: center;">
+                                    <img loading="lazy" decoding="async" src="images/email.svg" style="width: 20px; margin-right: 10px;"/>
+                                    <p style="margin-bottom: 0;">info@abv-es.ru</p>
+                                </div> </a>
+                            <a href="mailto:info@abv-es.ru"> <div style="display: flex; margin-bottom: 10px; align-items: center; justify-content: center;">
+                                    <p class="address">г. Москва, проспект Вернадского, 39, офис 505</p>
+                                </div> </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- загрузка управления меню-->
+        <script src="menu.js?v=20261017"> </script>
+    </body>
+            <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24504604/crm/site_button/loader_4_xjrfw4.js');
+        </script>
+</html>

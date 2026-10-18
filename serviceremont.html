@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        
+        <!-- кодировка UTF-8 -->
+        <meta charset="utf-8"/>
+        <!-- совместимость с браузером и кодировка UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- размер пропорционален экрану устройства, пользователь не может масштабировать пальцами -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- заголовок страницы -->
+        <title>Сервисный центр АБВ</title>
+        <!-- description отражается в результатах поиска -->
+        <meta name="description" content="Сервисный центр АБВ"/>
+        <meta name="author" content="АБВ"/>
+        <meta name="color-scheme" content="light only">
+        <!-- установка фавиконки -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+        <link href="css/style.css?v=20261017" rel="stylesheet"/>
+        <link href="css/media800.css?v=20261017" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@300..800&display=swap">
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(92958095, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/92958095" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+        <!-- верхнее меню -->
+        <section style="display: flex; flex-direction: column;" data-pgc="headmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block"> <img src="images/footer_logo.png" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="height: 100%;">
+                        <div class="items-in-line">
+                            <div class="menu-items"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer;">
+                                    <p id="topddmenu" onclick="postavkaclickfull()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="ddmenu" class="dropdown-content" style="width: 300px;">
+                                        <a href="oborudovanieabb1.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html"> <p class="dropdown-item">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob">
+                            <div class="menu-items-mob"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                    <p id="postavkam" onclick="postavkaclick()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="postavka" style="display: flex; flex-direction: column; width: fit-content; max-width: calc(100% - 60px); margin: 0 auto 10px; background-color: transparent; row-gap: 8px; padding: 12px 24px; align-items: center; position: relative; z-index: 5; pointer-events: auto;">
+                                        <a href="oborudovanieabb1.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable lable-2col">
+                            <div class="lable-col">
+                                <a href="tel:88002503392" class="lable-link"><span class="lable-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;flex-shrink:0;"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="#d0d0d0" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="lable-text lable-text-strong">8 (800) 250 33 92</span></a>
+                                <a href="mailto:info@abv-es.ru" class="lable-link"><span class="lable-icon"><img src="images/email.svg"/></span><span class="lable-text">info@abv-es.ru</span></a>
+                            </div>
+                            <div class="lable-col">
+                                <a href="https://t.me/ABV_es_bot" class="lable-link"><span class="lable-icon"><img src="images/telegram.svg"/></span><span class="lable-text">@ABV_es_bot</span></a>
+                                <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="lable-link"><span class="lable-icon"><img src="images/max.svg"/></span><span class="lable-text">abv-es</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- о нас -->
+        <section class="about-company reveal">
+            <h1>Обслуживание и ремонт электрооборудования АББ</h1>
+            <p style="text-align: center;">Сервисные специалисты нашей компании имеют многолетний опыт работы диагностики и обслуживания оборудования АББ. Также у нас есть сертифицированные АББ специалисты на ремонт сложных поломок</p>
+            <p style="text-align: center; font-weight: 700;">L3-service level по классификации АББ</p>
+        </section>
+        <section style="display: flex; flex-direction: column; align-items: center;">
+            <div id="ihost" style="width: 50%; display: flex; flex-direction: row; flex-wrap: nowrap; overflow: hidden; border-width: 1px; border-style: solid; align-items: center; justify-content: flex-start;">
+                <!-- изображения -->
+                <img id="1" onclick="tab(this)" src="images/services/01/01.jpg" class="news_img_trans_lenta"/>
+                <img id="2" onclick="tab(this)" src="images/services/01/02.jpg" class="news_img_trans_lenta"/>
+                <img id="3" onclick="tab(this)" src="images/services/01/03.jpg" class="news_img_trans_lenta"/>
+                <img id="4" onclick="tab(this)" src="images/services/01/04.jpg" class="news_img_trans_lenta"/>
+                <img id="5" onclick="tab(this)" src="images/services/01/05.jpg" class="news_img_trans_lenta"/>
+                <img id="6" onclick="tab(this)" src="images/services/01/06.jpg" class="news_img_trans_lenta"/>
+                <img id="7" onclick="tab(this)" src="images/services/01/07.jpg" class="news_img_trans_lenta"/>
+                <img id="8" onclick="tab(this)" src="images/services/01/08.jpg" class="news_img_trans_lenta"/>
+                <img id="9" onclick="tab(this)" src="images/services/01/09.jpg" class="news_img_trans_lenta"/>
+                <img id="10" onclick="tab(this)" src="images/services/01/10.jpg" class="news_img_trans_lenta"/>
+                <img id="11" onclick="tab(this)" src="images/services/01/11.jpg" class="news_img_trans_lenta"/>
+                <img id="12" onclick="tab(this)" src="images/services/01/12.jpg" class="news_img_trans_lenta"/>
+                <img id="13" onclick="tab(this)" src="images/services/01/13.jpg" class="news_img_trans_lenta"/>
+                <img id="14" onclick="tab(this)" src="images/services/01/14.jpg" class="news_img_trans_lenta"/>
+                <img id="15" onclick="tab(this)" src="images/services/01/15.jpg" class="news_img_trans_lenta"/>
+                
+            </div>
+        </section>
+        <!-- обучение -->
+        <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px;">
+            <div>
+                <p class="eyebrow">услуги</p>
+                <p style="text-align: center;">Мы постоянно поддерживаем навыки и опыт в таких задачах:</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Ремонт и обслуживание вакуумных выключателей АББ VD4, Vmax</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Ремонт и обслуживание элегазовых выключателей АББ HD4</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Диагностика ремонт и обслуживание воздушных выключателей АББ SACE Emax, New Emax, Emax 2</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Диагностика ремонт и обслуживание воздушных выключателей АББ SACE Megamax</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Обслуживание и ремонт распределительных устройств АББ Unigear ZS1, ZS3.2, Unisec, ZX0, ZX1.2</p>
+                <p style="text-align: left; border-left: 10px solid #f5821e; padding-left: 10px;">Диагностику и ремонт элегазовых распределительных устройств АББ SafeRing, SafePlus</p>
+            </div>
+            <a href="#" onclick="openRequestForm(event)" style="margin-top: 50px; text-decoration: none;"><p class="rf-cta-btn">ЗАПРОСИТЬ УСЛУГУ</p></a>
+        </section>
+        
+        
+
+        <!-- контакты-телефон -->
+                <footer class="site-footer" data-pgc="footmenu">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img loading="lazy" decoding="async" src="images/footer_logo.png" class="footer-logo"/>
+                    <p class="footer-tagline">Сервисный центр низковольтного и средневольтного электрооборудования АББ</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Компания</p>
+                    <a href="about.html">О компании</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="projects.html">Проекты</a>
+                    <a href="partners.html">Партнёры</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Поставка оборудования</p>
+                    <a href="oborudovanieabb1.html">АББ Среднее напряжение</a>
+                    <a href="oborudovanieabb2.html">АББ низковольтное оборудование</a>
+                    <a href="sklad.html">Склад</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Контакты</p>
+                    <a href="tel:88002503392" class="footer-contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span>8 (800) 250 33 92</span>
+                    </a>
+                    <a href="https://t.me/ABV_es_bot" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/telegram.svg"/>
+                        <span>@ABV_es_bot</span>
+                    </a>
+                    <a href="mailto:info@abv-es.ru" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/email.svg"/>
+                        <span>info@abv-es.ru</span>
+                    </a>
+                    <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/max.svg"/>
+                        <span>abv-es</span>
+                    </a>
+                    <p class="footer-address">г. Москва, ул. Профсоюзная, д. 57</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© АБВ Электросервис, 2026</p>
+                <div class="footer-accent-line"></div>
+            </div>
+        </footer>
+        <!-- загрузка управления меню-->
+        <script src="menu.js?v=20261017"> </script>
+        <script src="slider.js"> </script>
+        <!-- Модальная форма "Запрос" -->
+    <div id="rf-overlay" class="rf-overlay">
+        <div class="rf-modal">
+            <button type="button" class="rf-close" onclick="closeRequestForm()" aria-label="Закрыть">&times;</button>
+            <h3 class="rf-title">Оставьте запрос</h3>
+            <p class="rf-subtitle">Заполните форму, и мы свяжемся с Вами в ближайшее время</p>
+
+            <form id="rf-form">
+                <input type="hidden" name="_subject" value="Новый запрос с сайта АБВ Электросервис">
+                <input type="hidden" name="_cc" value="info@abv-es.ru">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="rf-field">
+                    <label for="rf-name">Как мы можем к Вам обращаться?<span class="rf-required">*</span></label>
+                    <input type="text" id="rf-name" name="Имя" required>
+                </div>
+                <div class="rf-field">
+                    <label for="rf-email">Email<span class="rf-required">*</span></label>
+                    <input type="email" id="rf-email" name="Email" required>
+                </div>
+                <div class="rf-field">
+                    <label for="rf-phone">Телефон</label>
+                    <input type="tel" id="rf-phone" name="Телефон">
+                </div>
+                <div class="rf-field">
+                    <label for="rf-message">Опишите Вашу проблему<span class="rf-required">*</span></label>
+                    <textarea id="rf-message" name="Запрос" rows="4" required></textarea>
+                </div>
+
+                <div id="rf-error" class="rf-error" style="display:none;"></div>
+
+                <button type="submit" id="rf-submit-btn" class="rf-submit">Отправить</button>
+            </form>
+
+            <div id="rf-success" class="rf-success" style="display:none;">
+                <p class="rf-success-title">Заявка отправлена!</p>
+                <p>Спасибо, мы получили Ваш запрос и свяжемся с Вами в ближайшее время.</p>
+                <button type="button" class="rf-submit" onclick="closeRequestForm()">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <script src="request-form.js"></script>
+            <script src="reveal.js"></script>
+    </body>
+            <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24504604/crm/site_button/loader_4_xjrfw4.js');
+        </script>
+</html>

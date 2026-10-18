@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-10-12T17:51:47+03:00">
+  <shop>
+    <name>АБВ Электросервис</name>
+    <company>ООО «АБВ Электросервис»</company>
+    <url>https://abv-es.ru/</url>
+    <email>info@abv-es.ru</email>
+    <currencies>
+      <currency id="RUR" rate="1" />
+    </currencies>
+    <categories>
+      <category id="1">Рубильники и АВР TruONE</category>
+      <category id="2">Выключатели Emax и комплектующие</category>
+      <category id="3">Выключатели Tmax и комплектующие</category>
+      <category id="4">Расцепители и модули Ekip</category>
+      <category id="5">Релейная защита и среднее напряжение</category>
+    </categories>
+    <offers>
+      <offer id="1SCA112710R1001" available="true">
+        <name>Реверсивный рубильник OTM2500E3CM230 C 3-полюсный с моторным приводом</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SCA112710R1001</vendorCode>
+        <url>https://abv-es.ru/tovar-1SCA112710R1001.html</url>
+        <price>315000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SCA112710R1001.jpg</picture>
+        <description>Реверсивный рубильник OTM2500E3CM230 C 3-полюсный с моторным приводом (артикул 1SCA112710R1001) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SCA112710R1001</param>
+      </offer>
+      <offer id="1SDA104051R1" available="true">
+        <name>Модуль связи TruONE Modbus RS-485-OX</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA104051R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA104051R1.html</url>
+        <price>24000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA104051R1.jpg</picture>
+        <description>Модуль связи TruONE Modbus RS-485-OX (артикул 1SDA104051R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA104051R1</param>
+      </offer>
+      <offer id="1SCA148926R1001" available="true">
+        <name>Модуль питания OXEA1 (TruONE)</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SCA148926R1001</vendorCode>
+        <url>https://abv-es.ru/tovar-1SCA148926R1001.html</url>
+        <price>24000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SCA148926R1001.png</picture>
+        <description>Модуль питания OXEA1 (TruONE) (артикул 1SCA148926R1001) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SCA148926R1001</param>
+      </offer>
+      <offer id="1SCA153630R1001" available="true">
+        <name>АВР TruONE OXB1600E3X4QT 1600А 3P Touch</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SCA153630R1001</vendorCode>
+        <url>https://abv-es.ru/tovar-1SCA153630R1001.html</url>
+        <price>600000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SCA153630R1001.png</picture>
+        <description>АВР TruONE OXB1600E3X4QT 1600А 3P Touch (артикул 1SCA153630R1001) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SCA153630R1001</param>
+      </offer>
+      <offer id="1SDA038324R1" available="true">
+        <name>Электродвигатель для взвода включающих пружин MOTOR 220/250/E1/6 -T8</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA038324R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA038324R1.html</url>
+        <price>240000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA038324R1.jpg</picture>
+        <description>Электродвигатель для взвода включающих пружин MOTOR 220/250/E1/6 -T8 (артикул 1SDA038324R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>7</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA038324R1</param>
+      </offer>
+      <offer id="1SDA058318R1" available="true">
+        <name>Панель лицевая выключателя New Emax E1-E2 3р</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA058318R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA058318R1.html</url>
+        <price>64000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA058318R1.jpg</picture>
+        <description>Панель лицевая выключателя New Emax E1-E2 3р (артикул 1SDA058318R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>9</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA058318R1</param>
+      </offer>
+      <offer id="1SDA058321R1" available="true">
+        <name>Панель лицевая выключателя New Emax E3 3h</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA058321R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA058321R1.html</url>
+        <price>74000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA058321R1.jpg</picture>
+        <description>Панель лицевая выключателя New Emax E3 3h (артикул 1SDA058321R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>8</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA058321R1</param>
+      </offer>
+      <offer id="1SDA058323R1" available="true">
+        <name>Панель лицевая выключателя New Emax E4 3р</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA058323R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA058323R1.html</url>
+        <price>84000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA058323R1.jpg</picture>
+        <description>Панель лицевая выключателя New Emax E4 3р (артикул 1SDA058323R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA058323R1</param>
+      </offer>
+      <offer id="1SDA059645R1" available="true">
+        <name>Комплект преобразования фикс. части Emax в New Emax Conversion Kit FP old-new</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA059645R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA059645R1.html</url>
+        <price>24000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA059645R1.jpg</picture>
+        <description>Комплект преобразования фикс. части Emax в New Emax Conversion Kit FP old-new (артикул 1SDA059645R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>8</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA059645R1</param>
+      </offer>
+      <offer id="1SDA062164R1" available="true">
+        <name>Блок скользящих контактов выключателя T7-T7M-X1 левый</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA062164R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA062164R1.html</url>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA062164R1.jpg</picture>
+        <description>Блок скользящих контактов выключателя T7-T7M-X1 левый (артикул 1SDA062164R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>4</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA062164R1</param>
+      </offer>
+      <offer id="1SDA062166R1" available="true">
+        <name>Блок скользящих контактов выключателя T7-T7M-X1 правый</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA062166R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA062166R1.html</url>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA062166R1.jpg</picture>
+        <description>Блок скользящих контактов выключателя T7-T7M-X1 правый (артикул 1SDA062166R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA062166R1</param>
+      </offer>
+      <offer id="1SDA063141R1" available="true">
+        <name>Адаптер для замены расцепителя защиты TRIP UNIT ADAPTER FOR PR331-PR332 T7</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA063141R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA063141R1.html</url>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA063141R1.jpg</picture>
+        <description>Адаптер для замены расцепителя защиты TRIP UNIT ADAPTER FOR PR331-PR332 T7 (артикул 1SDA063141R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA063141R1</param>
+      </offer>
+      <offer id="1SDA063142R1" available="true">
+        <name>Адаптер для замены расцепителя защиты TRIP UNIT ADAPTER FOR PR33x T7M-X1</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA063142R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA063142R1.html</url>
+        <price>6000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA063142R1.jpg</picture>
+        <description>Адаптер для замены расцепителя защиты TRIP UNIT ADAPTER FOR PR33x T7M-X1 (артикул 1SDA063142R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA063142R1</param>
+      </offer>
+      <offer id="1SDA066460R1" available="true">
+        <name>Привод моторный для дистанционного управления MOD XT1-XT3 220...250V ac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA066460R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA066460R1.html</url>
+        <price>12000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA066460R1.png</picture>
+        <description>Привод моторный для дистанционного управления MOD XT1-XT3 220...250V ac/dc (артикул 1SDA066460R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA066460R1</param>
+      </offer>
+      <offer id="1SDA068662R1" available="true">
+        <name>Модуль коммуникации Modbus EKIP COM XT2-XT4 W для выкатного исполнения</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA068662R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA068662R1.html</url>
+        <price>24000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA068662R1.png</picture>
+        <description>Модуль коммуникации Modbus EKIP COM XT2-XT4 W для выкатного исполнения (артикул 1SDA068662R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA068662R1</param>
+      </offer>
+      <offer id="1SDA072345R1" available="true">
+        <name>Выключатель автоматический выкатной E2.2N 1600 Ekip Touch LSI 3p WMP</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA072345R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA072345R1.html</url>
+        <price>480000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA072345R1.jpg</picture>
+        <description>Выключатель автоматический выкатной E2.2N 1600 Ekip Touch LSI 3p WMP (артикул 1SDA072345R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA072345R1</param>
+      </offer>
+      <offer id="1SDA073911R1" available="true">
+        <name>Фиксированная часть выкатного исполнения E2.2 W FP Iu=2500 HR HR 3p</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073911R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073911R1.html</url>
+        <price>140000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073911R1.jpg</picture>
+        <description>Фиксированная часть выкатного исполнения E2.2 W FP Iu=2500 HR HR 3p (артикул 1SDA073911R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073911R1</param>
+      </offer>
+      <offer id="1SDA073674R1" available="true">
+        <name>Реле отключения YO E1.2..E6.2-XT7-XT7M 220-240 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073674R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073674R1.html</url>
+        <price>18000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073674R1.jpg</picture>
+        <description>Реле отключения YO E1.2..E6.2-XT7-XT7M 220-240 Vac/dc (артикул 1SDA073674R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>4</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073674R1</param>
+      </offer>
+      <offer id="1SDA073675R1" available="true">
+        <name>Реле отключения YO E1.2..E6.2 240-250 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073675R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073675R1.html</url>
+        <price>18000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073675R1.jpg</picture>
+        <description>Реле отключения YO E1.2..E6.2 240-250 Vac/dc (артикул 1SDA073675R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073675R1</param>
+      </offer>
+      <offer id="1SDA073687R1" available="true">
+        <name>Реле включения YC E1.2..E6.2-XT7-XT7M 220-240 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073687R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073687R1.html</url>
+        <price>18000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073687R1.jpg</picture>
+        <description>Реле включения YC E1.2..E6.2-XT7-XT7M 220-240 Vac/dc (артикул 1SDA073687R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>3</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073687R1</param>
+      </offer>
+      <offer id="1SDA073688R1" available="true">
+        <name>Реле включения YC E1.2..E6.2-XT7-XT7M 240-250 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073688R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073688R1.html</url>
+        <price>18000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073688R1.jpg</picture>
+        <description>Реле включения YC E1.2..E6.2-XT7-XT7M 240-250 Vac/dc (артикул 1SDA073688R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073688R1</param>
+      </offer>
+      <offer id="1SDA073711R1" available="true">
+        <name>Мотор-редуктор M E1.2 220-250 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073711R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073711R1.html</url>
+        <price>24000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073711R1.jpg</picture>
+        <description>Мотор-редуктор M E1.2 220-250 Vac/dc (артикул 1SDA073711R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073711R1</param>
+      </offer>
+      <offer id="1SDA073725R1" available="true">
+        <name>Мотор-редуктор M E2.2...E6.2 220-250 Vac/dc</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA073725R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA073725R1.html</url>
+        <price>36000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA073725R1.jpg</picture>
+        <description>Мотор-редуктор M E2.2...E6.2 220-250 Vac/dc (артикул 1SDA073725R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA073725R1</param>
+      </offer>
+      <offer id="1SDA074172R1" available="true">
+        <name>Модуль питания Ekip Supply 110-240VAC/DC E1.2..E6.2-XT</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA074172R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA074172R1.html</url>
+        <price>36000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA074172R1.jpg</picture>
+        <description>Модуль питания Ekip Supply 110-240VAC/DC E1.2..E6.2-XT (артикул 1SDA074172R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>3</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA074172R1</param>
+      </offer>
+      <offer id="1SDA074173R1" available="true">
+        <name>Модуль питания Ekip Supply 24-48VDC E1.2..E6.2-XT</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA074173R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA074173R1.html</url>
+        <price>36000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA074173R1.jpg</picture>
+        <description>Модуль питания Ekip Supply 24-48VDC E1.2..E6.2-XT (артикул 1SDA074173R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA074173R1</param>
+      </offer>
+      <offer id="1SDA074536R1" available="true">
+        <name>Расцепитель защиты PR332/PLSI T7-T7M-X1</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA074536R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA074536R1.html</url>
+        <price>48000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA074536R1.jpg</picture>
+        <description>Расцепитель защиты PR332/PLSI T7-T7M-X1 (артикул 1SDA074536R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA074536R1</param>
+      </offer>
+      <offer id="1SDA107527R1" available="true">
+        <name>Расцепитель защиты Ekip Dip LSI E1.2..E6.2 чёрная платформа</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA107527R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA107527R1.html</url>
+        <price>110000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA107527R1.jpg</picture>
+        <description>Расцепитель защиты Ekip Dip LSI E1.2..E6.2 чёрная платформа (артикул 1SDA107527R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>3</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA107527R1</param>
+      </offer>
+      <offer id="1SDA107531R1" available="true">
+        <name>Расцепитель защиты Ekip Touch LSIG E1.2..E6.2 чёрная платформа</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA107531R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA107531R1.html</url>
+        <price>120000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA107531R1.jpg</picture>
+        <description>Расцепитель защиты Ekip Touch LSIG E1.2..E6.2 чёрная платформа (артикул 1SDA107531R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA107531R1</param>
+      </offer>
+      <offer id="1SDA107532R1" available="true">
+        <name>Расцепитель защиты Ekip Hi-Touch LSI E1.2..E6.2 чёрная платформа</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA107532R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA107532R1.html</url>
+        <price>180000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA107532R1.jpg</picture>
+        <description>Расцепитель защиты Ekip Hi-Touch LSI E1.2..E6.2 чёрная платформа (артикул 1SDA107532R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA107532R1</param>
+      </offer>
+      <offer id="1SVR730712R1200" available="true">
+        <name>Термисторное реле защиты двигателя CM-MSS.41S</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SVR730712R1200</vendorCode>
+        <url>https://abv-es.ru/tovar-1SVR730712R1200.html</url>
+        <price>36000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SVR730712R1200.jpg</picture>
+        <description>Термисторное реле защиты двигателя CM-MSS.41S (артикул 1SVR730712R1200) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SVR730712R1200</param>
+      </offer>
+      <offer id="1VCF750090802" available="true">
+        <name>Дисплей для REF542Plus HMI V4: 110..220V</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1VCF750090802</vendorCode>
+        <url>https://abv-es.ru/tovar-1VCF750090802.html</url>
+        <price>196000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1VCF750090802.jpg</picture>
+        <description>Дисплей для REF542Plus HMI V4: 110..220V (артикул 1VCF750090802) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>6</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1VCF750090802</param>
+      </offer>
+      <offer id="3WAA008111P0612" available="true">
+        <name>Индикатор напряжения VPIS 6-12kV (RMU)</name>
+        <vendor>ABB</vendor>
+        <vendorCode>3WAA008111P0612</vendorCode>
+        <url>https://abv-es.ru/tovar-3WAA008111P0612.html</url>
+        <price>36000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://abv-es.ru/images/tovar-3WAA008111P0612.png</picture>
+        <description>Индикатор напряжения VPIS 6-12kV (RMU) (артикул 3WAA008111P0612) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>10</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">3WAA008111P0612</param>
+      </offer>
+      <offer id="2RCA025340A0001" available="true">
+        <name>Дисплей для REF615</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2RCA025340A0001</vendorCode>
+        <url>https://abv-es.ru/tovar-2RCA025340A0001.html</url>
+        <price>240000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2RCA025340A0001.jpg</picture>
+        <description>Дисплей для REF615 (артикул 2RCA025340A0001) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2RCA025340A0001</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!-- кодировка UTF-8 -->
+        <meta charset="utf-8"/>
+        <!-- совместимость с браузером и кодировка UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- размер пропорционален экрану устройства, пользователь не может масштабировать пальцами -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- заголовок страницы -->
+        <title>Сервисный центр АБВ</title>
+        <!-- description отражается в результатах поиска -->
+        <meta name="description" content="Сервисный центр АБВ"/>
+        <meta name="author" content="АБВ"/>
+        <meta name="color-scheme" content="light only">
+        <!-- установка фавиконки -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+        <link href="css/style.css?v=20261017" rel="stylesheet"/>
+        <link href="css/media800.css?v=20261017" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@300..800&display=swap">
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(92958095, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/92958095" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+        <style>
+/* ===== АБВ: новая главная «живой ток» ===== */
+.abvx-hero,.abvx{--bg:#2e241d;--bg2:#382b21;--panel:#43352a;--panel2:#3b2e24;--line:#5c4a3c;--ink:#fbf5ef;--muted:#d4c4b6;--dim:#a8968a;--well:#211a14;
+ --o:#F5821E;--o2:#ffb066;--glow:rgba(245,130,30,.55);--f-d:'Montserrat',Arial,sans-serif;--f-b:'Open Sans',Arial,sans-serif;--f-m:'JetBrains Mono',Consolas,monospace;color:var(--ink);font-family:var(--f-b)}
+.abvx-hero *,.abvx *{box-sizing:border-box;font-size:inherit;font-family:inherit;line-height:inherit}
+.abvx-hero p,.abvx p{margin:0;color:inherit}
+.abvx-hero h1,.abvx h2,.abvx h3{background:none;box-shadow:none;padding:0;border-radius:0;text-align:left;letter-spacing:normal;color:var(--ink);font-family:var(--f-d);margin:0;text-wrap:balance;line-height:1.12;text-transform:none}
+.abvx-hero a,.abvx a{color:inherit;text-decoration:none}
+.abvx-hero img,.abvx img{max-width:100%;height:auto;display:block}
+.abvx-hero .wrap,.abvx .wrap{position:relative;max-width:1180px;margin:0 auto;padding-inline:24px}
+/* загрузка */
+.abvx-boot{position:fixed;inset:0;z-index:100000;display:none;place-items:center;background:radial-gradient(70% 70% at 50% 45%,#4a3626,#2e241d);transition:opacity .6s .1s,visibility .6s .1s}
+.abvx-boot.show{display:grid}.abvx-boot.done{opacity:0;visibility:hidden}
+.abvx-boot:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,176,102,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(255,176,102,.10) 1px,transparent 1px);background-size:32px 32px}
+.abvx-boot .bi{position:relative;display:grid;justify-items:center;gap:18px}
+.abvx-boot svg{width:min(240px,56vw);height:auto;overflow:visible}
+.abvx-boot .bp{fill:none;stroke:#ffb066;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:abvxDraw 1.2s cubic-bezier(.6,.05,.3,1) forwards}
+.abvx-boot .bp.f{stroke-width:1.2;opacity:.7}
+.abvx-boot .dm{stroke:rgba(245,130,30,.4);stroke-width:1;stroke-dasharray:4 4;fill:none}
+.abvx-boot .lb{font-family:'JetBrains Mono',Consolas,monospace;font-size:9px;fill:rgba(255,176,102,.8);letter-spacing:.08em}
+@keyframes abvxDraw{to{stroke-dashoffset:0}}
+.abvx-boot .real{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(240px,56vw);opacity:0}
+.abvx-boot.on .real{animation:abvxOn .8s ease forwards}
+.abvx-boot.on svg .bp{animation:none;stroke-dashoffset:0;transition:opacity .3s;opacity:0}
+@keyframes abvxOn{0%{opacity:0}12%{opacity:1;filter:drop-shadow(0 0 28px #ffb066) brightness(1.8)}18%{opacity:.25}30%{opacity:1;filter:drop-shadow(0 0 20px #ffb066) brightness(1.4)}100%{opacity:1;filter:drop-shadow(0 0 14px rgba(245,130,30,.35))}}
+.abvx-boot .st{font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;letter-spacing:.18em;color:#ffb066;min-height:1.4em}
+.abvx-boot .br{width:220px;height:2px;background:#5c4a3c;border-radius:2px;overflow:hidden}
+.abvx-boot .br i{display:block;height:100%;width:0;background:linear-gradient(90deg,#F5821E,#ffb066);box-shadow:0 0 12px rgba(245,130,30,.55);transition:width .25s}
+/* герой */
+.abvx-hero{position:relative;z-index:2;padding:60px 0 90px}
+.abvx-hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.abvx-hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-m);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--o2)}
+.abvx-hero .eyebrow i{width:8px;height:8px;border-radius:50%;background:#37d16a;box-shadow:0 0 0 4px rgba(55,209,106,.18)}
+.abvx-hero h1{font-weight:900;font-size:clamp(34px,4.5vw,64px);line-height:.98;letter-spacing:-.025em;margin:18px 0 22px;text-transform:uppercase;color:#fff}
+.abvx-hero h1 span{display:block;font-size:inherit;color:transparent;-webkit-text-fill-color:transparent;background-image:linear-gradient(90deg,var(--o),var(--o2)),linear-gradient(rgba(245,130,30,.22),rgba(245,130,30,.22));-webkit-background-clip:text;background-clip:text;background-size:0% 100%,100% 100%;background-repeat:no-repeat;animation:abvxFill 1.1s .3s cubic-bezier(.6,.1,.2,1) forwards}
+@keyframes abvxFill{to{background-size:100% 100%,100% 100%}}
+.abvx-hero .sub{color:#f0dfcf;max-width:46ch;margin:0 0 26px;font-size:18px;text-transform:uppercase;font-weight:600;letter-spacing:.02em;line-height:1.4}
+.abvx-hero .badges{display:flex;flex-direction:column;gap:12px;margin:0 0 28px}
+.abvx-hero .bdg{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.abvx-hero .bdg small{font-family:var(--f-d);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#f3e2d2;line-height:1.3;min-width:200px}
+.abvx-hero .bdg b{padding:7px 16px;border-radius:20px;background:linear-gradient(135deg,var(--o),var(--o2));color:#2a1606;font-family:var(--f-d);font-weight:800;font-size:15px}
+.abvx-hero .heq img{width:100%;height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+.abvx-hero .tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.abvx-hero .tags span{padding:6px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);font-size:13px;font-weight:600;color:#fff}
+.abvx-hero .btns,.abvx .btns{display:flex;flex-wrap:wrap;gap:14px}
+.abvx-hero .mag,.abvx .mag{display:inline-flex;align-items:center;height:56px;padding:0 30px;border-radius:30px;font-family:var(--f-d);font-weight:700;font-size:14px;letter-spacing:.06em;cursor:pointer;transition:transform .25s,box-shadow .3s,background .3s,border-color .3s}
+.abvx-hero .mag.main,.abvx .mag.main{background:linear-gradient(135deg,var(--o),var(--o2));color:#2a1606;box-shadow:0 10px 30px rgba(245,130,30,.35)}
+.abvx-hero .mag.main:hover,.abvx .mag.main:hover{box-shadow:0 14px 44px rgba(245,130,30,.6);transform:translateY(-2px)}
+.abvx-hero .mag.ghost,.abvx .mag.ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06)}
+.abvx-hero .mag.ghost:hover,.abvx .mag.ghost:hover{border-color:var(--o)}
+/* основная часть */
+.abvx{position:relative;background:var(--bg);overflow:hidden}
+.abvx:before{content:"";position:absolute;left:0;right:0;top:0;height:140px;background:linear-gradient(#1a1a1a,var(--bg));pointer-events:none}
+.abvx-bus{position:absolute;left:0;top:0;width:100%;pointer-events:none;z-index:2;overflow:visible}
+.abvx-bus .track{fill:none;stroke:#5c4a3c;stroke-width:2}
+.abvx-lit{position:absolute;left:0;top:0;width:100%;height:0;z-index:2;pointer-events:none}
+.abvx-lit>*{position:absolute;display:block}
+.abvx-lit .lvw{width:24px;margin-left:-12px;overflow:hidden}.abvx-lit .lv{position:absolute;left:10.8px;top:0;width:2.4px;height:100%;background:#F5821E;box-shadow:0 0 7px 1px rgba(245,130,30,.5);transform:translate3d(0,-100%,0)}
+.abvx-lit .lh{height:2.4px;margin-top:-1.2px;background:#F5821E;box-shadow:0 0 7px 1px rgba(245,130,30,.5);transform-origin:0 50%;transform:scaleX(0);transition:transform .5s ease-out}
+.abvx-lit .lh.on{transform:none}
+.abvx-lit .lc{opacity:0;transition:opacity .15s;overflow:visible}.abvx-lit .lc.on{opacity:1}
+.abvx-lit .lc path{fill:none;stroke:#F5821E;stroke-width:2.4}
+.abvx-lit .ls{height:2px;margin-top:-1px;background:#F5821E;transform-origin:0 50%;transform:scaleX(0);transition:transform .4s ease-out}.abvx-lit .ls.on{transform:none}
+.abvx-lit .ld{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#F5821E;border:2px solid #ffb066;box-shadow:0 0 10px rgba(245,130,30,.7);opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s}.abvx-lit .ld.on{opacity:1;transform:none}
+
+.abvx-bus .node{fill:#382b21;stroke:#6e5a49;stroke-width:2}
+.abvx-bus .node.on{stroke:#ffb066;fill:#F5821E}
+.abvx-ring{position:absolute;left:0;top:0;width:52px;height:52px;margin:-26px 0 0 -26px;border:1.5px solid #F5821E;border-radius:50%;opacity:0;pointer-events:none;z-index:2;transform:scale(.23)}
+.abvx-ring.on{animation:abvxRing 1.8s ease-out 2}
+@keyframes abvxRing{0%{opacity:.8;transform:scale(.23)}100%{opacity:0;transform:scale(1)}}
+.abvx-bus .stub{stroke:#5c4a3c;stroke-width:2}
+.abvx-bus .stub.on{stroke:#F5821E}
+.abvx-spark{position:absolute;left:0;top:0;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#fff;box-shadow:0 0 6px 3px rgba(255,176,102,.55);z-index:2;pointer-events:none;opacity:0;will-change:transform,opacity;contain:strict}
+.abvx .blk{position:relative;padding:90px 0}
+.abvx .blk>.wrap{z-index:3}
+.abvx .kicker{font-family:var(--f-m);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--o2);margin-bottom:14px}
+.abvx h2{font-size:clamp(28px,3.4vw,44px);font-weight:800;letter-spacing:-.01em;margin-bottom:40px;max-width:22ch}
+.abvx h3{font-size:18px;line-height:1.35}
+.abvx .lead{color:var(--muted);font-size:17px;line-height:1.6;max-width:56ch;margin:0 0 16px}
+.abvx .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.abvx .gauges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.abvx .dev{position:relative;border-radius:22px;padding:24px 22px 22px;background:linear-gradient(180deg,#4a3a2e,#3d3026);border:1px solid var(--line)}
+.abvx .dev .t{font-family:var(--f-m);font-size:11px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;margin-bottom:16px;display:flex;justify-content:space-between}
+.abvx .dev .t b{color:#37d16a;font-weight:500}
+.abvx .dev .cap{margin-top:14px;font-weight:600;color:#f1e6dc;font-size:14px;line-height:1.35}
+.abvx .odo{display:flex;gap:4px;align-items:center;height:72px;padding:8px;border-radius:12px;background:var(--well);border:1px solid #5c4a3c;box-shadow:inset 0 6px 14px rgba(0,0,0,.6)}
+.abvx .odo .sym{font-family:var(--f-m);font-size:32px;font-weight:700;color:var(--o2);padding:0 4px}
+.abvx .drum{position:relative;width:38px;height:54px;overflow:hidden;border-radius:6px;background:linear-gradient(180deg,#000 0%,#2b2621 18%,#3a332c 50%,#2b2621 82%,#000 100%)}
+.abvx .drum.red{background:linear-gradient(180deg,#000 0%,#4a1c0c 18%,#6b2a12 50%,#4a1c0c 82%,#000 100%)}
+.abvx .drum ul{list-style:none;margin:0;padding:0;transition:transform 2.2s cubic-bezier(.15,.85,.25,1)}
+.abvx .drum li{height:54px;line-height:54px;text-align:center;font-family:var(--f-m);font-weight:700;font-size:32px;color:#f2e8de;list-style:none;margin:0;padding:0}
+.abvx .unit{font-family:var(--f-m);font-size:14px;color:var(--muted);margin-left:6px;align-self:flex-end;padding-bottom:6px}
+.abvx .dial{position:relative;height:72px;border-radius:12px;background:var(--well);border:1px solid #5c4a3c;box-shadow:inset 0 6px 14px rgba(0,0,0,.6);overflow:hidden}
+.abvx .dial svg{width:100%;height:100%}
+.abvx .dial .needle{transform-origin:100px 96px;transform:rotate(-62deg);transition:transform 2.4s cubic-bezier(.3,1.6,.4,1)}
+.abvx .dial.go .needle{transform:rotate(58deg)}
+.abvx .dial text{font-family:var(--f-m);font-size:8px;fill:#a8968a}
+.abvx .mission{padding:30px;border-radius:24px;background:var(--panel);border:1px solid var(--line)}
+.abvx .mission p.m{margin:0 0 20px;font-size:19px;line-height:1.5;color:var(--ink);font-family:var(--f-d);font-weight:600}
+.abvx .pts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.abvx .pts li{position:relative;padding-left:30px;color:var(--muted);list-style:none}
+.abvx .pts li:before{content:"";position:absolute;left:0;top:.35em;width:14px;height:14px;border-radius:50%;border:2px solid var(--o);box-shadow:0 0 10px var(--glow)}
+.abvx .photo{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line)}
+.abvx .photo picture{display:block;width:100%;height:100%}.abvx .photo img{width:100%;height:100%;object-fit:cover}
+.abvx .photo.tall{aspect-ratio:4/5;max-height:560px}
+.abvx .photo .cap{position:absolute;left:18px;bottom:16px;font-family:var(--f-m);font-size:12px;color:#fff;letter-spacing:.06em;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.abvx .lists{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.abvx .lst{padding:28px;border-radius:22px;background:var(--panel);border:1px solid var(--line)}
+.abvx .lst h3{margin:0 0 16px}
+.abvx .lst ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.abvx .lst li{position:relative;padding:12px 14px 12px 40px;border-radius:14px;background:var(--panel2);color:var(--muted);font-size:15px;list-style:none;margin:0;display:block}
+.abvx .lst li b{color:var(--ink);font-weight:600;display:block}
+.abvx .lst li:before{content:"";position:absolute;left:16px;top:18px;width:10px;height:10px;border-radius:2px;background:var(--o);box-shadow:0 0 10px var(--glow)}
+.abvx .idents{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.abvx .idc{display:flex;flex-direction:column;align-items:center;gap:12px;padding:26px 12px;border-radius:20px;background:var(--panel);border:1px solid var(--line);transition:border-color .3s,transform .3s}
+.abvx .idc:hover{border-color:var(--o);transform:translateY(-3px)}
+.abvx .idc svg{width:56px;height:56px;filter:drop-shadow(0 0 8px rgba(245,130,30,.35))}
+.abvx .idc span{font-family:var(--f-d);font-weight:700;color:var(--ink)}
+.abvx .trio{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;text-transform:uppercase;max-width:none}
+.abvx .trio i{font-style:normal;color:var(--o)}
+.abvx .links{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.abvx .links a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;border-radius:18px;background:var(--panel);border:1px solid var(--line);font-family:var(--f-d);font-weight:600;font-size:16px;transition:border-color .3s,background .3s}
+.abvx .links a span{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--o),var(--o2));color:#2a1606;font-weight:800;transition:transform .3s}
+.abvx .links a:hover{border-color:var(--o);background:#4b3b2f}.abvx .links a:hover span{transform:translateX(4px)}
+.abvx .cta{text-align:center;padding:100px 0 120px;background:radial-gradient(60% 80% at 50% 60%,rgba(245,130,30,.22),transparent 70%)}
+.abvx .cta h2{margin:0 auto 18px;text-align:center;max-width:20ch}
+.abvx .cta .lead{margin:0 auto 32px}
+.abvx .cta .btns{justify-content:center}
+@media (max-width:1260px){.abvx .wrap{padding-left:56px}}
+@media (max-width:980px){.abvx-hero{padding:40px 0 60px}.abvx-hero .wrap,.abvx .two,.abvx .lists,.abvx .links{grid-template-columns:1fr}
+ .abvx .gauges{grid-template-columns:repeat(2,minmax(0,1fr))}.abvx .idents{grid-template-columns:repeat(3,minmax(0,1fr))}.abvx-hero .bdg small{min-width:0;width:100%}.abvx .blk{padding:70px 0}}
+@media (max-width:520px){.abvx .gauges{grid-template-columns:1fr}.abvx .idents{grid-template-columns:repeat(2,minmax(0,1fr))}.abvx .drum{width:34px}.abvx-hero .mag,.abvx .mag{height:50px;padding:0 22px}}
+.hero-merged-glow.glow-section::before{filter:none;will-change:transform,opacity;background:radial-gradient(circle at 20% 30%,rgba(255,130,20,.56) 0%,rgba(255,130,20,.34) 10%,rgba(255,130,20,.13) 23%,rgba(255,130,20,0) 38%),radial-gradient(circle at 75% 25%,rgba(255,90,10,.5) 0%,rgba(255,90,10,.3) 11%,rgba(255,90,10,.12) 25%,rgba(255,90,10,0) 40%),radial-gradient(circle at 50% 80%,rgba(255,150,30,.5) 0%,rgba(255,150,30,.3) 11%,rgba(255,150,30,.11) 25%,rgba(255,150,30,0) 40%),radial-gradient(circle at 85% 75%,rgba(230,100,0,.45) 0%,rgba(230,100,0,.26) 10%,rgba(230,100,0,.1) 23%,rgba(230,100,0,0) 38%)}
+.abv-glassbar,.abv-mbar.glass{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(36,25,17,.94)!important}
+
+/* ===== mobile compact ===== */
+@media (max-width:700px){
+.abvx-hero{padding:20px 0 30px}
+.abvx-hero .wrap,.abvx .wrap{padding-inline:16px}
+.abvx-hero .wrap{gap:14px;grid-template-columns:minmax(0,1fr)}.abvx-hero .wrap>*{min-width:0}
+.abvx-hero h1{margin:12px 0 12px;font-size:clamp(30px,9.4vw,40px)}
+.abvx-hero .sub{text-transform:none;font-size:15px;line-height:1.45;letter-spacing:0;margin:0 0 16px;max-width:none}
+.abvx-hero .badges{flex-direction:row;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.abvx-hero .bdg{display:contents}
+.abvx-hero .bdg small{display:none}
+.abvx-hero .bdg b{font-size:14px;padding:6px 13px}
+.abvx-hero .bdg:first-child b::before{content:"Опыт ";font-weight:600}
+.abvx-hero .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.abvx-hero .mag{height:50px;padding:0 10px;justify-content:center;font-size:12.5px;letter-spacing:.03em;text-align:center}
+.abvx-hero .heq img{max-width:300px;margin:0 auto}
+.abvx-hero .tags{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;margin:10px -16px 0;padding:0 16px 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.abvx-hero .tags::-webkit-scrollbar{display:none}
+.abvx-hero .tags span{flex:0 0 auto;font-size:12.5px}
+.abvx .blk{padding:40px 0}
+.abvx .wrap{padding-left:44px}
+.abvx h2{font-size:25px;margin-bottom:16px}
+.abvx .kicker{margin-bottom:8px}
+.abvx .lead{font-size:15px}
+.abvx .two{gap:18px}
+.abvx .gauges{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.abvx .dev{padding:12px 10px 12px;border-radius:16px}
+.abvx .dev .t{font-size:9.5px;margin-bottom:8px}
+.abvx .odo{padding:6px 8px;gap:4px}
+.abvx .drum{width:28px}
+.abvx .odo .sym{font-size:22px}
+.abvx .odo .unit{font-size:12px}
+.abvx .dev .cap{font-size:12px;line-height:1.35;margin-top:8px}
+.abvx .mission{padding:18px}
+.abvx .mission .m{font-size:16px}
+.abvx .photo.tall{aspect-ratio:4/3;max-height:none}.abvx .photo.tall img{object-position:50% 8%}
+.abvx .lst{padding:16px}
+.abvx .lst h3{font-size:15.5px;cursor:pointer;display:flex;gap:10px;justify-content:space-between;align-items:flex-start;margin:0}
+.abvx .lst h3::after{content:"";flex:0 0 10px;height:10px;margin-top:5px;border-right:2px solid #F5821E;border-bottom:2px solid #F5821E;transform:rotate(45deg);transition:transform .25s}
+.abvx .lst.open h3::after{transform:rotate(225deg);margin-top:9px}
+.abvx .lst ul{display:none;margin-top:12px}
+.abvx .lst.open ul{display:grid}
+.abvx .lists{gap:10px}
+.abvx .idents{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.abvx .idc{padding:10px 2px;gap:6px;border-radius:12px}
+.abvx .idc svg{width:26px;height:26px}
+.abvx .idc span{font-size:12px;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.abvx #supply .photo{aspect-ratio:16/9}
+.abvx .links{gap:8px}
+.abvx .links a{padding:14px 14px;font-size:14px}
+.abvx .cta{padding:44px 0 50px}.abvx .cta .kicker{margin-top:30px}
+.abvx .cta .btns{display:grid;grid-template-columns:1fr;gap:10px}
+.abvx .cta .mag{justify-content:center}
+.abvx-lit .lv,.abvx-lit .lh,.abvx-lit .ld{box-shadow:none}.abvx-lit .lv{will-change:transform}
+.abvx .dev .t{font-size:10px}
+}
+@media (prefers-reduced-motion:reduce){.abvx-boot .bp{animation:none;stroke-dashoffset:0}.abvx-hero h1 span{animation:none;background-size:100% 100%,100% 100%}.abvx .drum ul,.abvx .dial .needle{transition:none}.abvx-ring.on{animation:none}}
+        </style>
+</head>
+    <body>
+
+        <div class="abvx-boot" id="abvxBoot" aria-hidden="true"><div class="bi">
+          <svg viewBox="0 0 240 236">
+            <path class="bp" d="M30 26 L118 14 L150 22 L150 170 L118 184 L30 170 Z"/>
+            <path class="bp" d="M30 26 L30 170"/><path class="bp" d="M60 22 L60 174"/><path class="bp" d="M90 18 L90 178"/><path class="bp" d="M118 14 L118 184"/>
+            <path class="bp f" d="M36 48 h18 M66 44 h18 M96 40 h16"/>
+            <path class="bp f" d="M38 70 h14 v14 h-14 z M68 66 h14 v14 h-14 z M98 62 h14 v14 h-14 z"/>
+            <path class="bp" d="M136 44 L128 66 L138 66 L130 90"/>
+            <path class="bp" d="M112 128 h96 v64 h-96 z"/><path class="bp" d="M96 200 h128 l-10 10 h-108 z"/>
+            <path class="bp" d="M140 142 l40 36 M180 142 l-40 36 M136 142 l8 -6 l8 8 M184 142 l-8 -6 l-8 8"/>
+            <path class="dm" d="M30 202 L30 222 M150 202 L150 222 M30 216 L150 216"/>
+            <text class="lb" x="58" y="230">ABB · 0,4–35 kV</text>
+            <path class="dm" d="M214 128 L232 128 M214 192 L232 192 M226 128 L226 192"/>
+          </svg>
+          <img class="real" src="images/footer_logo.png" alt="">
+          <div class="br"><i id="abvxBar"></i></div><div class="st" id="abvxSt">ПОДКЛЮЧЕНИЕ…</div>
+        </div></div>
+        <script>
+        (function(){var b=document.getElementById('abvxBoot');var seen=false;try{seen=sessionStorage.getItem('abvxBoot')==='1';sessionStorage.setItem('abvxBoot','1')}catch(e){}
+         if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){b.parentNode.removeChild(b);return}
+         b.classList.add('show');document.documentElement.style.overflow='hidden';
+         [].forEach.call(b.querySelectorAll('.bp'),function(p,i){p.style.setProperty('--len',Math.ceil(p.getTotalLength()));p.style.animationDelay=(i*.06)+'s'});
+         var bar=document.getElementById('abvxBar'),st=document.getElementById('abvxSt');
+         [[0,'ПОДКЛЮЧЕНИЕ…',10],[400,'ПРОВЕРКА ЦЕПЕЙ…',40],[800,'ВЗВОД ПРУЖИН…',72],[1250,'ВКЛЮЧЕНИЕ',100]].forEach(function(s){setTimeout(function(){st.textContent=s[1];bar.style.width=s[2]+'%'},s[0])});
+         setTimeout(function(){b.classList.add('on')},1350);
+         setTimeout(function(){b.classList.add('done');document.documentElement.style.overflow=''},2150);
+         setTimeout(function(){if(b.parentNode)b.parentNode.removeChild(b)},2900);})();
+        </script>
+        <!-- верхнее меню -->
+        <div class="hero-merged-glow glow-section">
+        <section style="display: flex; flex-direction: column;" data-pgc="headmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block"> <img src="images/footer_logo.png" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="width: 100%; height: 100%;">
+                        <div class="items-in-line">
+                            <div class="menu-items"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer;">
+                                    <p id="topddmenu" onclick="postavkaclickfull()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="ddmenu" class="dropdown-content" style="width: 300px;">
+                                        <a href="oborudovanieabb1.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html"> <p class="dropdown-item">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob">
+                            <div class="menu-items-mob"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                    <p id="postavkam" onclick="postavkaclick()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="postavka" style="display: flex; flex-direction: column; width: fit-content; max-width: calc(100% - 60px); margin: 0 auto 10px; background-color: transparent; row-gap: 8px; padding: 12px 24px; align-items: center; position: relative; z-index: 5; pointer-events: auto;">
+                                        <a href="oborudovanieabb1.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable lable-2col">
+                            <div class="lable-col">
+                                <a href="tel:88002503392" class="lable-link"><span class="lable-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;flex-shrink:0;"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="#d0d0d0" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="lable-text lable-text-strong">8 (800) 250 33 92</span></a>
+                                <a href="mailto:info@abv-es.ru" class="lable-link"><span class="lable-icon"><img src="images/email.svg"/></span><span class="lable-text">info@abv-es.ru</span></a>
+                            </div>
+                            <div class="lable-col">
+                                <a href="https://t.me/ABV_es_bot" class="lable-link"><span class="lable-icon"><img src="images/telegram.svg"/></span><span class="lable-text">@ABV_es_bot</span></a>
+                                <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="lable-link"><span class="lable-icon"><img src="images/max.svg"/></span><span class="lable-text">abv-es</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- баннер (новый) -->
+        <div class="abvx-hero">
+          <div class="wrap">
+            <div>
+              <span class="eyebrow"><i></i>Сервисный центр ABB</span>
+              <h1>АБВ<span>Электросервис</span></h1>
+              <p class="sub">Сервисный центр низковольтного и средневольтного электрооборудования АББ</p>
+              <div class="badges">
+                <div class="bdg"><small>Специалисты<br>с опытом работы</small><b>&gt;10 лет</b></div>
+                <div class="bdg"><small>Регион сервисного<br>обслуживания</small><b>Россия</b><b>Белоруссия</b></div>
+              </div>
+              <div class="btns"><a class="mag main" href="#" onclick="openRequestForm(event)">ЗАПРОС</a><a class="mag ghost" href="sklad.html">СКЛАД ЗАПЧАСТЕЙ</a></div>
+            </div>
+            <div class="heq">
+              <img src="images/hero_equipment.svg" alt="Электрооборудование АББ" width="517" height="438" fetchpriority="high">
+              <div class="tags"><span>Ремонт</span><span>Обслуживание</span><span>Поставка ЗИП</span><span>Модернизация</span><span>Ретрофит</span><span>Тренинги</span></div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- основная часть (новая) -->
+        <div class="abvx" id="abvx">
+          <svg class="abvx-bus" id="abvxBus" aria-hidden="true"><path class="track" id="abvxTrack"/><g id="abvxNodes"></g></svg>
+          <div class="abvx-lit" id="abvxL" aria-hidden="true"></div>
+
+          <div class="blk" id="nums"><div class="wrap">
+            <div class="kicker" data-node="0">// Показания</div>
+            <h2>Цифры, которые мы держим под напряжением</h2>
+            <div class="gauges">
+              <div class="dev"><div class="t">СТАЖ <b>● ON</b></div>
+                <div class="odo"><span class="sym">&gt;</span><div class="drum" data-to="1"></div><div class="drum red" data-to="0"></div><span class="unit">лет</span></div>
+                <p class="cap">Специалисты с опытом работы с оборудованием АББ</p></div>
+              <div class="dev"><div class="t">ДИАПАЗОН <b>● ON</b></div>
+                <div class="dial" id="abvxDial"><svg viewBox="0 0 200 72" preserveAspectRatio="xMidYMid meet">
+                  <path d="M28 70 A76 76 0 0 1 172 70" fill="none" stroke="#5c4a3c" stroke-width="2"/>
+                  <path d="M128 18 A76 76 0 0 1 172 70" fill="none" stroke="#F5821E" stroke-width="3" opacity=".7"/>
+                  <g stroke="#8d7a6a" stroke-width="1.4" id="abvxTicks"></g>
+                  <text x="22" y="66">0,4</text><text x="94" y="14">15</text><text x="166" y="66">35</text>
+                  <g class="needle"><line x1="100" y1="96" x2="100" y2="22" stroke="#ffb066" stroke-width="2.2" stroke-linecap="round"/></g>
+                  <circle cx="100" cy="72" r="5" fill="#F5821E"/></svg></div>
+                <p class="cap">Центр компетенций в силовом электрооборудовании АББ от 0,4 до 35 кВ</p></div>
+              <div class="dev"><div class="t">КЛИЕНТЫ <b>● ON</b></div>
+                <div class="odo"><div class="drum" data-to="4"></div><div class="drum red" data-to="0"></div><span class="sym">+</span></div>
+                <p class="cap">Компаний доверили нам своё оборудование</p></div>
+              <div class="dev"><div class="t">ПОКРЫТИЕ <b>● ON</b></div>
+                <div class="odo"><div class="drum" data-to="2"></div><span class="unit">страны</span></div>
+                <p class="cap">Россия и Белоруссия — регион сервисного обслуживания</p></div>
+            </div>
+          </div></div>
+
+          <div class="blk" id="about"><div class="wrap two">
+            <div>
+              <div class="kicker" data-node="1">// О нас</div>
+              <h2>ООО «АБВ Электросервис»</h2>
+              <p class="lead">Компания ООО «АБВ Электросервис», являясь новым юридическим лицом, продолжает сервисную деятельность подразделения АББ «Электрооборудование» на российском рынке, а также в Республике Беларусь.</p>
+            </div>
+            <div class="mission">
+              <div class="kicker">Наша миссия</div>
+              <p class="m">Обеспечение безопасной, эффективной, бесперебойной работы систем электроснабжения российских предприятий и электросетевых объектов.</p>
+              <ul class="pts"><li>Центр компетенций в силовом электрооборудовании АББ от 0,4 до 35 кВ</li><li>Сервисный центр электрооборудования АББ</li></ul>
+            </div>
+          </div></div>
+
+          <div class="blk" id="team"><div class="wrap two">
+            <div>
+              <div class="kicker" data-node="2">// Экспертиза АББ</div>
+              <h2>Наши специалисты</h2>
+              <p class="lead">Наши сервисные специалисты помогут сохранить ваши активы АББ в исходном состоянии на долгие годы, а также восстановить требующие ремонта части распределительных устройств и аппаратов.</p>
+            </div>
+            <div class="photo tall"><picture><source type="image/webp" srcset="images/men_abb.webp"><img src="images/men_abb_s.jpg" alt="Сервисный специалист АББ" width="720" height="960" loading="lazy" decoding="async"></picture><div class="cap">// ЭКСПЕРТИЗА АББ · ОПЫТ &gt;10 ЛЕТ</div></div>
+          </div></div>
+
+          <div class="blk" id="biz"><div class="wrap">
+            <div class="kicker" data-node="3">// Направления бизнеса</div>
+            <h2>Направления бизнеса</h2>
+            <div class="lists">
+              <div class="lst"><h3>Подбор запасных частей для распределительных устройств серий:</h3><ul>
+                <li><b>С воздушной изоляцией</b>ABB Unigear ZS1, ABB Unigear ZS3.2, ABB Unisec</li>
+                <li><b>Компактные с элегазовой изоляцией</b>ABB SafeRing, SafePlus</li>
+                <li><b>С элегазовой изоляцией</b>ABB ZX1.2, ABB ZX2</li>
+                <li><b>Низковольтные системы</b>типа ABB MNS</li></ul></div>
+              <div class="lst"><h3>Идентификация и формирование заказных спецификаций аппаратов АББ:</h3><ul>
+                <li><b>Вакуумные выключатели</b>ABB VD4, HD4, VMAX, VM1, VM1-T</li>
+                <li><b>Контакторы, заземлители</b></li>
+                <li><b>Воздушные выключатели</b>ABB SACE Emax, Emax 2, New Emax, Megamax, Tmax</li></ul></div>
+            </div>
+          </div></div>
+
+          <div class="blk" id="ident"><div class="wrap">
+            <div class="kicker" data-node="4">// Идентификация</div>
+            <h2>Идентификация необходимых компонентов для их последующей замены</h2>
+            <p class="lead">Возможна обработка информации:</p>
+            <div class="idents"><div class="idc"><svg viewBox="0 0 40 40" fill="none" stroke="#F5821E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="6"/><path d="M13 20l5 5 10-12"/></svg><span>опросный лист</span></div><div class="idc"><svg viewBox="0 0 40 40" fill="none" stroke="#F5821E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="6"/><circle cx="20" cy="20" r="5"/></svg><span>фото</span></div><div class="idc"><svg viewBox="0 0 40 40" fill="none" stroke="#F5821E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="6"/><path d="M16 13l11 7-11 7z"/></svg><span>видео</span></div><div class="idc"><svg viewBox="0 0 40 40" fill="none" stroke="#F5821E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="6"/><rect x="11" y="15" width="18" height="10" rx="2"/><path d="M14 20h1M25 20h1"/></svg><span>шильд</span></div><div class="idc"><svg viewBox="0 0 40 40" fill="none" stroke="#F5821E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="6"/><rect x="12" y="11" width="16" height="18" rx="2"/><path d="M15 16h10M15 20h10M15 24h6"/></svg><span>паспорт</span></div></div>
+          </div></div>
+
+          <div class="blk" id="supply"><div class="wrap two">
+            <div>
+              <div class="kicker" data-node="5">// Поставка</div>
+              <h2>Поставка электрооборудования АББ</h2>
+              <p class="lead">Компания АБВ Электросервис осуществляет поставку запасных частей и других сложных компонентов электрооборудования АББ (ABB). Мы специализируемся на поставке именно нестандартного и несерийного оборудования, которое не найти в стандартных прайс-листах.</p>
+              <p class="lead">Если вам понадобились части электрооборудования АББ или силовое электрооборудование, просто отправьте нам ваш запрос.</p>
+              <div class="btns"><a class="mag main" href="#" onclick="openRequestForm(event)">ЗАПРОС</a></div>
+            </div>
+            <div class="photo"><picture><source type="image/webp" srcset="images/car.webp"><img src="images/car.jpg" alt="Поставка электрооборудования" width="500" height="283" loading="lazy" decoding="async"></picture></div>
+          </div></div>
+
+          <div class="blk" id="extra"><div class="wrap">
+            <div class="kicker" data-node="6">// Дополнительно</div>
+            <h2 class="trio">Диагностика<i>·</i>обслуживание<i>·</i>ремонт</h2>
+            <div class="links">
+              <a href="retrofit2.html">Ретрофит РЗА АББ. Автоматизация подстанций<span>→</span></a>
+              <a href="retrofit.html">Ретрофит и замены выключателей АББ<span>→</span></a>
+              <a href="modern.html">Модернизация распределительных устройств и ретрофит<span>→</span></a>
+              <a href="elegaz.html">Работа с элегазовым оборудованием (ремонт моноблоков SafeRing, SafePlus)<span>→</span></a>
+            </div>
+          </div></div>
+
+          <div class="blk cta" id="cta"><div class="wrap">
+            <div class="kicker" data-node="7" style="text-align:center">// Замыкаем цепь</div>
+            <h2>Оставьте запрос</h2>
+            <p class="lead">Заполните форму, и мы свяжемся с вами в ближайшее время.</p>
+            <div class="btns"><a class="mag main" href="#" onclick="openRequestForm(event)">ОСТАВИТЬ ЗАПРОС</a><a class="mag ghost" href="tel:88002503392">8 (800) 250 33 92</a></div>
+          </div></div>
+        </div>
+
+                <footer class="site-footer" data-pgc="footmenu">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="images/footer_logo.png" class="footer-logo"/>
+                    <p class="footer-tagline">Сервисный центр низковольтного и средневольтного электрооборудования АББ</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Компания</p>
+                    <a href="about.html">О компании</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="projects.html">Проекты</a>
+                    <a href="partners.html">Партнёры</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Поставка оборудования</p>
+                    <a href="oborudovanieabb1.html">АББ Среднее напряжение</a>
+                    <a href="oborudovanieabb2.html">АББ низковольтное оборудование</a>
+                    <a href="sklad.html">Склад</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Контакты</p>
+                    <a href="tel:88002503392" class="footer-contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span>8 (800) 250 33 92</span>
+                    </a>
+                    <a href="https://t.me/ABV_es_bot" class="footer-contact-link">
+                        <img src="images/telegram.svg"/>
+                        <span>@ABV_es_bot</span>
+                    </a>
+                    <a href="mailto:info@abv-es.ru" class="footer-contact-link">
+                        <img src="images/email.svg"/>
+                        <span>info@abv-es.ru</span>
+                    </a>
+                    <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="footer-contact-link">
+                        <img src="images/max.svg"/>
+                        <span>abv-es</span>
+                    </a>
+                    <p class="footer-address">г. Москва, ул. Профсоюзная, д. 57</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© АБВ Электросервис, 2026</p>
+                <div class="footer-accent-line"></div>
+            </div>
+        </footer>
+        <!-- загрузка управления меню-->
+        <script src="menu.js?v=20261017"> </script>
+
+        <!-- Модальная форма "Запрос" -->
+        <div id="rf-overlay" class="rf-overlay">
+            <div class="rf-modal">
+                <button type="button" class="rf-close" onclick="closeRequestForm()" aria-label="Закрыть">&times;</button>
+                <h3 class="rf-title">Оставьте запрос</h3>
+                <p class="rf-subtitle">Заполните форму, и мы свяжемся с Вами в ближайшее время</p>
+
+                <form id="rf-form">
+                    <input type="hidden" name="_subject" value="Новый запрос с сайта АБВ Электросервис">
+                    <input type="hidden" name="_cc" value="info@abv-es.ru">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="rf-field">
+                        <label for="rf-name">Как мы можем к Вам обращаться?<span class="rf-required">*</span></label>
+                        <input type="text" id="rf-name" name="Имя" required>
+                    </div>
+                    <div class="rf-field">
+                        <label for="rf-email">Email<span class="rf-required">*</span></label>
+                        <input type="email" id="rf-email" name="Email" required>
+                    </div>
+                    <div class="rf-field">
+                        <label for="rf-phone">Телефон</label>
+                        <input type="tel" id="rf-phone" name="Телефон">
+                    </div>
+                    <div class="rf-field">
+                        <label for="rf-message">Опишите Вашу проблему<span class="rf-required">*</span></label>
+                        <textarea id="rf-message" name="Запрос" rows="4" required></textarea>
+                    </div>
+
+                    <div id="rf-error" class="rf-error" style="display:none;"></div>
+
+                    <button type="submit" id="rf-submit-btn" class="rf-submit">Отправить</button>
+                </form>
+
+                <div id="rf-success" class="rf-success" style="display:none;">
+                    <p class="rf-success-title">Заявка отправлена!</p>
+                    <p>Спасибо, мы получили Ваш запрос и свяжемся с Вами в ближайшее время.</p>
+                    <button type="button" class="rf-submit" onclick="closeRequestForm()">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <script src="request-form.js"></script>
+        <script src="reveal.js"></script>
+    
+        <script>
+        (function(){
+        var root=document.getElementById('abvx');if(!root)return;
+        var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,NS='http://www.w3.org/2000/svg';
+        var mobile=!matchMedia('(hover:hover) and (pointer:fine)').matches;
+        var $=function(id){return document.getElementById(id)};
+        var svg=$('abvxBus'),track=$('abvxTrack'),LB=$('abvxL'),nodesG=$('abvxNodes'),numsEl=$('nums');
+        var nodes=[],vs=[],trig=[],busLen=0,H=0,litY=0,shownY=-1,PX=[],PY=[],STEP=4,lastW=0,lastH=0,visible=true,running=false,gOn=false;
+        function lenAtY(y){var lo=0,hi=PY.length-1;if(hi<0)return 0;if(PY[hi]<y)return busLen;while(lo<hi){var m=(lo+hi)>>1;if(PY[m]<y)lo=m+1;else hi=m}return lo*STEP}
+        function el(cls,x,y,w,h){var e=document.createElement('i');e.className=cls;e.style.left=x+'px';e.style.top=y+'px';if(w!=null)e.style.width=w+'px';if(h!=null)e.style.height=h+'px';LB.appendChild(e);return e}
+        function layout(){
+          var W=root.clientWidth,HH=root.scrollHeight;if(W===lastW&&Math.abs(HH-lastH)<2&&busLen)return;lastW=W;lastH=HH;H=HH;
+          var rr=root.getBoundingClientRect();
+          svg.setAttribute('width',W);svg.setAttribute('height',H);svg.setAttribute('viewBox','0 0 '+W+' '+H);
+          var els=[].slice.call(root.querySelectorAll('[data-node]')).sort(function(a,b){return a.dataset.node-b.dataset.node});
+          var w=root.querySelector('.blk .wrap'),wr=w.getBoundingClientRect(),cl=wr.left-rr.left+parseFloat(getComputedStyle(w).paddingLeft),gx=Math.max(14,cl-30);
+          var pts=els.map(function(el){var r=el.getBoundingClientRect();return{y:r.top-rr.top+r.height/2,x:r.left-rr.left}});
+          var L=pts[pts.length-1],cx=W/2,r=22,ty=L.y-62,ey=L.y-26;
+          var d='M'+gx+' 0 L'+gx+' '+(ty-r)+' Q'+gx+' '+ty+' '+(gx+r)+' '+ty+' L'+(cx-r)+' '+ty+' Q'+cx+' '+ty+' '+cx+' '+(ty+r)+' L'+cx+' '+ey;
+          track.setAttribute('d',d);busLen=track.getTotalLength();
+          PX=[];PY=[];for(var l=0;l<=busLen;l+=STEP){var p=track.getPointAtLength(l);PX.push(p.x);PY.push(p.y)}
+          LB.innerHTML='';nodes.forEach(function(o){o.r.remove()});nodes=[];vs=[];trig=[];shownY=-1;
+          function vl(x,y0,y1){var wv=el('lvw',x,y0,null,y1-y0),iv=document.createElement('i');iv.className='lv';wv.appendChild(iv);vs.push({e:iv,y0:y0,y1:y1,len:y1-y0})}
+          vl(gx,0,ty-r);
+          var c1=document.createElementNS(NS,'svg');c1.setAttribute('class','lc');c1.setAttribute('width',r+2);c1.setAttribute('height',r+2);c1.style.left=(gx-1)+'px';c1.style.top=(ty-r-1)+'px';
+          c1.innerHTML='<path d="M1 1 Q1 '+(r+1)+' '+(r+1)+' '+(r+1)+'"/>';LB.appendChild(c1);
+          var hz=el('lh',gx+r,ty,cx-gx-2*r,null);
+          var c2=document.createElementNS(NS,'svg');c2.setAttribute('class','lc');c2.setAttribute('width',r+2);c2.setAttribute('height',r+2);c2.style.left=(cx-r-1)+'px';c2.style.top=(ty-1)+'px';c2.style.transitionDelay='.45s';
+          c2.innerHTML='<path d="M1 1 Q'+(r+1)+' 1 '+(r+1)+' '+(r+1)+'"/>';LB.appendChild(c2);
+          trig.push({y:ty-r,e:c1},{y:ty-r,e:hz},{y:ty-r,e:c2});
+          vl(cx,ty+r,ey);
+          var a='';
+          pts.forEach(function(p,i){var last=i===pts.length-1,nx=last?cx:gx,ny=last?ey:p.y;
+            if(!last){a+='<line class="stub" x1="'+(gx+7)+'" y1="'+ny+'" x2="'+(p.x-8)+'" y2="'+ny+'"/>';trig.push({y:ny,e:el('ls',gx+7,ny,p.x-8-gx-7,null)})}
+            a+='<circle class="node" cx="'+nx+'" cy="'+ny+'" r="6"/>';
+            trig.push({y:ny,e:el('ld',nx,ny)});
+            var rg=document.createElement('i');rg.className='abvx-ring';rg.style.left=nx+'px';rg.style.top=ny+'px';root.appendChild(rg);
+            nodes.push({y:ny,on:false,r:rg})});
+          nodesG.innerHTML=a;trig.forEach(function(t){t.on=false});
+          kick();
+        }
+        var sparks=[],NSP=mobile?0:4;
+        for(var i=0;i<NSP;i++){var c=document.createElement('i');c.className='abvx-spark';if(i)c.style.width=c.style.height='4px',c.style.margin='-2px 0 0 -2px';root.appendChild(c);sparks.push({el:c,op:0,off:i/NSP,speed:.10+.02*i})}
+        [].forEach.call(root.querySelectorAll('.drum'),function(d){var ul=document.createElement('ul');for(var r=0;r<3;r++)for(var i=0;i<10;i++){var li=document.createElement('li');li.textContent=i;ul.appendChild(li)}d.appendChild(ul)});
+        var tk=$('abvxTicks');for(var i=0;i<=20;i++){var a=(-62+i*6)*Math.PI/180,r1=i%5?70:64,r2=76,l=document.createElementNS(NS,'line');
+          l.setAttribute('x1',100+r1*Math.sin(a));l.setAttribute('y1',96-r1*Math.cos(a));l.setAttribute('x2',100+r2*Math.sin(a));l.setAttribute('y2',96-r2*Math.cos(a));tk.appendChild(l)}
+        function frame(t){
+          running=false;if(!visible||document.hidden||!H)return;
+          var vh=innerHeight,rr=root.getBoundingClientRect(),target=Math.max(0,Math.min(H,-rr.top+vh*.62)),diff=target-litY;
+          litY=Math.abs(diff)<0.5?target:litY+diff*.14;
+          if(Math.abs(litY-shownY)>=0.5){shownY=litY;
+            for(var v=0;v<vs.length;v++){var q=vs[v],k=Math.max(0,Math.min(1,(litY-q.y0)/(q.y1-q.y0)));var py=Math.round((k-1)*q.len);if(py!==q.py){q.py=py;q.e.style.transform='translate3d(0,'+py+'px,0)'}}
+            for(var g=0;g<trig.length;g++){var o=trig[g],on=litY>=o.y-2;if(on!==o.on){o.on=on;o.e.classList.toggle('on',on)}}
+            for(var i=0;i<nodes.length;i++){var n=nodes[i],on2=litY>=n.y-2;if(on2!==n.on){n.on=on2;if(!reduce)n.r.classList.toggle('on',on2)}}}
+          var litLen=lenAtY(litY),sp=NSP>0&&!reduce&&litLen>=20&&!scrolling;
+          for(var j=0;j<sparks.length;j++){var s=sparks[j],op=0;
+            if(sp){var p=((t/1000*s.speed+s.off)%1)*litLen,k2=Math.min(PX.length-1,Math.round(p/STEP));op=p>litLen-8?0:1;s.el.style.transform='translate3d('+PX[k2]+'px,'+PY[k2]+'px,0)'}
+            if(op!==s.op){s.op=op;s.el.style.opacity=op}}
+          if(!gOn&&numsEl.getBoundingClientRect().top<vh*.7){gOn=true;
+            [].forEach.call(root.querySelectorAll('.drum'),function(d,i){setTimeout(function(){d.querySelector('ul').style.transform='translateY(-'+(20+ +d.dataset.to)*54+'px)'},reduce?0:i*180)});
+            $('abvxDial').classList.add('go')}
+          if(sp||litY!==target)kick();else if(NSP&&scrolling)setTimeout(kick,400);
+        }
+        function kick(){if(!running&&visible&&!document.hidden){running=true;requestAnimationFrame(frame)}}
+        if('IntersectionObserver' in window){new IntersectionObserver(function(e){visible=e[0].isIntersecting;kick()},{rootMargin:'200px 0px'}).observe(root)}
+        var scrolling=false,st;addEventListener('scroll',function(){scrolling=true;clearTimeout(st);st=setTimeout(function(){scrolling=false;kick()},350);kick()},{passive:true});
+        document.addEventListener('visibilitychange',kick);
+        var rt;function relayout(){clearTimeout(rt);rt=setTimeout(layout,200)}
+        addEventListener('resize',relayout);addEventListener('load',layout);setTimeout(layout,800);
+        if(window.ResizeObserver)new ResizeObserver(relayout).observe(root);
+        [].forEach.call(root.querySelectorAll('.lst h3'),function(h){h.addEventListener('click',function(){if(matchMedia('(max-width:700px)').matches){h.parentNode.classList.toggle('open');relayout()}})});
+        layout();
+        })();
+        </script>
+</body>
+    <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24504604/crm/site_button/loader_4_xjrfw4.js');
+</script>
+</html>

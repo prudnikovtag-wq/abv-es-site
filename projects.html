@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        
+        <!-- кодировка UTF-8 -->
+        <meta charset="utf-8"/>
+        <!-- совместимость с браузером и кодировка UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- размер пропорционален экрану устройства, пользователь не может масштабировать пальцами -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- заголовок страницы -->
+        <title>Сервисный центр АБВ</title>
+        <!-- description отражается в результатах поиска -->
+        <meta name="description" content="Сервисный центр АБВ"/>
+        <meta name="author" content="АБВ"/>
+        <meta name="color-scheme" content="light only">
+        <!-- установка фавиконки -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+        <link href="css/style.css?v=20261017" rel="stylesheet"/>
+        <link href="css/media800.css?v=20261017" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@300..800&display=swap">
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(92958095, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/92958095" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+        <section id="img_gray" onclick="tabhide(this)" style="">
+            <div id="img_preview_container" onclick="tabhide(this)" style="z-index: -10; display: none;">
+                <img id="img_preview" onclick="tabhide(this)" src="" style="max-width: 90dvw; max-height: 90dvh;"/>
+            </div>
+        </section>
+        <!-- верхнее меню -->
+        <section style="display: flex; flex-direction: column;" data-pgc="headmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block"> <img src="images/footer_logo.png" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="height: 100%;">
+                        <div class="items-in-line">
+                            <div class="menu-items"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer;">
+                                    <p id="topddmenu" onclick="postavkaclickfull()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="ddmenu" class="dropdown-content" style="width: 300px;">
+                                        <a href="oborudovanieabb1.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html"> <p class="dropdown-item">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob">
+                            <div class="menu-items-mob"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                    <p id="postavkam" onclick="postavkaclick()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="postavka" style="display: flex; flex-direction: column; width: fit-content; max-width: calc(100% - 60px); margin: 0 auto 10px; background-color: transparent; row-gap: 8px; padding: 12px 24px; align-items: center; position: relative; z-index: 5; pointer-events: auto;">
+                                        <a href="oborudovanieabb1.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable lable-2col">
+                            <div class="lable-col">
+                                <a href="tel:88002503392" class="lable-link"><span class="lable-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;flex-shrink:0;"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="#d0d0d0" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="lable-text lable-text-strong">8 (800) 250 33 92</span></a>
+                                <a href="mailto:info@abv-es.ru" class="lable-link"><span class="lable-icon"><img src="images/email.svg"/></span><span class="lable-text">info@abv-es.ru</span></a>
+                            </div>
+                            <div class="lable-col">
+                                <a href="https://t.me/ABV_es_bot" class="lable-link"><span class="lable-icon"><img src="images/telegram.svg"/></span><span class="lable-text">@ABV_es_bot</span></a>
+                                <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="lable-link"><span class="lable-icon"><img src="images/max.svg"/></span><span class="lable-text">abv-es</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- обучение -->
+        <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; gap: 50px;">
+            <h1>Проекты</h1>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Аэропорт г. Москва</p>
+                    <p class="project-meta">Россия, г. Москва, 2023-2024</p>
+                </div>
+                <p class="project-desc">1.	Сервисные работы, в том числе техническое обслуживание (ТО) диагностика выкатных воздушных выключателей. Проведено полное обслуживание 90 выключателей. Произведён срочный ремонт выключателей по вызову от заказчика в кратчайшие сроки.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/1.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/2.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/3.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Буровая установка</p>
+                    <p class="project-meta">Россия, г. Москва, 2025</p>
+                </div>
+                <p class="project-desc">Поставка автоматического выключателя E2N 1600 PR 122/P -LSI In-1600A 3p-2 шт.-2024. Поставка была произведена в срок.<br><br>Ремонт выключателей Emax (5 штук)-2025. Проведены ремонтные работы выключателей на сервисном участке компании.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/4.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/5.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/6.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Международная медицинская компания</p>
+                    <p class="project-meta">Россия, Ярославль, 2025</p>
+                </div>
+                <p class="project-desc">Работы по диагностике и техническому обслуживанию ячеек среднего напряжения производства АВВ. Произведена полная диагностика оборудования и обслуживание по регламенту АББ.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/7.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">ГОК</p>
+                    <p class="project-meta">Россия, Урал, 2023-2025</p>
+                </div>
+                <p class="project-desc">Техническое обслуживание Вакуумных выключателей АВВ марки VD4.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/8.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/9.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Горнолыжный комплекс</p>
+                    <p class="project-meta">Россия, г. Сочи, 2025</p>
+                </div>
+                <p class="project-desc">Поставка оборудования. Выключатель автоматический выкатной E6H 6300 PR123/P-LSIG с аксессуарами.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/10.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/11.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/12.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Нефтяная компания, ЗАПАДНАЯ СИБИРЬ</p>
+                    <p class="project-meta">Россия, г. Москва, 2025</p>
+                </div>
+                <p class="project-desc">Ремонт дугогасящих камер высоковольтных выключателей 10 кВ.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/13.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/14.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/15.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Золотодобывающая компания</p>
+                    <p class="project-meta">Россия, Сибирь, 2025</p>
+                </div>
+                <p class="project-desc">Диагностика, шеф-монтажные и шеф-наладочные работы РУ 10кВ, РУ 35кВ.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/16.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Трубный завод</p>
+                    <p class="project-meta">Россия, г. Москва, 2025</p>
+                </div>
+                <p class="project-desc">Ремонт автоматического выключателя Novomax G5.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/17.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/18.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/19.jpg" class="news_img"/>
+                    </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <p class="project-title">Завод точных изделий</p>
+                    <p class="project-meta">Россия, г. Москва, 2025</p>
+                </div>
+                <p class="project-desc">Ремонт выключателей ABB Sace Emax (4 шт.) с заменой запчастей.</p>
+                <div class="news_img_container">
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/20.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/21.jpg" class="news_img"/>
+                        <img loading="lazy" decoding="async" onclick="tab(this)" src="images/projects/22.jpg" class="news_img"/>
+                    </div>
+            </div>
+        </section>
+        <!-- контакты-телефон -->
+                <footer class="site-footer" data-pgc="footmenu">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img loading="lazy" decoding="async" src="images/footer_logo.png" class="footer-logo"/>
+                    <p class="footer-tagline">Сервисный центр низковольтного и средневольтного электрооборудования АББ</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Компания</p>
+                    <a href="about.html">О компании</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="projects.html">Проекты</a>
+                    <a href="partners.html">Партнёры</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Поставка оборудования</p>
+                    <a href="oborudovanieabb1.html">АББ Среднее напряжение</a>
+                    <a href="oborudovanieabb2.html">АББ низковольтное оборудование</a>
+                    <a href="sklad.html">Склад</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Контакты</p>
+                    <a href="tel:88002503392" class="footer-contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span>8 (800) 250 33 92</span>
+                    </a>
+                    <a href="https://t.me/ABV_es_bot" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/telegram.svg"/>
+                        <span>@ABV_es_bot</span>
+                    </a>
+                    <a href="mailto:info@abv-es.ru" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/email.svg"/>
+                        <span>info@abv-es.ru</span>
+                    </a>
+                    <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/max.svg"/>
+                        <span>abv-es</span>
+                    </a>
+                    <p class="footer-address">г. Москва, ул. Профсоюзная, д. 57</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© АБВ Электросервис, 2026</p>
+                <div class="footer-accent-line"></div>
+            </div>
+        </footer>
+        <!-- загрузка управления меню-->
+        <script src="menu.js?v=20261017"> </script>
+        <script type="text/javascript">
+            
+            function tab(i) {
+                //Предотвращаем листание
+                document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+                document.getElementsByTagName('body')[0].style.position = 'relative';
+
+                var ipc = document.getElementById('img_preview_container'),
+                ipi = document.getElementById('img_preview'),
+                ipg = document.getElementById('img_gray');
+                
+                ipg.style="background-color: rgba(53, 53, 53, 0.46); z-index: 1000; display: flex; align-items: center; justify-content: center; align-items: center; position: absolute; left: 0px; width: 100dvw; height: 100dvh;";
+                ipg.style.top = window.pageYOffset + 'px';
+                
+                ipc.style="background-color: #fff; padding: 20px; box-shadow: 0px 0px 10px #666666; display: flex; align-items: flex-end; justify-content: flex-end; flex-direction: column; max-width: 100%; max-height: 100%;";
+                ipi.src = i.src;
+                
+            }
+
+
+            function tabhide(i) {
+                document.getElementById('img_gray').style="z-index: -10; display: none;";
+                //Возвращаем листание
+                document.getElementsByTagName('body')[0].style.overflow = 'visible'
+            }
+
+
+            document.addEventListener("keydown", (e) => {
+                if (e.code == "Escape") {
+                    tabhide.call();
+                }
+            });
+
+            window.addEventListener('resize', function(event){
+                //Обновляю фон при изменении размера страницы
+                var ipg = document.getElementById('img_gray');
+                ipg.style.top = window.pageYOffset + 'px';
+            });
+
+            window.addEventListener('scroll', function(event){
+                //Обновляю фон при изменении размера страницы
+                var ipg = document.getElementById('img_gray');
+                ipg.style.top = window.pageYOffset + 'px';
+            });
+        </script>
+    </body>
+            <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24504604/crm/site_button/loader_4_xjrfw4.js');
+        </script>
+</html>

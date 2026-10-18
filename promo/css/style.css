@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    vertical-align: baseline;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.main_body {
+    display: flex;
+    flex-direction: row;
+}

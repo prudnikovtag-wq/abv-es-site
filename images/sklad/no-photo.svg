@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<rect width="400" height="400" fill="#f4f4f4"/>
+<g fill="none" stroke="#F5821E" stroke-opacity=".5" stroke-width="7" stroke-linejoin="round">
+<rect x="135" y="160" width="130" height="95" rx="10"/><circle cx="200" cy="207" r="25"/><path d="M168 160l11-18h42l11 18"/></g>
+<text x="200" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#9a9a9a">Фото по запросу</text></svg>

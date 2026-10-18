@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        
+        <!-- кодировка UTF-8 -->
+        <meta charset="utf-8"/>
+        <!-- совместимость с браузером и кодировка UTF-8 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!-- размер пропорционален экрану устройства, пользователь не может масштабировать пальцами -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- заголовок страницы -->
+        <title>Сервисный центр АБВ</title>
+        <!-- description отражается в результатах поиска -->
+        <meta name="description" content="Сервисный центр АБВ"/>
+        <meta name="author" content="АБВ"/>
+        <meta name="color-scheme" content="light only">
+        <!-- установка фавиконки -->
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+        <link href="css/style.css?v=20261017" rel="stylesheet"/>
+        <link href="css/media800.css?v=20261017" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&family=Open+Sans:wght@300..800&family=Roboto+Condensed:wght@300..800&display=swap">
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+   ym(92958095, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/92958095" style="position:absolute; left:-9999px;" alt=""/>
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+    </head>
+    <body>
+        <!-- верхнее меню -->
+        <section style="display: flex; flex-direction: column;" data-pgc="headmenu">
+            <div class="block-menu" style="z-index: 1;"><div class="header-glow-clip"></div>
+                <!-- логотип --><a href="index.html" class="logo-block"> <img src="images/footer_logo.png" class="logotype"/> </a>
+                <!-- меню -->
+                <div style="display: flex; flex-direction: column; width: 100%; justify-content: space-between;">
+                    <div class="line-menu" style="height: 100%;">
+                        <div class="items-in-line">
+                            <div class="menu-items"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer;">
+                                    <p id="topddmenu" onclick="postavkaclickfull()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="ddmenu" class="dropdown-content" style="width: 300px;">
+                                        <a href="oborudovanieabb1.html"> <p class="dropdown-item">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html"> <p class="dropdown-item">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html"> <p class="dropdown-item">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                            </div>
+                        </div>
+                        <div class="items-in-line-mob">
+                            <div class="menu-items-mob"><a href="about.html"><p class="main-menu">О КОМПАНИИ</p></a>
+                                <div class="dropdown" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                                    <p id="postavkam" onclick="postavkaclick()" class="main-menu" style="display: flex; flex-direction: row; align-items: center; cursor: pointer;">ПОСТАВКА ▼</p>
+                                    <div id="postavka" style="display: flex; flex-direction: column; width: fit-content; max-width: calc(100% - 60px); margin: 0 auto 10px; background-color: transparent; row-gap: 8px; padding: 12px 24px; align-items: center; position: relative; z-index: 5; pointer-events: auto;">
+                                        <a href="oborudovanieabb1.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ Среднее напряжение<br>Силовые выключатели АББ<br>Релейная защита АББ</p> </a>
+                                        <a href="oborudovanieabb2.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">АББ низковольтное оборудование<br>Силовое электрооборудование</p> </a>
+                                        <a href="sklad.html" class="l2menu"> <p style="text-align: center; margin-top: 10px;">Склад</p> </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;"><a href="services.html"><p class="main-menu">УСЛУГИ</p></a><a href="projects.html"><p class="main-menu">ПРОЕКТЫ</p></a><a href="partners.html"><p class="main-menu">ПАРТНЁРЫ</p></a><a href="contacts.html"><p class="main-menu">КОНТАКТЫ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lable lable-2col">
+                            <div class="lable-col">
+                                <a href="tel:88002503392" class="lable-link"><span class="lable-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:20px;height:20px;flex-shrink:0;"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="#d0d0d0" stroke-width="1.6" stroke-linejoin="round"/></svg></span><span class="lable-text lable-text-strong">8 (800) 250 33 92</span></a>
+                                <a href="mailto:info@abv-es.ru" class="lable-link"><span class="lable-icon"><img src="images/email.svg"/></span><span class="lable-text">info@abv-es.ru</span></a>
+                            </div>
+                            <div class="lable-col">
+                                <a href="https://t.me/ABV_es_bot" class="lable-link"><span class="lable-icon"><img src="images/telegram.svg"/></span><span class="lable-text">@ABV_es_bot</span></a>
+                                <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="lable-link"><span class="lable-icon"><img src="images/max.svg"/></span><span class="lable-text">abv-es</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- обучение -->
+        <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; gap: 50px;">
+            <h1>Наши клиенты</h1>
+            <div class="partners-grid">
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/01-unipro.png" alt="Юнипро"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/02-vnukovo.png" alt="Внуково — международный аэропорт"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/03-shekino-gres.png" alt="Щекинская ГРЭС"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/04-dow-dauizolan.png" alt="Dow ДауИзолан"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/05-tatneft.png" alt="Татнефть"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/06-gazprom-azs.png" alt="Газпром — сеть АЗС"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/07-toyota-boshoku.png" alt="Toyota Boshoku"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/08-botkinskaya.png" alt="Боткинская больница"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/09-swiss-krono.png" alt="Swiss Krono"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/10-nornikel.png" alt="Норникель"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/11-rmk-mgok.png" alt="РМК Михеевский ГОК"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/12-kca-deutag.png" alt="KCA Deutag"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/13-air-liquide.png" alt="Air Liquide"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/14-florentika.png" alt="Florentika"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/15-lenta.png" alt="Лента"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/16-sakhalin-energy.png" alt="Сахалинская энергия"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/17-olimp.png" alt="Олимп"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/18-mw.png" alt="MW"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/19-chukotenergo.png" alt="Чукотэнерго"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/20-tek.png" alt="ТЭК"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/21-alabuga-volokno.png" alt="Алабуга-Волокно"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/22-tersky.png" alt="Терский"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/23-mek.png" alt="МЭК"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/24-moselektroshit.png" alt="Мосэлектрощит"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/25-nanolek.png" alt="Нанолек"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/26-farm.png" alt="Фарм"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/27-o2-standard.png" alt="O2 Standard"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/28-ekopet.png" alt="eko pet"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/29-svod-international.png" alt="Свод Интернешнл"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/30-cemros.png" alt="Цемрос"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/31-oek.png" alt="Объединённая энергетическая компания"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/32-udokan-med.png" alt="Удоканская медь"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/33-heidelbergcement.png" alt="HeidelbergCement"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/34-toliatiazot.png" alt="Тольяттиазот"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/35-metropolis.png" alt="Метрополис"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/36-elektronmash.png" alt="Электронмаш"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/37-top-energo.png" alt="Топ-энерго"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/38-rehau.png" alt="REHAU"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/39-eco-icon.png" alt="Эко"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/40-ozmm.png" alt="ОЗММ"/></div>
+                <div class="partner-logo-card"><img loading="lazy" decoding="async" src="images/partners_logos/41-nkz.png" alt="Норский керамический завод"/></div>
+            </div>
+        </section>
+        <!-- контакты-телефон -->
+                <footer class="site-footer" data-pgc="footmenu">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img loading="lazy" decoding="async" src="images/footer_logo.png" class="footer-logo"/>
+                    <p class="footer-tagline">Сервисный центр низковольтного и средневольтного электрооборудования АББ</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Компания</p>
+                    <a href="about.html">О компании</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="projects.html">Проекты</a>
+                    <a href="partners.html">Партнёры</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Поставка оборудования</p>
+                    <a href="oborudovanieabb1.html">АББ Среднее напряжение</a>
+                    <a href="oborudovanieabb2.html">АББ низковольтное оборудование</a>
+                    <a href="sklad.html">Склад</a>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-col-title">Контакты</p>
+                    <a href="tel:88002503392" class="footer-contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                        <span>8 (800) 250 33 92</span>
+                    </a>
+                    <a href="https://t.me/ABV_es_bot" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/telegram.svg"/>
+                        <span>@ABV_es_bot</span>
+                    </a>
+                    <a href="mailto:info@abv-es.ru" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/email.svg"/>
+                        <span>info@abv-es.ru</span>
+                    </a>
+                    <a href="https://max.ru/u/f9LHodD0cOIugdPtkssC6RUk7jvt0Gh_3AEw9VwljknAgDniaN-NLEiD0rA" target="_blank" class="footer-contact-link">
+                        <img loading="lazy" decoding="async" src="images/max.svg"/>
+                        <span>abv-es</span>
+                    </a>
+                    <p class="footer-address">г. Москва, ул. Профсоюзная, д. 57</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© АБВ Электросервис, 2026</p>
+                <div class="footer-accent-line"></div>
+            </div>
+        </footer>
+        <!-- загрузка управления меню-->
+        <script src="menu.js?v=20261017"> </script>
+    </body>
+            <script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn-ru.bitrix24.ru/b24504604/crm/site_button/loader_4_xjrfw4.js');
+        </script>
+</html>

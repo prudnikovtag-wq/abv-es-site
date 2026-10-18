@@ -23,8 +23,8 @@
 - Корень: страницы разделов — `index.html`, `about.html`, `services.html`, `sklad.html`,
   `contacts.html`, `projects.html`, `partners.html`, `obuchenie.html`, `retrofit*.html` и др.
 - `tovar-<артикул>.html` — карточки товаров склада (на них ссылается каталог `sklad.html`).
-- `<артикул>.html` в корне (32 шт.) — **известная проблема**: внутри не тот товар, что в имени,
-  ссылки ведут в несуществующую папку `/sklad/`. Не использовать как образец.
+- Старые адреса `/<артикул>.html` и `/sklad/<артикул>.html` переадресуются (301) на `tovar-<артикул>.html`
+  правилами в `.htaccess`; проверка — `python3 tools/check_redirects.py`. Файлов-артикулов в корне быть не должно.
 - `images/*.html` и `images/feed.xml` — случайные копии, сайт на них не ссылается.
 - `promo/` — отдельная промо-страница со своими `css/`, `bootstrap/`, `assets/`.
 - Стили: `css/style.css`, `css/media800.css` (мобильная версия до 800px). Шрифты — Google Fonts.

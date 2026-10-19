@@ -10,11 +10,11 @@
 ## Демо
 
 ## Готово к выкатке
-- [2026-10-19] Фото 1SDA074536R1: сам блок PR332/P вместо коробки — zadacha/foto-074536 — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv (общее демо)
-- [2026-10-19] Убрать товар 1SDA059645R1 (страница, фото, каталог, «Другие товары», feed.xml; 301 на sklad.html) — zadacha/udalit-059645 — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv (общее демо с фото панелей)
-- [2026-10-19] Фото 1SDA058321R1 и 1SDA058323R1 (панели New Emax E3/E4) — как у 1SDA058318R1 — zadacha/foto-paneli-emax — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv
 
 ## На сайте
+- [2026-10-19] Фото 1SDA074536R1: сам блок PR332/P вместо коробки — zadacha/foto-074536 — на сайте с 2026-10-19, проверено на живом сайте
+- [2026-10-19] Убрать товар 1SDA059645R1 (страница, фото, каталог, «Другие товары», feed.xml; 301 на sklad.html) — zadacha/udalit-059645 — на сайте с 2026-10-19, проверено на живом сайте
+- [2026-10-19] Фото 1SDA058321R1 и 1SDA058323R1 (панели New Emax E3/E4) — как у 1SDA058318R1 — zadacha/foto-paneli-emax — на сайте с 2026-10-19, проверено на живом сайте
 - [2026-10-18] Удалить 32 старые страницы товаров `<артикул>.html` из корня, 301-переадресация `/<артикул>.html` и `/sklad/<артикул>.html` → `/tovar-<артикул>.html` в `.htaccess` (проверка: `tools/check_redirects.py`) — zadacha/kartochki-tovarov — на сайте с 2026-10-18, проверено на живом сайте
 
 ## Идеи / найдено

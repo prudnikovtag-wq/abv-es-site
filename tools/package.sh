@@ -19,10 +19,10 @@ rm -rf "$dir" "$dir.zip"
 mkdir -p "$dir"
 
 # Служебные файлы проекта на сайт не уходят.
-filter='^(CLAUDE\.md|README\.md|BOARD\.md|\.claude/|tools/|out/|\.gitignore|\.gitattributes|package(-lock)?\.json)'
+filter='^(CLAUDE\.md|README\.md|BOARD\.md|\.claude/|\.github/|tools/|out/|\.gitignore|\.gitattributes|package(-lock)?\.json)'
 
-changed=$(git diff --name-only --diff-filter=ACMR na-saite HEAD | grep -Ev "$filter" || true)
-deleted=$(git diff --name-only --diff-filter=D na-saite HEAD | grep -Ev "$filter" || true)
+changed=$(git -c core.quotePath=false diff --no-renames --name-only --diff-filter=ACMR na-saite HEAD | grep -Ev "$filter" || true)
+deleted=$(git -c core.quotePath=false diff --no-renames --name-only --diff-filter=D na-saite HEAD | grep -Ev "$filter" || true)
 
 if [ -z "$changed" ] && [ -z "$deleted" ]; then
   echo "С момента последней загрузки на сайт ничего не изменилось."

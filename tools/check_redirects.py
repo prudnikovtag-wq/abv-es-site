@@ -5,7 +5,7 @@
 
 Читает .htaccess, берёт RewriteCond/RewriteRule из блока после редиректа http→https
 (после строки «# Конец редиректа») и эмулирует их через Python re на списке адресов:
-  - 31 старый адрес /<артикул>.html и те же через /sklad/<артикул>.html —
+  - 29 старых адресов /<артикул>.html и те же через /sklad/<артикул>.html —
     должны вести на /tovar-<тот же артикул>.html, страница должна существовать
     и содержать "sku": "<артикул>";
   - снятые с продажи товары (REMOVED_SKUS): адреса /<артикул>.html,
@@ -26,7 +26,7 @@ START_MARKER = "# Конец редиректа"
 
 # Артикулы удалённых старых страниц /<артикул>.html
 OLD_SKUS = [
-    "1SCA112710R1001", "1SCA148926R1001", "1SCA153630R1001", "1SDA038324R1",
+    "1SCA148926R1001", "1SCA153630R1001",
     "1SDA058318R1", "1SDA058321R1", "1SDA058323R1", "1SDA062164R1",
     "1SDA062166R1", "1SDA063141R1", "1SDA063142R1",
     "1SDA066460R1", "1SDA072345R1", "1SDA073674R1", "1SDA073675R1",
@@ -37,11 +37,11 @@ OLD_SKUS = [
 ]
 
 # Товары, снятые с продажи: все их адреса ведут в каталог
-REMOVED_SKUS = ["1SDA059645R1"]
+REMOVED_SKUS = ["1SDA059645R1", "1SCA112710R1001", "1SDA038324R1"]
 REMOVED_TARGET = "/sklad.html"
 
 CONTROL = [
-    "/index.html", "/sklad.html", "/tovar-1SDA038324R1.html",
+    "/index.html", "/sklad.html", "/tovar-1SDA058318R1.html",
     "/contacts.html", "/9999ZZZ.html",
     "/1SDA059645R10.html", "/tovar-1SDA059645R10.html", "/x1SDA059645R1.html",
 ]

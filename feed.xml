@@ -16,20 +16,6 @@
       <category id="5">Релейная защита и среднее напряжение</category>
     </categories>
     <offers>
-      <offer id="1SCA112710R1001" available="true">
-        <name>Реверсивный рубильник OTM2500E3CM230 C 3-полюсный с моторным приводом</name>
-        <vendor>ABB</vendor>
-        <vendorCode>1SCA112710R1001</vendorCode>
-        <url>https://abv-es.ru/tovar-1SCA112710R1001.html</url>
-        <price>315000</price>
-        <currencyId>RUR</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://abv-es.ru/images/tovar-1SCA112710R1001.jpg</picture>
-        <description>Реверсивный рубильник OTM2500E3CM230 C 3-полюсный с моторным приводом (артикул 1SCA112710R1001) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>1</count>
-        <manufacturer_warranty>true</manufacturer_warranty>
-        <param name="Артикул">1SCA112710R1001</param>
-      </offer>
       <offer id="1SDA104051R1" available="true">
         <name>Модуль связи TruONE Modbus RS-485-OX</name>
         <vendor>ABB</vendor>
@@ -72,20 +58,6 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SCA153630R1001</param>
       </offer>
-      <offer id="1SDA038324R1" available="true">
-        <name>Электродвигатель для взвода включающих пружин MOTOR 220/250/E1/6 -T8</name>
-        <vendor>ABB</vendor>
-        <vendorCode>1SDA038324R1</vendorCode>
-        <url>https://abv-es.ru/tovar-1SDA038324R1.html</url>
-        <price>240000</price>
-        <currencyId>RUR</currencyId>
-        <categoryId>2</categoryId>
-        <picture>https://abv-es.ru/images/tovar-1SDA038324R1.jpg</picture>
-        <description>Электродвигатель для взвода включающих пружин MOTOR 220/250/E1/6 -T8 (артикул 1SDA038324R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>7</count>
-        <manufacturer_warranty>true</manufacturer_warranty>
-        <param name="Артикул">1SDA038324R1</param>
-      </offer>
       <offer id="1SDA058318R1" available="true">
         <name>Панель лицевая выключателя New Emax E1-E2 3р</name>
         <vendor>ABB</vendor>
@@ -96,7 +68,7 @@
         <categoryId>2</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SDA058318R1.jpg</picture>
         <description>Панель лицевая выключателя New Emax E1-E2 3р (артикул 1SDA058318R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>9</count>
+        <count>12</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SDA058318R1</param>
       </offer>
@@ -320,7 +292,7 @@
         <categoryId>2</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SDA073725R1.jpg</picture>
         <description>Мотор-редуктор M E2.2...E6.2 220-250 Vac/dc (артикул 1SDA073725R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>1</count>
+        <count>3</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SDA073725R1</param>
       </offer>
@@ -334,7 +306,7 @@
         <categoryId>4</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SDA074172R1.jpg</picture>
         <description>Модуль питания Ekip Supply 110-240VAC/DC E1.2..E6.2-XT (артикул 1SDA074172R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>3</count>
+        <count>1</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SDA074172R1</param>
       </offer>

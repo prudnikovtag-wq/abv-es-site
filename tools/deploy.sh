@@ -47,8 +47,9 @@ for line in open(sys.argv[1], encoding="utf-8", errors="replace"):
     if not m or m.group(1).startswith("d"):
         continue
     p = m.group(6)
-    if p.startswith("./"): p = p[2:]
-    print(f"{p}\t{m.group(3)}")
+    if not p.startswith("./"):   # формат строки не тот — не угадываем путь (отсечёт проверка доли)
+        continue
+    print(f"{p[2:]}\t{m.group(3)}")
 PY
 }
 # Без пайпов: `cmd | grep -q` при pipefail даёт ложный «нет» (SIGPIPE у cmd).
@@ -128,6 +129,16 @@ while read -r op path; do
     echo "get \"$path\" -o \"$WORK/backup/$path\"" >> "$WORK/cmd-backup"
   fi
 done < "$WORK/plan.txt"
+# Страховка: файл по данным репозитория на сервере есть, но в списке его не видно — пробуем скачать (без ошибки).
+: > "$WORK/cmd-backup2"
+while read -r op path; do
+  if ! on_server "$path" && in_live "$path"; then
+    [ -s "$WORK/cmd-backup2" ] || echo "set cmd:fail-exit false" > "$WORK/cmd-backup2"
+    mkdir -p "$WORK/backup/$(dirname "$path")"
+    echo "get \"$path\" -o \"$WORK/backup/$path\"" >> "$WORK/cmd-backup2"
+  fi
+done < "$WORK/plan.txt"
+[ -s "$WORK/cmd-backup2" ] && { ftp_run "$WORK/cmd-backup2" > /dev/null 2>&1 || true; }
 if [ -s "$WORK/cmd-backup" ] && ! ftp_run "$WORK/cmd-backup" > /dev/null 2> "$WORK/ftp-err.txt"; then
   fail "не удалось снять резервную копию ($(tail -1 "$WORK/ftp-err.txt")). Ничего не изменено."
 fi
@@ -145,6 +156,9 @@ while read -r op path; do
       conflicts=$((conflicts+1))
     fi
   elif in_live "$path"; then
+    if [ -f "$WORK/backup/$path" ]; then
+      fail "\`$path\` есть на сервере, но не виден в списке файлов — список сервера разобран неверно. Ничего не изменено."
+    fi
     say "⚠️ \`$path\` по данным репозитория должен быть на сервере, но его там нет."
   fi
 done < "$WORK/plan.txt"
@@ -218,6 +232,7 @@ while read -r op path; do
 done < "$WORK/plan.txt"
 
 STARTED=1
+trap '' INT   # при отмене задания даём lftp доработать загрузку, дальше сработает проверка/откат
 ftp_run "$WORK/cmd-deploy" > /dev/null 2> "$WORK/ftp-err.txt" || {
   say "❌ Ошибка при загрузке: $(tail -1 "$WORK/ftp-err.txt")"; false; }
 say "✅ Файлы загружены."

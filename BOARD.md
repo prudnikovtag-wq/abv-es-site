@@ -6,6 +6,7 @@
 ## В работе
 
 ## Проверка
+- [2026-10-19] Яндекс: robots.txt, sitemap.xml, 301 на https — zadacha/yandex-tovary
 
 ## Демо
 

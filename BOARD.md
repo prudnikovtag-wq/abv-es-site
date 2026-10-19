@@ -6,9 +6,9 @@
 ## В работе
 
 ## Проверка
-- [2026-10-19] Фото 1SDA058321R1 и 1SDA058323R1 (панели New Emax E3/E4) — как у 1SDA058318R1 — zadacha/foto-paneli-emax
 
 ## Демо
+- [2026-10-19] Фото 1SDA058321R1 и 1SDA058323R1 (панели New Emax E3/E4) — как у 1SDA058318R1 — zadacha/foto-paneli-emax — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv
 
 ## Готово к выкатке
 

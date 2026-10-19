@@ -6,11 +6,11 @@
 ## В работе
 
 ## Проверка
-- [2026-10-19] Файл подтверждения Яндекс Вебмастера — zadacha/yandex-podtverzhdenie
 
 ## Демо
 
 ## Готово к выкатке
+- [2026-10-19] Файл подтверждения Яндекс Вебмастера — zadacha/yandex-podtverzhdenie — ревизор пропустил
 
 ## На сайте
 - [2026-10-19] Яндекс: robots.txt, sitemap.xml, 301 на https — zadacha/yandex-tovary — на сайте с 2026-10-19, robots.txt и sitemap.xml (46 адресов) проверены на живом сайте

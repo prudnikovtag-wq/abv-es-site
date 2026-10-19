@@ -69,5 +69,7 @@ jobs:
             out/deploy/ОТЧЁТ.md
             out/deploy/backup/
             out/deploy/sync.txt
+            out/deploy/server-list.txt
+            out/deploy/plan.txt
           retention-days: 90
           if-no-files-found: ignore

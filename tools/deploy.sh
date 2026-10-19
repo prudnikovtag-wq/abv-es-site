@@ -139,6 +139,7 @@ while read -r op path; do
   fi
 done < "$WORK/plan.txt"
 [ -s "$WORK/cmd-backup2" ] && { ftp_run "$WORK/cmd-backup2" > /dev/null 2>&1 || true; }
+find "$WORK/backup" -type f -empty -delete   # пустышки от неудачных get не должны считаться копиями
 if [ -s "$WORK/cmd-backup" ] && ! ftp_run "$WORK/cmd-backup" > /dev/null 2> "$WORK/ftp-err.txt"; then
   fail "не удалось снять резервную копию ($(tail -1 "$WORK/ftp-err.txt")). Ничего не изменено."
 fi
@@ -156,7 +157,7 @@ while read -r op path; do
       conflicts=$((conflicts+1))
     fi
   elif in_live "$path"; then
-    if [ -f "$WORK/backup/$path" ]; then
+    if [ -s "$WORK/backup/$path" ]; then   # пустой файл = lftp создал его при ошибке 550, не считаем
       fail "\`$path\` есть на сервере, но не виден в списке файлов — список сервера разобран неверно. Ничего не изменено."
     fi
     say "⚠️ \`$path\` по данным репозитория должен быть на сервере, но его там нет."

@@ -1,0 +1,73 @@
+# Выкатка сайта на хостинг reg.ru.
+# Запускается ТОЛЬКО вручную владельцем: вкладка Actions → «Выкатка на сайт» → Run workflow.
+# Других способов запуска нет (ни по пушу, ни по расписанию) — так задумано.
+name: Выкатка на сайт
+
+on:
+  workflow_dispatch:
+    inputs:
+      rezhim:
+        description: "proverka — только посмотреть, ничего не меняя; vykatka — выкатить на сайт"
+        required: true
+        default: proverka
+        type: choice
+        options: [proverka, vykatka]
+
+permissions:
+  contents: write   # нужно только чтобы сдвинуть ветку na-saite после успешной выкатки
+
+concurrency:
+  group: vykatka
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Только из ветки main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          echo "Выкатка разрешена только из main (а запущено из ${{ github.ref }})."
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Ветка na-saite (что сейчас на сайте)
+        run: git fetch origin na-saite:na-saite
+
+      - name: Установить lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Проверки сайта перед выкаткой
+        run: |
+          python3 tools/check_redirects.py > /dev/null
+          echo "Редиректы в .htaccess в порядке"
+
+      - name: ${{ inputs.rezhim == 'vykatka' && 'Выкатка' || 'Проверка (ничего не меняет)' }}
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          bash tools/deploy.sh "${{ inputs.rezhim }}"
+
+      - name: Отчёт
+        if: always()
+        run: cat out/deploy/ОТЧЁТ.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Сохранить резервную копию и отчёт
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vykatka-${{ github.run_number }}
+          path: |
+            out/deploy/ОТЧЁТ.md
+            out/deploy/backup/
+            out/deploy/sync.txt
+          retention-days: 90
+          if-no-files-found: ignore

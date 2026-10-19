@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /images/*.html
+Disallow: /images/feed.xml
+
+Sitemap: https://abv-es.ru/sitemap.xml

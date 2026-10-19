@@ -51,8 +51,10 @@ for line in open(sys.argv[1], encoding="utf-8", errors="replace"):
     print(f"{p}\t{m.group(3)}")
 PY
 }
-on_server() { cut -f1 "$WORK/server-files.tsv" | grep -qxF -- "$1"; }
-in_live()   { git ls-tree -r --name-only na-saite | grep -qxF -- "$1"; }
+# Без пайпов: `cmd | grep -q` при pipefail даёт ложный «нет» (SIGPIPE у cmd).
+on_server() { grep -qxF -- "$1" <(cut -f1 "$WORK/server-files.tsv"); }
+git ls-tree -r --name-only na-saite > "$WORK/live-files.txt"
+in_live()   { grep -qxF -- "$1" "$WORK/live-files.txt"; }
 
 say "# Выкатка abv-es.ru — режим: **$MODE**"
 say ""

@@ -8,6 +8,7 @@
 ## Проверка
 
 ## Демо
+- [2026-10-19] Фото 1SDA074536R1: сам блок PR332/P вместо коробки — zadacha/foto-074536 — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv (общее демо)
 - [2026-10-19] Убрать товар 1SDA059645R1 (страница, фото, каталог, «Другие товары», feed.xml; 301 на sklad.html) — zadacha/udalit-059645 — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv (общее демо с фото панелей)
 - [2026-10-19] Фото 1SDA058321R1 и 1SDA058323R1 (панели New Emax E3/E4) — как у 1SDA058318R1 — zadacha/foto-paneli-emax — https://claude.ai/artifact/DuLxew5pLWC1kzTzZn5xVv
 

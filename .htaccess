@@ -9,6 +9,8 @@ RewriteRule ^(sklad/)?(tovar-)?1SDA059645R1\.html$ /sklad.html [R=301,L]
 # Товары 1SCA112710R1001 и 1SDA038324R1 сняты с продажи (остатки на 2026-10-02) -> каталог
 RewriteRule ^(sklad/)?(tovar-)?1SCA112710R1001\.html$ /sklad.html [R=301,L]
 RewriteRule ^(sklad/)?(tovar-)?1SDA038324R1\.html$ /sklad.html [R=301,L]
+# Промо-страница /promo/ удалена (2026-10-19): /promo, /promo/ и всё внутри -> главная
+RewriteRule ^promo(/.*)?$ / [R=301,L]
 
 # Старые адреса карточек товаров -> tovar-<артикул>.html
 # Раньше в корне лежали страницы /<артикул>.html, а в их canonical стояли адреса /sklad/<артикул>.html.

@@ -11,6 +11,8 @@
   - снятые с продажи товары (REMOVED_SKUS): адреса /<артикул>.html,
     /sklad/<артикул>.html и /tovar-<артикул>.html должны вести (301) на /sklad.html,
     а карточки tovar-<артикул>.html в репозитории быть не должно;
+  - удалённая промо-страница: /promo, /promo/ и всё внутри должны вести (301) на /,
+    а папки promo/ в репозитории быть не должно;
   - контрольные адреса — не должны переадресовываться.
 Эмуляция упрощённая: поддерживаются только условия вида «<строка> -f»
 и переменная %{DOCUMENT_ROOT} (= корень репозитория). Этого достаточно для наших правил.
@@ -40,10 +42,15 @@ OLD_SKUS = [
 REMOVED_SKUS = ["1SDA059645R1", "1SCA112710R1001", "1SDA038324R1"]
 REMOVED_TARGET = "/sklad.html"
 
+# Удалённая промо-страница (2026-10-19): все её адреса ведут на главную
+PROMO_URLS = ["/promo", "/promo/", "/promo/index.html", "/promo/css/style.css"]
+PROMO_TARGET = "/"
+
 CONTROL = [
     "/index.html", "/sklad.html", "/tovar-1SDA058318R1.html",
     "/contacts.html", "/9999ZZZ.html",
     "/1SDA059645R10.html", "/tovar-1SDA059645R10.html", "/x1SDA059645R1.html",
+    "/promo2.html", "/promotion.html", "/promo2/index.html", "/images/promo/x.jpg",
 ]
 
 
@@ -145,6 +152,18 @@ def main():
                 errors.append(f"{url}: ведёт на {res[0]}, ожидалось {REMOVED_TARGET}")
             elif res[1] != "301":
                 errors.append(f"{url}: код {res[1]}, ожидался 301")
+
+    if os.path.exists(os.path.join(ROOT, "promo")):
+        errors.append("промо-страница: папка promo/ всё ещё есть в репозитории")
+    for url in PROMO_URLS:
+        res = apply(rules, url)
+        rows.append((url, f"{res[0]} [{res[1]}]" if res else "без изменений"))
+        if not res:
+            errors.append(f"{url}: нет переадресации")
+        elif res[0] != PROMO_TARGET:
+            errors.append(f"{url}: ведёт на {res[0]}, ожидалось {PROMO_TARGET}")
+        elif res[1] != "301":
+            errors.append(f"{url}: код {res[1]}, ожидался 301")
 
     for url in CONTROL:
         res = apply(rules, url)

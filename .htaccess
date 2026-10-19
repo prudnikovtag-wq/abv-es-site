@@ -4,6 +4,9 @@ RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
 # Конец редиректа
 
+# Товар 1SDA059645R1 снят с продажи (2026-10-19) -> каталог
+RewriteRule ^(sklad/)?(tovar-)?1SDA059645R1\.html$ /sklad.html [R=301,L]
+
 # Старые адреса карточек товаров -> tovar-<артикул>.html
 # Раньше в корне лежали страницы /<артикул>.html, а в их canonical стояли адреса /sklad/<артикул>.html.
 # Эти страницы удалены, рабочие карточки — /tovar-<артикул>.html.

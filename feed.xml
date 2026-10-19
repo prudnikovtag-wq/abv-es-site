@@ -128,20 +128,6 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SDA058323R1</param>
       </offer>
-      <offer id="1SDA059645R1" available="true">
-        <name>Комплект преобразования фикс. части Emax в New Emax Conversion Kit FP old-new</name>
-        <vendor>ABB</vendor>
-        <vendorCode>1SDA059645R1</vendorCode>
-        <url>https://abv-es.ru/tovar-1SDA059645R1.html</url>
-        <price>24000</price>
-        <currencyId>RUR</currencyId>
-        <categoryId>2</categoryId>
-        <picture>https://abv-es.ru/images/tovar-1SDA059645R1.jpg</picture>
-        <description>Комплект преобразования фикс. части Emax в New Emax Conversion Kit FP old-new (артикул 1SDA059645R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
-        <count>8</count>
-        <manufacturer_warranty>true</manufacturer_warranty>
-        <param name="Артикул">1SDA059645R1</param>
-      </offer>
       <offer id="1SDA062164R1" available="true">
         <name>Блок скользящих контактов выключателя T7-T7M-X1 левый</name>
         <vendor>ABB</vendor>

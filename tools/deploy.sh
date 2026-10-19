@@ -79,9 +79,9 @@ say "Файлов на сервере: $n_server, в репозитории (в�
 if grep -q -E '^(ONLY_|DIFF_)' "$WORK/sync.txt"; then
   say ""
   say "⚠️ **Сервер и репозиторий расходятся** (кто-то менял файлы на хостинге вручную, или это файлы хостинга):"
-  grep -E '^ONLY_SERVER' "$WORK/sync.txt" | sed 's/^ONLY_SERVER /- только на сервере: /' | head -40 | tee -a "$REPORT"
-  grep -E '^ONLY_REPO'   "$WORK/sync.txt" | sed 's/^ONLY_REPO /- только в репозитории: /' | head -40 | tee -a "$REPORT"
-  grep -E '^DIFF_SIZE'   "$WORK/sync.txt" | awk '{print "- другой размер: "$2" (сервер "$3" б, репозиторий "$4" б)"}' | head -40 | tee -a "$REPORT"
+  grep -E '^ONLY_SERVER' "$WORK/sync.txt" | sed 's/^ONLY_SERVER /- только на сервере: /' | head -40 | tee -a "$REPORT" || true
+  grep -E '^ONLY_REPO'   "$WORK/sync.txt" | sed 's/^ONLY_REPO /- только в репозитории: /' | head -40 | tee -a "$REPORT" || true
+  grep -E '^DIFF_SIZE'   "$WORK/sync.txt" | awk '{print "- другой размер: "$2" (сервер "$3" б, репозиторий "$4" б)"}' | head -40 | tee -a "$REPORT" || true
 else
   say "✅ Сервер полностью совпадает с репозиторием."
 fi
@@ -173,7 +173,7 @@ ok=1
 mkdir -p "$WORK/verify"; : > "$WORK/cmd-verify"
 grep '^M ' "$WORK/plan.txt" | while read -r op path; do
   mkdir -p "$WORK/verify/$(dirname "$path")"; echo "get \"$path\" -o \"$WORK/verify/$path\"" >> "$WORK/cmd-verify"
-done
+done || true
 if ftp_run "$WORK/cmd-verify" > /dev/null 2>&1; then
   while read -r op path; do
     [ "$op" = M ] || continue

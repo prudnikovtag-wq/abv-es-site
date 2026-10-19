@@ -68,8 +68,35 @@ git merge-base --is-ancestor na-saite HEAD || fail "ветка na-saite (что 
 выкатка откатила бы чьи-то правки. Сначала влейте na-saite в main."
 
 # ---------- 1. Подключение и полный список файлов на сервере ----------
+# Диагностика, если подключиться не вышло. Пароль вырезается из любого вывода.
+diagnose() {
+  local D="$WORK/diag.txt"
+  {
+    echo "### Диагностика подключения"
+    echo '```'
+    echo "Хост: $FTP_HOST   пользователь: $FTP_USER"
+    echo "-- DNS:"; getent hosts "$FTP_HOST" || echo "имя не находится"
+    echo "-- порт 21:"; timeout 10 bash -c "</dev/tcp/$FTP_HOST/21" 2>&1 && echo "открыт" || echo "НЕ открыт (закрыт или фильтруется)"
+    echo "-- приветствие и TLS-сертификат (STARTTLS):"
+    timeout 15 openssl s_client -connect "$FTP_HOST:21" -starttls ftp -servername "$FTP_HOST" </dev/null 2>&1 \
+      | grep -E '^(CONNECTED|depth|verify|subject=|issuer=)|Verify return code|error|errno' | head -12
+    echo "-- вход с подробным журналом lftp (пароль скрыт):"
+    timeout 40 lftp --env-password -u "$FTP_USER" -e "debug 3; set ftp:ssl-force true; set ssl:verify-certificate true; \
+      set net:max-retries 1; set net:timeout 15; pwd; ls -a | head -5; bye" "ftp://$FTP_HOST" 2>&1 | head -60
+    echo '```'
+  } > "$D" 2>&1
+  python3 - "$D" <<'PY'
+import os, sys
+p = sys.argv[1]; t = open(p, encoding="utf-8", errors="replace").read()
+pw = os.environ.get("FTP_PASSWORD", "")
+if pw: t = t.replace(pw, "***")
+open(p, "w", encoding="utf-8").write(t)
+PY
+  cat "$D" | tee -a "$REPORT"
+}
 if ! ftp_list "$WORK/server-list.txt"; then
   cat "$WORK/ftp-err.txt" >&2
+  diagnose || true
   fail "не удалось подключиться к хостингу по FTPS ($(tail -1 "$WORK/ftp-err.txt"))"
 fi
 parse_list "$WORK/server-list.txt" > "$WORK/server-files.tsv"

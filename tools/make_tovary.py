@@ -11,7 +11,10 @@
   qty      — остаток, целое > 0;
   price    — цена в рублях с НДС, целое > 0;
   category — категория склада (как на кнопках-фильтрах sklad.html).
-Остальные поля (raw_ru, raw_en, opt и т.п.) игнорируются. Оптовая цена (opt) на сайт не попадает.
+Остальные поля (raw_ru, raw_en и т.п.) игнорируются.
+Поля с оптовой/закупочной ценой (имя содержит «opt», «закуп», «wholesale») запрещены: репозиторий
+публичный, такой файл генератор не примет — уберите поле из JSON до того, как класть его в репозиторий.
+Из строк при загрузке вычищаются управляющие и невидимые символы (переводы строк, табуляции — в пробел).
 
 Что делает (повторный запуск с теми же данными ничего не меняет):
   1. sklad.html — добавляет плитку товара в конец его категории (или обновляет плитку,
@@ -38,6 +41,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -118,6 +122,44 @@ class Item:
 # ---------- входные данные ----------
 
 SKU_RE = re.compile(r"[A-Z0-9][A-Z0-9-]*")
+FORBIDDEN_KEY_PARTS = ("opt", "закуп", "wholesale")   # оптовые/закупочные цены — в публичный репозиторий нельзя
+
+
+def forbidden_keys(obj, prefix=""):
+    """Имена полей (на любой глубине), похожие на оптовую/закупочную цену."""
+    found = []
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            name = prefix + str(k)
+            if any(p in str(k).lower() for p in FORBIDDEN_KEY_PARTS):
+                found.append(name)
+            found += forbidden_keys(v, name + ".")
+    elif isinstance(obj, list):
+        for v in obj:
+            found += forbidden_keys(v, prefix)
+    return found
+
+
+def clean(obj):
+    """Убирает из строк управляющие и невидимые символы; пробельные (\t, \n, \u2028…) заменяет пробелом."""
+    if isinstance(obj, str):
+        out = []
+        for ch in obj:
+            cat = unicodedata.category(ch)
+            if ch == " ":
+                out.append(ch)
+            elif cat in ("Cc", "Zl", "Zp"):
+                out.append(" " if ch.isspace() else "")
+            elif cat == "Cf":
+                continue
+            else:
+                out.append(ch)
+        return "".join(out)
+    if isinstance(obj, dict):
+        return {k: clean(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [clean(v) for v in obj]
+    return obj
 
 
 def load_input(fname):
@@ -125,6 +167,12 @@ def load_input(fname):
         data = json.load(f)
     if not isinstance(data, list):
         die(f"{fname}: ожидался JSON-массив")
+    bad = forbidden_keys(data)
+    if bad:
+        die(f"{fname}: есть поля с оптовой/закупочной ценой ({', '.join(sorted(set(bad)))}). "
+            "Репозиторий публичный — такие цены туда класть нельзя. Удалите эти поля из JSON "
+            "(и не коммитьте файл с ними), затем запустите снова.")
+    data = clean(data)
     items, seen, errs = [], set(), []
     for n, d in enumerate(data, 1):
         where = f"запись {n} ({d.get('sku', '?') if isinstance(d, dict) else '?'})"
@@ -148,7 +196,6 @@ def load_input(fname):
             errs.append(f"{where}: qty должно быть целым > 0 (сейчас {qty!r})")
         if not (isinstance(price, int) and not isinstance(price, bool) and price > 0):
             errs.append(f"{where}: price должно быть целым числом рублей > 0 (сейчас {price!r})")
-        # opt (оптовая цена) и прочие поля сознательно не читаются
         items.append(Item(sku, name, qty, price, cat, f"images/tovar-{sku}.jpg"))
     if errs:
         die("неверные данные:\n  " + "\n  ".join(errs))
@@ -289,7 +336,7 @@ def render_page(ref, it, items):
                      "availability": "https://schema.org/InStock",
                      "itemCondition": "https://schema.org/NewCondition", "url": url,
                      "seller": {"@type": "Organization", "name": "ООО «АБВ Электросервис»"}}}
-    ld_json = json.dumps(ld, ensure_ascii=False).replace("</", "<\\/")
+    ld_json = json.dumps(ld, ensure_ascii=False).replace("<", "\\u003c")  # «<» внутри <script> — всегда экранировать
     head_line = (f'<meta content="product" property="og:type"/><meta content="{a(title)}" property="og:title"/>'
                  f'<meta content="{a(descr)}" property="og:description"/><meta content="{url}" property="og:url"/>'
                  f'<meta content="АБВ Электросервис" property="og:site_name"/><meta content="ru_RU" property="og:locale"/>'

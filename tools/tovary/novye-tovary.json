@@ -1,0 +1,29 @@
+[
+ {
+  "sku": "1SDA066907R1",
+  "name": "Комплект передних выводов FC Cu для Tmax XT1, 6 шт.",
+  "raw_ru": "Выводы стац. выкл. FC Cu XT1 6pcs",
+  "raw_en": "KIT FC Cu XT1 6pcs",
+  "qty": 24,
+  "price": 828,
+  "category": "Выключатели Tmax и комплектующие"
+ },
+ {
+  "sku": "1SDA067155R1",
+  "name": "Комплект выводов FC CuAl 1×35…95 мм² для Tmax XT1, 3 шт.",
+  "raw_ru": "Выводы стац. выкл. FC CuAl 1x35...95mm2",
+  "raw_en": "KIT FC CuAl 1x35...95mm2 XT1 3pcs",
+  "qty": 31,
+  "price": 2014,
+  "category": "Выключатели Tmax и комплектующие"
+ },
+ {
+  "sku": "1SDA066242R1",
+  "name": "Комплект выводов FC CuAl 50 мм² для Formula A1 125 А, 3 шт.",
+  "raw_ru": "Выводы стац. выкл. FC CuAl A1 125A 3шт.",
+  "raw_en": "KIT FC CuAl A1 125A 3pcs",
+  "qty": 23,
+  "price": 2413,
+  "category": "Выключатели Tmax и комплектующие"
+ }
+]

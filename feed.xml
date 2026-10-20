@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-12T17:51:47+03:00">
+<yml_catalog date="2026-10-20T12:19:55+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -183,6 +183,48 @@
         <count>2</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SDA068662R1</param>
+      </offer>
+      <offer id="1SDA066907R1" available="true">
+        <name>Комплект передних выводов FC Cu для Tmax XT1, 6 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA066907R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA066907R1.html</url>
+        <price>828</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA066907R1.jpg</picture>
+        <description>Комплект передних выводов FC Cu для Tmax XT1, 6 шт. (артикул 1SDA066907R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>24</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA066907R1</param>
+      </offer>
+      <offer id="1SDA067155R1" available="true">
+        <name>Комплект выводов FC CuAl 1×35…95 мм² для Tmax XT1, 3 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA067155R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA067155R1.html</url>
+        <price>2014</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA067155R1.jpg</picture>
+        <description>Комплект выводов FC CuAl 1×35…95 мм² для Tmax XT1, 3 шт. (артикул 1SDA067155R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>31</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA067155R1</param>
+      </offer>
+      <offer id="1SDA066242R1" available="true">
+        <name>Комплект выводов FC CuAl 50 мм² для Formula A1 125 А, 3 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SDA066242R1</vendorCode>
+        <url>https://abv-es.ru/tovar-1SDA066242R1.html</url>
+        <price>2413</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SDA066242R1.jpg</picture>
+        <description>Комплект выводов FC CuAl 50 мм² для Formula A1 125 А, 3 шт. (артикул 1SDA066242R1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>23</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SDA066242R1</param>
       </offer>
       <offer id="1SDA072345R1" available="true">
         <name>Выключатель автоматический выкатной E2.2N 1600 Ekip Touch LSI 3p WMP</name>

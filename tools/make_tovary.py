@@ -11,6 +11,13 @@
   qty      — остаток, целое > 0;
   price    — цена в рублях с НДС, целое > 0;
   category — категория склада (как на кнопках-фильтрах sklad.html).
+Необязательные поля — условия заказа (нет полей — карточка как раньше, без этих блоков):
+  srok      — срок поставки, строка («1–2 недели»): в блоке цены и в «Характеристиках»;
+  min_zakaz — минимальная сумма заказа, целое число рублей с НДС или null: в блоке цены,
+              в «Характеристиках» и в JSON-LD (offers.eligibleTransactionVolume);
+  dostavka  — true/false: панель «Доставка и самовывоз» рядом с «Описанием».
+Плитки склада и feed.xml от этих полей не зависят. При перегенерации и в --proverka условия
+у товаров, которых нет во входном JSON, берутся из их готовых карточек tovar-<sku>.html.
 Остальные поля (raw_ru, raw_en и т.п.) игнорируются.
 Поля с оптовой/закупочной ценой (имя содержит «opt», «закуп», «wholesale») запрещены: репозиторий
 публичный, такой файл генератор не примет — уберите поле из JSON до того, как класть его в репозиторий.
@@ -58,6 +65,22 @@ DESC_1 = ("{name} (артикул {sku}) — оригинальное обору
           "ремонт и обслуживание.")
 DESC_2 = ("Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru "
           "или позвоните 8 (800) 250 33 92.")
+
+# Условия заказа (поля srok / min_zakaz / dostavka). Стили — только в карточках с условиями,
+# дописываются в конец <style> карточки (остальные карточки остаются байт в байт как эталон).
+DOSTAVKA = [("По Москве и Московской области", "бесплатно", "ok"),
+            ("В другие регионы", f"при заказе от 50{NBSP}000{NBSP}₽ с{NBSP}НДС", ""),
+            ("Самовывоз из офиса", "Москва, ул. Профсоюзная, 57", "")]
+TERMS_CSS = (
+    "/* условия заказа */\n"
+    ".abv-product .abv-terms{list-style:none;margin:16px 0 0;padding:14px 0 0;border-top:1px dashed #ffd3ad;"
+    "display:flex;flex-direction:column;gap:6px}\n"
+    ".abv-product .abv-terms li{position:relative;margin:0;padding:0 0 0 17px;font-size:14px;line-height:1.45;color:var(--t)}\n"
+    ".abv-product .abv-terms li:before{content:\"\";position:absolute;left:0;top:.5em;width:7px;height:7px;"
+    "border-radius:50%;background:var(--o)}\n"
+    ".abv-product .abv-terms b{color:var(--h);font-weight:700;white-space:nowrap}\n"
+    ".abv-side{display:grid;gap:28px;min-width:0}\n"
+    ".abv-product .abv-side .abv-spec dt{flex:0 1 auto}\n")
 
 GO_SVG = ('<span class="abv-go"><svg fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" '
           'stroke-width="2.4" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>')
@@ -110,13 +133,18 @@ def die(msg):
 
 
 class Item:
-    __slots__ = ("sku", "name", "qty", "price", "cat", "img")
+    __slots__ = ("sku", "name", "qty", "price", "cat", "img", "srok", "min_zakaz", "dostavka")
 
-    def __init__(self, sku, name, qty, price, cat, img):
+    def __init__(self, sku, name, qty, price, cat, img, srok=None, min_zakaz=None, dostavka=False):
         self.sku, self.name, self.qty, self.price, self.cat, self.img = sku, name, qty, price, cat, img
+        self.srok, self.min_zakaz, self.dostavka = srok, min_zakaz, dostavka
 
     def key(self):
-        return (self.sku, self.name, self.qty, self.price, self.cat, self.img)
+        return (self.sku, self.name, self.qty, self.price, self.cat, self.img,
+                self.srok, self.min_zakaz, self.dostavka)
+
+    def has_terms(self):
+        return bool(self.srok or self.min_zakaz or self.dostavka)
 
 
 # ---------- входные данные ----------
@@ -196,7 +224,19 @@ def load_input(fname):
             errs.append(f"{where}: qty должно быть целым > 0 (сейчас {qty!r})")
         if not (isinstance(price, int) and not isinstance(price, bool) and price > 0):
             errs.append(f"{where}: price должно быть целым числом рублей > 0 (сейчас {price!r})")
-        items.append(Item(sku, name, qty, price, cat, f"images/tovar-{sku}.jpg"))
+        srok, min_zakaz, dostavka = d.get("srok"), d.get("min_zakaz"), d.get("dostavka", False)
+        if srok is not None:
+            srok = " ".join(str(srok).split()) if isinstance(srok, str) else srok
+            if not (isinstance(srok, str) and srok):
+                errs.append(f"{where}: srok должно быть непустой строкой или отсутствовать (сейчас {d.get('srok')!r})")
+        if min_zakaz is not None and not (isinstance(min_zakaz, int) and not isinstance(min_zakaz, bool)
+                                          and min_zakaz > 0):
+            errs.append(f"{where}: min_zakaz должно быть целым числом рублей > 0 или null (сейчас {min_zakaz!r})")
+        if dostavka is None:
+            dostavka = False
+        if not isinstance(dostavka, bool):
+            errs.append(f"{where}: dostavka должно быть true или false (сейчас {dostavka!r})")
+        items.append(Item(sku, name, qty, price, cat, f"images/tovar-{sku}.jpg", srok or None, min_zakaz, dostavka))
     if errs:
         die("неверные данные:\n  " + "\n  ".join(errs))
     return items
@@ -336,6 +376,9 @@ def render_page(ref, it, items):
                      "availability": "https://schema.org/InStock",
                      "itemCondition": "https://schema.org/NewCondition", "url": url,
                      "seller": {"@type": "Organization", "name": "ООО «АБВ Электросервис»"}}}
+    if it.min_zakaz:   # минимальная сумма заказа (schema.org Offer.eligibleTransactionVolume)
+        ld["offers"]["eligibleTransactionVolume"] = {"@type": "PriceSpecification", "minPrice": it.min_zakaz,
+                                                     "priceCurrency": "RUB", "valueAddedTaxIncluded": True}
     ld_json = json.dumps(ld, ensure_ascii=False).replace("<", "\\u003c")  # «<» внутри <script> — всегда экранировать
     head_line = (f'<meta content="product" property="og:type"/><meta content="{a(title)}" property="og:title"/>'
                  f'<meta content="{a(descr)}" property="og:description"/><meta content="{url}" property="og:url"/>'
@@ -346,6 +389,12 @@ def render_page(ref, it, items):
     subj = quote(f"Запрос: {it.sku} — {it.name}", safe="/")
     body = quote(f"Прошу уточнить наличие и цену:\n{it.sku} — {it.name}\nКоличество: \n", safe="/")
     price_txt = money(it.price)
+    min_txt = f"от {money(it.min_zakaz)}{NBSP}₽ с{NBSP}НДС" if it.min_zakaz else ""
+    terms = []
+    if it.min_zakaz:
+        terms.append(f"<li>Минимальная сумма заказа — <b>{min_txt}</b></li>")
+    if it.srok:
+        terms.append(f"<li>Срок поставки: <b>{t(it.srok)}</b></li>")
     spec = lambda k, v, cls="": (f'<div class="abv-spec"><dt>{k}</dt><span class="abv-lead"></span>'
                                  f'<dd class="{cls}">{v}</dd></div>')
     shield = ('<svg fill="none" stroke="#2fa652" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" '
@@ -372,21 +421,33 @@ def render_page(ref, it, items):
         '<div class="abv-pricebox">',
         f'<p class="abv-price-lbl">Цена за 1 шт.</p><p class="abv-bigprice">{price_txt}{NBSP}<span>₽</span>'
         f'<small>с НДС</small></p>',
+    ]
+    if terms:
+        lines.append('<ul class="abv-terms">' + "".join(terms) + "</ul>")
+    lines += [
         '<div class="abv-actions">',
         f'<a class="abv-btn abv-btn-main" data-code="{it.sku}" data-name="{a(it.name)}" '
         f'href="mailto:info@abv-es.ru?subject={subj}&amp;body={body}" onclick="abvRequest(event)">ЗАПРОСИТЬ</a>',
     ]
     # Неизменяемая часть (кнопки звонка/Telegram, подсказка, блок преимуществ) — из эталона.
     lines.append(REF_PARTS["actions_tail"])
+    desc = (f'<div class="abv-panel"><h2 class="abv-h2">Описание</h2><div class="abv-desc"><p>{t(d1)}</p>'
+            f'<p>{t(d2)}</p></div></div>')
+    if it.dostavka:
+        desc = nl.join(['<div class="abv-side">', desc,
+                        '<div class="abv-panel"><h2 class="abv-h2">Доставка и самовывоз</h2><dl class="abv-specs">'
+                        + "".join(spec(k, v, c) for k, v, c in DOSTAVKA) + "</dl></div>",
+                        '</div>'])
     lines += [
         '<div class="abv-info">',
         '<div class="abv-panel"><h2 class="abv-h2">Характеристики</h2><dl class="abv-specs">'
         + spec("Артикул", it.sku) + spec("Производитель", "ABB") + spec("Категория", t(it.cat))
         + spec("Наличие", f"{it.qty} шт.", "ok") + spec("Склад", "Москва, ул. Профсоюзная, 57")
-        + spec("Цена", f"{price_txt}{NBSP}₽ с НДС", "pr") + "</dl>",
+        + (spec("Срок поставки", t(it.srok)) if it.srok else "")
+        + spec("Цена", f"{price_txt}{NBSP}₽ с НДС", "pr")
+        + (spec("Минимальный заказ", min_txt, "pr") if it.min_zakaz else "") + "</dl>",
         REF_PARTS["note"],
-        f'<div class="abv-panel"><h2 class="abv-h2">Описание</h2><div class="abv-desc"><p>{t(d1)}</p>'
-        f'<p>{t(d2)}</p></div></div>',
+        desc,
         '</div>',
         '<div class="abv-psec"><h2 class="abv-h2">Другие товары со склада</h2><div class="abv-rel">'
         + "".join(render_tile(r, catalog=False) for r in related(it, items)) + "</div></div>",
@@ -400,7 +461,25 @@ def render_page(ref, it, items):
     out = sub_once(out, r'<meta content="product" property="og:type"/>.*?</head>', head_line, "og/ld+json")
     out = sub_once(out, r'<nav class="abv-crumbs">.*?(?=\r?\n</div>\r?\n<script>\r?\ndocument\.querySelectorAll)',
                    block, "тело карточки")
+    if it.has_terms():
+        css = TERMS_CSS.replace("\n", nl)
+        out = sub_once(out, r"</style>", css + "</style>", "</style> карточки")
     return out
+
+
+def terms_from_page(it):
+    """Условия заказа уже готовой карточки (для товаров, которых нет во входном JSON, и для --proverka)."""
+    name = f"tovar-{it.sku}.html"
+    if not os.path.exists(path(name)):
+        return
+    pg = read(name)
+    def spec_val(k):
+        m = re.search(r'<dt>' + re.escape(k) + r'</dt><span class="abv-lead"></span><dd class="[^"]*">(.*?)</dd>', pg)
+        return html.unescape(m.group(1)) if m else None
+    it.srok = spec_val("Срок поставки")
+    mz = spec_val("Минимальный заказ")
+    it.min_zakaz = int(re.sub(r"\D", "", mz)) if mz else None
+    it.dostavka = '<h2 class="abv-h2">Доставка и самовывоз</h2>' in pg
 
 
 REF_PARTS = {}
@@ -498,6 +577,8 @@ def proverka():
     load_reference(ref)
     _, cards, _ = split_sklad(s)
     items = [parse_card(c) for c in cards]
+    for it in items:
+        terms_from_page(it)
     bad = rel_only = 0
     if render_sklad(s, items) != s:
         print(f"РАЗЛИЧИЕ: {SKLAD} — плитки/кнопки собираются не так, как в файле")
@@ -553,6 +634,8 @@ def main():
     s = read(SKLAD)
     _, cards, _ = split_sklad(s)
     catalog = [parse_card(c) for c in cards]
+    for c in catalog:
+        terms_from_page(c)
     items, added, updated = upsert(catalog, new_items)
     new_cats = sorted({it.cat for it in new_items} - {c.cat for c in catalog})
 

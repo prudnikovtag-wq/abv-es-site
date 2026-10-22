@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-20T12:19:55+03:00">
+<yml_catalog date="2026-10-22T15:30:54+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -14,6 +14,7 @@
       <category id="3">Выключатели Tmax и комплектующие</category>
       <category id="4">Расцепители и модули Ekip</category>
       <category id="5">Релейная защита и среднее напряжение</category>
+      <category id="6">Модульные автоматические выключатели</category>
     </categories>
     <offers>
       <offer id="1SDA104051R1" available="true">
@@ -477,6 +478,20 @@
         <count>2</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2RCA025340A0001</param>
+      </offer>
+      <offer id="2CDS211001R0254" available="true">
+        <name>Автоматический выключатель 1-полюсный SH201 C25</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS211001R0254</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS211001R0254.html</url>
+        <price>1129</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS211001R0254.jpg</picture>
+        <description>Автоматический выключатель 1-полюсный SH201 C25 (артикул 2CDS211001R0254) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>3270</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS211001R0254</param>
       </offer>
     </offers>
   </shop>

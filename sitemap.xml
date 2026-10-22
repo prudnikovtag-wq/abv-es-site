@@ -19,6 +19,8 @@
   <url><loc>https://abv-es.ru/tovar-00051.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-00810.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-00816.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-00846.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-1SBE121111R0602.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBH137001R1340.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL136060R2210.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL136061R2101.html</loc></url>
@@ -30,6 +32,7 @@
   <url><loc>https://abv-es.ru/tovar-1SBL156001R2301.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL157001R1410.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL176001R2310.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-1SBL176501R2100.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL176560R2200.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL176561R2100.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL177001R1410.html</loc></url>
@@ -75,12 +78,14 @@
   <url><loc>https://abv-es.ru/tovar-1SDA107531R1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SDA107532R1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SL0816A00.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-1SL0822A00.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SL0846A00.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405501R4010.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405600R4000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405613R9000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405651R0000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405651R1000.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-1SVR405651R1100.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405656R2000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR405658R1000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SVR730712R1200.html</loc></url>
@@ -335,18 +340,21 @@
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2145.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2151.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2153.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CKA001012A2169.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2179.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2184.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001731A1889.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001751A3075.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001751A3079.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001751A3083.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CKA001751A3089.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001753A9976.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CMA167756R1000.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA255103R1104.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA255103R1105.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA255103R1164.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA255103R1165.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CSA255103R1204.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA275103R1104.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA275103R1164.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSA275103R1165.html</loc></url>
@@ -380,10 +388,12 @@
   <url><loc>https://abv-es.ru/tovar-2CSR274001R1164.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR645041R1064.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR645041R1204.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CTB815710R5700.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2RCA025340A0001.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TAZ312000R2041.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TKA001744G1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TKA003967G1.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2TKA130020G1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TKA130027G1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TKA130029G1.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2TKA130031G1.html</loc></url>

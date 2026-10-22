@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-22T16:15:07+03:00">
+<yml_catalog date="2026-10-22T16:15:22+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -1574,6 +1574,76 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CDS272061R0254</param>
       </offer>
+      <offer id="2CDS251001R0634" available="true">
+        <name>Автоматический выключатель 1-полюсный S201 C63, упаковка 10 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS251001R0634</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS251001R0634.html</url>
+        <price>2539</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS251001R0634.jpg</picture>
+        <description>Автоматический выключатель 1-полюсный S201 C63, упаковка 10 шт. (артикул 2CDS251001R0634) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>10</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS251001R0634</param>
+      </offer>
+      <offer id="2CDS282001R0064" available="true">
+        <name>Автоматический выключатель 2-полюсный S202P C6</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS282001R0064</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS282001R0064.html</url>
+        <price>14334</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS282001R0064.jpg</picture>
+        <description>Автоматический выключатель 2-полюсный S202P C6 (артикул 2CDS282001R0064) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>23</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS282001R0064</param>
+      </offer>
+      <offer id="2CDS251001R0428" available="true">
+        <name>Автоматический выключатель 1-полюсный S201 Z10</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS251001R0428</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS251001R0428.html</url>
+        <price>3905</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS251001R0428.jpg</picture>
+        <description>Автоматический выключатель 1-полюсный S201 Z10 (артикул 2CDS251001R0428) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>21</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS251001R0428</param>
+      </offer>
+      <offer id="2CDS283001R0064" available="true">
+        <name>Автоматический выключатель 3-полюсный S203P C6</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS283001R0064</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS283001R0064.html</url>
+        <price>21786</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS283001R0064.jpg</picture>
+        <description>Автоматический выключатель 3-полюсный S203P C6 (артикул 2CDS283001R0064) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>21</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS283001R0064</param>
+      </offer>
+      <offer id="2CDS272001R0014" available="true">
+        <name>Автоматический выключатель 2-полюсный S202M C1</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS272001R0014</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS272001R0014.html</url>
+        <price>15115</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS272001R0014.jpg</picture>
+        <description>Автоматический выключатель 2-полюсный S202M C1 (артикул 2CDS272001R0014) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>25</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS272001R0014</param>
+      </offer>
       <offer id="2CSF602041R1250" available="true">
         <name>Выключатель дифференциального тока (УЗО) BMF41225, 2P, 25 А, 30 мА, тип AC</name>
         <vendor>ABB</vendor>
@@ -1686,6 +1756,34 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CSR255180R1105</param>
       </offer>
+      <offer id="2CSR245080R3064" available="true">
+        <name>Автоматический выключатель дифференциального тока (АВДТ) DS201 L C6 AC300</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSR245080R3064</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSR245080R3064.html</url>
+        <price>21444</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSR245080R3064.jpg</picture>
+        <description>Автоматический выключатель дифференциального тока (АВДТ) DS201 L C6 AC300 (артикул 2CSR245080R3064) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>55</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSR245080R3064</param>
+      </offer>
+      <offer id="2CSR272140R1104" available="true">
+        <name>Автоматический выключатель дифференциального тока (АВДТ) DS202C M C10 A30</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSR272140R1104</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSR272140R1104.html</url>
+        <price>29422</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSR272140R1104.jpg</picture>
+        <description>Автоматический выключатель дифференциального тока (АВДТ) DS202C M C10 A30 (артикул 2CSR272140R1104) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>58</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSR272140R1104</param>
+      </offer>
       <offer id="1SBL921074R8010" available="true">
         <name>Контактор AX18-30-10-80, 18 А (AC-3), катушка управления 220–230 В AC</name>
         <vendor>ABB</vendor>
@@ -1741,6 +1839,20 @@
         <count>63</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SBL921074R8410</param>
+      </offer>
+      <offer id="1SBL137501R1300" available="true">
+        <name>Контактор AF09-22-00-13 с универсальной катушкой управления 100–250 В AC/DC</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SBL137501R1300</vendorCode>
+        <url>https://abv-es.ru/tovar-1SBL137501R1300.html</url>
+        <price>9523</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SBL137501R1300.jpg</picture>
+        <description>Контактор AF09-22-00-13 с универсальной катушкой управления 100–250 В AC/DC (артикул 1SBL137501R1300) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>93</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SBL137501R1300</param>
       </offer>
       <offer id="2CHH590145A6018" available="true">
         <name>Выключатель одноклавишный, серия Levit, кофе макиато / белый</name>
@@ -2175,6 +2287,34 @@
         <count>133</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CHN582552C4500</param>
+      </offer>
+      <offer id="2CHH590545A6016" available="true">
+        <name>Выключатель двухклавишный, серия Levit, серый / белый</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CHH590545A6016</vendorCode>
+        <url>https://abv-es.ru/tovar-2CHH590545A6016.html</url>
+        <price>1256</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>9</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CHH590545A6016.jpg</picture>
+        <description>Выключатель двухклавишный, серия Levit, серый / белый (артикул 2CHH590545A6016) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>164</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CHH590545A6016</param>
+      </offer>
+      <offer id="2CHH590646A6062" available="true">
+        <name>Переключатель одноклавишный с ориентационной подсветкой, серия Levit, белый / дымчатый чёрный</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CHH590646A6062</vendorCode>
+        <url>https://abv-es.ru/tovar-2CHH590646A6062.html</url>
+        <price>2489</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>9</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CHH590646A6062.jpg</picture>
+        <description>Переключатель одноклавишный с ориентационной подсветкой, серия Levit, белый / дымчатый чёрный (артикул 2CHH590646A6062) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>145</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CHH590646A6062</param>
       </offer>
     </offers>
   </shop>

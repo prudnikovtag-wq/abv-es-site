@@ -16,9 +16,13 @@
   min_zakaz — минимальная сумма заказа, целое число рублей с НДС или null: в блоке цены,
               в «Характеристиках» и в JSON-LD (offers.eligibleTransactionVolume);
   dostavka  — true/false: панель «Доставка и самовывоз» рядом с «Описанием».
-Плитки склада и feed.xml от этих полей не зависят. При перегенерации и в --proverka условия
-у товаров, которых нет во входном JSON, берутся из их готовых карточек tovar-<sku>.html.
-Остальные поля (raw_ru, raw_en и т.п.) игнорируются.
+Плитки склада и feed.xml от этих полей не зависят.
+Входной JSON — главный: карточка товара из него собирается только по его данным. Если у товара,
+у которого на сайте уже есть условия заказа, во входном JSON этих полей нет — блоки условий
+с карточки удаляются. Условия товаров, которых во входном JSON нет (их карточки не пересобираются),
+для --proverka и служебных проверок берутся из их готовых карточек tovar-<sku>.html.
+Поля raw_ru, raw_en игнорируются. На другие незнакомые поля — предупреждение; если незнакомое поле
+похоже на поле условий (min_zakas, Srok, «срок», delivery…) — ошибка: иначе условия молча пропадут.
 Поля с оптовой/закупочной ценой (имя содержит «opt», «закуп», «wholesale») запрещены: репозиторий
 публичный, такой файл генератор не примет — уберите поле из JSON до того, как класть его в репозиторий.
 Из строк при загрузке вычищаются управляющие и невидимые символы (переводы строк, табуляции — в пробел).
@@ -43,6 +47,7 @@
 """
 import argparse
 import datetime
+import difflib
 import html
 import json
 import os
@@ -150,6 +155,20 @@ class Item:
 # ---------- входные данные ----------
 
 SKU_RE = re.compile(r"[A-Z0-9][A-Z0-9-]*")
+KNOWN_KEYS = {"sku", "name", "qty", "price", "category", "srok", "min_zakaz", "dostavka", "raw_ru", "raw_en"}
+TERM_KEYS = ("srok", "min_zakaz", "dostavka")
+TERM_KEY_ROOTS = ("srok", "zakaz", "zakas", "dostav", "срок", "заказ", "достав", "deliver", "lead", "minorder",
+                  "minsum", "pickup", "samovyvoz", "самовывоз")
+
+
+def looks_like_term_key(k):
+    """Незнакомое поле похоже на srok / min_zakaz / dostavka (опечатка, регистр, кириллица)."""
+    n = re.sub(r"[\W_]+", "", k.lower())
+    if any(r in n for r in TERM_KEY_ROOTS):
+        return True
+    return any(difflib.SequenceMatcher(None, n, tk.replace("_", "")).ratio() >= 0.75 for tk in TERM_KEYS)
+
+
 FORBIDDEN_KEY_PARTS = ("opt", "закуп", "wholesale")   # оптовые/закупочные цены — в публичный репозиторий нельзя
 
 
@@ -202,6 +221,20 @@ def load_input(fname):
             "(и не коммитьте файл с ними), затем запустите снова.")
     data = clean(data)
     items, seen, errs = [], set(), []
+    unknown = {}                                   # незнакомое поле -> сколько записей
+    for d in data:
+        if isinstance(d, dict):
+            for k in d:
+                if k not in KNOWN_KEYS:
+                    unknown[k] = unknown.get(k, 0) + 1
+    similar = sorted(k for k in unknown if looks_like_term_key(str(k)))
+    if similar:
+        errs.append("поля похожи на условия заказа, но названы иначе: "
+                    + ", ".join(f"«{k}» ({unknown[k]} зап.)" for k in similar)
+                    + f" — допустимые имена: {', '.join(TERM_KEYS)}")
+    for k in sorted(set(unknown) - set(similar), key=str):
+        print(f"ПРЕДУПРЕЖДЕНИЕ: {fname}: незнакомое поле «{k}» ({unknown[k]} зап.) — не используется.",
+              file=sys.stderr)
     for n, d in enumerate(data, 1):
         where = f"запись {n} ({d.get('sku', '?') if isinstance(d, dict) else '?'})"
         if not isinstance(d, dict):

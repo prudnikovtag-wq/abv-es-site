@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-22T16:24:37+03:00">
+<yml_catalog date="2026-10-22T16:24:57+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -21,6 +21,7 @@
       <category id="10">Розетки</category>
       <category id="11">Реле и модульные контакторы</category>
       <category id="12">Щиты и распаячные коробки</category>
+      <category id="13">Прочее</category>
     </categories>
     <offers>
       <offer id="1SDA104051R1" available="true">
@@ -2599,6 +2600,76 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CDS271061R0104</param>
       </offer>
+      <offer id="2CDS272001R0024" available="true">
+        <name>Автоматический выключатель 2-полюсный S202M C2</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS272001R0024</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS272001R0024.html</url>
+        <price>11604</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS272001R0024.jpg</picture>
+        <description>Автоматический выключатель 2-полюсный S202M C2 (артикул 2CDS272001R0024) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>9</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS272001R0024</param>
+      </offer>
+      <offer id="2CDS251103R0064" available="true">
+        <name>Автоматический выключатель 1P+N S201 C6 NA</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS251103R0064</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS251103R0064.html</url>
+        <price>2802</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS251103R0064.jpg</picture>
+        <description>Автоматический выключатель 1P+N S201 C6 NA (артикул 2CDS251103R0064) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS251103R0064</param>
+      </offer>
+      <offer id="2CDS253001R0041" available="true">
+        <name>Автоматический выключатель 3-полюсный S203 D4</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS253001R0041</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS253001R0041.html</url>
+        <price>30833</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS253001R0041.jpg</picture>
+        <description>Автоматический выключатель 3-полюсный S203 D4 (артикул 2CDS253001R0041) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>16</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS253001R0041</param>
+      </offer>
+      <offer id="2CDS251001R0021" available="true">
+        <name>Автоматический выключатель 1-полюсный S201 D2</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS251001R0021</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS251001R0021.html</url>
+        <price>2902</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS251001R0021.jpg</picture>
+        <description>Автоматический выключатель 1-полюсный S201 D2 (артикул 2CDS251001R0021) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>6</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS251001R0021</param>
+      </offer>
+      <offer id="2CDD643051R0063" available="true">
+        <name>Выключатель нагрузки BMD51363, 3P, 63 А, упаковка 4 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDD643051R0063</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDD643051R0063.html</url>
+        <price>4521</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDD643051R0063.jpg</picture>
+        <description>Выключатель нагрузки BMD51363, 3P, 63 А, упаковка 4 шт. (артикул 2CDD643051R0063) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>618</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDD643051R0063</param>
+      </offer>
       <offer id="2CSF602041R1250" available="true">
         <name>Выключатель дифференциального тока (УЗО) BMF41225, 2P, 25 А, 30 мА, тип AC</name>
         <vendor>ABB</vendor>
@@ -3046,6 +3117,20 @@
         <count>52</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CSA255103R1104</param>
+      </offer>
+      <offer id="2CSA255103R1105" available="true">
+        <name>Автоматический выключатель дифференциального тока с защитой от дуги DS-ARC1 B10 A30</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSA255103R1105</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSA255103R1105.html</url>
+        <price>44671</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSA255103R1105.jpg</picture>
+        <description>Автоматический выключатель дифференциального тока с защитой от дуги DS-ARC1 B10 A30 (артикул 2CSA255103R1105) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>50</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSA255103R1105</param>
       </offer>
       <offer id="1SBL921074R8010" available="true">
         <name>Контактор AX18-30-10-80, 18 А (AC-3), катушка управления 220–230 В AC</name>
@@ -4531,6 +4616,34 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CKA001012A2179</param>
       </offer>
+      <offer id="2CHX590545A4000" available="true">
+        <name>Механизм выключателя двухклавишного, серия Levit</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CHX590545A4000</vendorCode>
+        <url>https://abv-es.ru/tovar-2CHX590545A4000.html</url>
+        <price>285</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>9</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CHX590545A4000.jpg</picture>
+        <description>Механизм выключателя двухклавишного, серия Levit (артикул 2CHX590545A4000) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>49</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CHX590545A4000</param>
+      </offer>
+      <offer id="2CHN588652C4500" available="true">
+        <name>Переключатель кнопочный одноклавишный с прозрачной линзой, серия Variant+, IP54, белый</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CHN588652C4500</vendorCode>
+        <url>https://abv-es.ru/tovar-2CHN588652C4500.html</url>
+        <price>1509</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>9</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CHN588652C4500.jpg</picture>
+        <description>Переключатель кнопочный одноклавишный с прозрачной линзой, серия Variant+, IP54, белый (артикул 2CHN588652C4500) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>16</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CHN588652C4500</param>
+      </offer>
       <offer id="2CMA167756R1000" available="true">
         <name>Розетка 216MPR6 с рубильником, механической блокировкой и УЗО, 16 А, 2P+E, IP44, 6 ч</name>
         <vendor>ABB</vendor>
@@ -4698,6 +4811,34 @@
         <count>2491</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2TKA130031G1</param>
+      </offer>
+      <offer id="00051" available="true">
+        <name>Коробка монтажная круглая, диаметр 85 мм</name>
+        <vendor>ABB</vendor>
+        <vendorCode>00051</vendorCode>
+        <url>https://abv-es.ru/tovar-00051.html</url>
+        <price>99</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-00051.jpg</picture>
+        <description>Коробка монтажная круглая, диаметр 85 мм (артикул 00051) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>439</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">00051</param>
+      </offer>
+      <offer id="1VCF339750R0321" available="true">
+        <name>Механическая блокировка вкатывания и выкатывания выключателя</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1VCF339750R0321</vendorCode>
+        <url>https://abv-es.ru/tovar-1VCF339750R0321.html</url>
+        <price>1585</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>13</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1VCF339750R0321.jpg</picture>
+        <description>Механическая блокировка вкатывания и выкатывания выключателя (артикул 1VCF339750R0321) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>298</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1VCF339750R0321</param>
       </offer>
     </offers>
   </shop>

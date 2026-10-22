@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-22T16:23:03+03:00">
+<yml_catalog date="2026-10-22T16:24:18+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -20,6 +20,7 @@
       <category id="9">Выключатели и рамки</category>
       <category id="10">Розетки</category>
       <category id="11">Реле и модульные контакторы</category>
+      <category id="12">Щиты и распаячные коробки</category>
     </categories>
     <offers>
       <offer id="1SDA104051R1" available="true">
@@ -2528,6 +2529,34 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CDS253001R0021</param>
       </offer>
+      <offer id="2CDS271001R0255" available="true">
+        <name>Автоматический выключатель 1-полюсный S201M B25</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS271001R0255</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS271001R0255.html</url>
+        <price>6745</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS271001R0255.jpg</picture>
+        <description>Автоматический выключатель 1-полюсный S201M B25 (артикул 2CDS271001R0255) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS271001R0255</param>
+      </offer>
+      <offer id="2CDS283001R0201" available="true">
+        <name>Автоматический выключатель 3-полюсный S203P D20</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS283001R0201</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS283001R0201.html</url>
+        <price>36459</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS283001R0201.jpg</picture>
+        <description>Автоматический выключатель 3-полюсный S203P D20 (артикул 2CDS283001R0201) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>10</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS283001R0201</param>
+      </offer>
       <offer id="2CSF602041R1250" available="true">
         <name>Выключатель дифференциального тока (УЗО) BMF41225, 2P, 25 А, 30 мА, тип AC</name>
         <vendor>ABB</vendor>
@@ -2948,6 +2977,20 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CSR255180R1044</param>
       </offer>
+      <offer id="2CSF202201R2630" available="true">
+        <name>Выключатель дифференциального тока (УЗО) F202 A S-63/0,1, 2P, 63 А, 100 мА, тип A, селективный</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSF202201R2630</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSF202201R2630.html</url>
+        <price>24053</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSF202201R2630.jpg</picture>
+        <description>Выключатель дифференциального тока (УЗО) F202 A S-63/0,1, 2P, 63 А, 100 мА, тип A, селективный (артикул 2CSF202201R2630) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>14</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSF202201R2630</param>
+      </offer>
       <offer id="1SBL921074R8010" available="true">
         <name>Контактор AX18-30-10-80, 18 А (AC-3), катушка управления 220–230 В AC</name>
         <vendor>ABB</vendor>
@@ -3283,6 +3326,34 @@
         <count>17</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SBL137001R1410</param>
+      </offer>
+      <offer id="GJH1211001R8225" available="true">
+        <name>Мини-контакторное реле K6-22Z-85, катушка 400 В AC, винтовые клеммы (3 А при AC-15 400 В)</name>
+        <vendor>ABB</vendor>
+        <vendorCode>GJH1211001R8225</vendorCode>
+        <url>https://abv-es.ru/tovar-GJH1211001R8225.html</url>
+        <price>4900</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://abv-es.ru/images/tovar-GJH1211001R8225.jpg</picture>
+        <description>Мини-контакторное реле K6-22Z-85, катушка 400 В AC, винтовые клеммы (3 А при AC-15 400 В) (артикул GJH1211001R8225) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>25</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">GJH1211001R8225</param>
+      </offer>
+      <offer id="1SBL236060R2200" available="true">
+        <name>Контактор AF26ZB-30-00RT-22 для железнодорожного транспорта, катушка 48–130 В AC/DC</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SBL236060R2200</vendorCode>
+        <url>https://abv-es.ru/tovar-1SBL236060R2200.html</url>
+        <price>30302</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SBL236060R2200.jpg</picture>
+        <description>Контактор AF26ZB-30-00RT-22 для железнодорожного транспорта, катушка 48–130 В AC/DC (артикул 1SBL236060R2200) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>30</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SBL236060R2200</param>
       </offer>
       <offer id="2CHH590145A6018" available="true">
         <name>Выключатель одноклавишный, серия Levit, кофе макиато / белый</name>
@@ -4348,6 +4419,20 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CKA001751A3083</param>
       </offer>
+      <offer id="2CHH590651A4070" available="true">
+        <name>Клавиша для одноклавишного выключателя, серия Levit, серебро / дымчатый чёрный</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CHH590651A4070</vendorCode>
+        <url>https://abv-es.ru/tovar-2CHH590651A4070.html</url>
+        <price>118</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>9</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CHH590651A4070.jpg</picture>
+        <description>Клавиша для одноклавишного выключателя, серия Levit, серебро / дымчатый чёрный (артикул 2CHH590651A4070) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>23</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CHH590651A4070</param>
+      </offer>
       <offer id="2CMA167756R1000" available="true">
         <name>Розетка 216MPR6 с рубильником, механической блокировкой и УЗО, 16 А, 2P+E, IP44, 6 ч</name>
         <vendor>ABB</vendor>
@@ -4417,6 +4502,62 @@
         <count>550</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">1SVR405656R2000</param>
+      </offer>
+      <offer id="1SVR405613R9000" available="true">
+        <name>Интерфейсное реле CR-M220DC4, 220 В DC, 4 переключающих контакта, 6 А, упаковка 10 шт.</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SVR405613R9000</vendorCode>
+        <url>https://abv-es.ru/tovar-1SVR405613R9000.html</url>
+        <price>1784</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>11</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SVR405613R9000.jpg</picture>
+        <description>Интерфейсное реле CR-M220DC4, 220 В DC, 4 переключающих контакта, 6 А, упаковка 10 шт. (артикул 1SVR405613R9000) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>398</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SVR405613R9000</param>
+      </offer>
+      <offer id="2TKA130027G1" available="true">
+        <name>Коробка разветвительная</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2TKA130027G1</vendorCode>
+        <url>https://abv-es.ru/tovar-2TKA130027G1.html</url>
+        <price>619</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2TKA130027G1.jpg</picture>
+        <description>Коробка разветвительная (артикул 2TKA130027G1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>2216</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2TKA130027G1</param>
+      </offer>
+      <offer id="00810" available="true">
+        <name>Коробка распаячная герметичная IP44, 80×80×40 мм</name>
+        <vendor>ABB</vendor>
+        <vendorCode>00810</vendorCode>
+        <url>https://abv-es.ru/tovar-00810.html</url>
+        <price>687</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-00810.jpg</picture>
+        <description>Коробка распаячная герметичная IP44, 80×80×40 мм (артикул 00810) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>741</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">00810</param>
+      </offer>
+      <offer id="2TKA130029G1" available="true">
+        <name>Коробка монтажная универсальная</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2TKA130029G1</vendorCode>
+        <url>https://abv-es.ru/tovar-2TKA130029G1.html</url>
+        <price>271</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2TKA130029G1.jpg</picture>
+        <description>Коробка монтажная универсальная (артикул 2TKA130029G1) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>5222</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2TKA130029G1</param>
       </offer>
     </offers>
   </shop>

@@ -18,6 +18,7 @@
   <url><loc>https://abv-es.ru/sklad.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL901074R8010.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL921074R8010.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-1SBL921074R8410.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SBL931074R8410.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SCA148926R1001.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-1SCA153630R1001.html</loc></url>
@@ -104,10 +105,13 @@
   <url><loc>https://abv-es.ru/tovar-2CDS272061R0104.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS272061R0105.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS272061R0165.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CDS272061R0254.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS272061R0255.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS272061R0324.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CDS272061R0467.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS273001R0165.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS273001R0504.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CDS274001R0164.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS281001R0014.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS281001R0044.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS281001R0104.html</loc></url>
@@ -123,6 +127,7 @@
   <url><loc>https://abv-es.ru/tovar-2CDS644041R0204.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS644041R0254.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS644041R0324.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CDS644041R0404.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CDS644041R0504.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6001.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6003.html</loc></url>
@@ -130,7 +135,9 @@
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6017.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6018.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6062.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CHH590145A6063.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590145A6068.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CHH590145A6069.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590146A6001.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590146A6016.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590146A6017.html</loc></url>
@@ -139,6 +146,7 @@
   <url><loc>https://abv-es.ru/tovar-2CHH590545A6003.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590545A6017.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590545A6018.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CHH590545A6062.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590545A6068.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590646A6001.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHH590651A4065.html</loc></url>
@@ -148,6 +156,7 @@
   <url><loc>https://abv-es.ru/tovar-2CHH590745A6062.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHN580151C4500.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CHN580654C4500.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CHN582552C4500.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2139.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2141.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CKA001012A2153.html</loc></url>
@@ -155,6 +164,7 @@
   <url><loc>https://abv-es.ru/tovar-2CSF602041R1250.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR245140R0064.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR245180R0064.html</loc></url>
+  <url><loc>https://abv-es.ru/tovar-2CSR255180R1105.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR255180R1165.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR255180R2104.html</loc></url>
   <url><loc>https://abv-es.ru/tovar-2CSR645041R1204.html</loc></url>

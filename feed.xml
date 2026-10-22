@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-22T16:29:40+03:00">
+<yml_catalog date="2026-10-22T16:30:00+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -2936,6 +2936,34 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CDS242001R0255</param>
       </offer>
+      <offer id="2CDS271103R0204" available="true">
+        <name>Автоматический выключатель 1P+N S201M C20 NA</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CDS271103R0204</vendorCode>
+        <url>https://abv-es.ru/tovar-2CDS271103R0204.html</url>
+        <price>10733</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CDS271103R0204.jpg</picture>
+        <description>Автоматический выключатель 1P+N S201M C20 NA (артикул 2CDS271103R0204) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>1</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CDS271103R0204</param>
+      </offer>
+      <offer id="2CSM200983R1801" available="true">
+        <name>Рубильник с предохранителем E91/20</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSM200983R1801</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSM200983R1801.html</url>
+        <price>1463</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSM200983R1801.jpg</picture>
+        <description>Рубильник с предохранителем E91/20 (артикул 2CSM200983R1801) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>726</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSM200983R1801</param>
+      </offer>
       <offer id="2CSF602041R1250" available="true">
         <name>Выключатель дифференциального тока (УЗО) BMF41225, 2P, 25 А, 30 мА, тип AC</name>
         <vendor>ABB</vendor>
@@ -3523,6 +3551,20 @@
         <count>5</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CSR275180R1105</param>
+      </offer>
+      <offer id="2CSR255180R2324" available="true">
+        <name>Автоматический выключатель дифференциального тока (АВДТ) DS201 C32, 100 мА, тип A</name>
+        <vendor>ABB</vendor>
+        <vendorCode>2CSR255180R2324</vendorCode>
+        <url>https://abv-es.ru/tovar-2CSR255180R2324.html</url>
+        <price>27593</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://abv-es.ru/images/tovar-2CSR255180R2324.jpg</picture>
+        <description>Автоматический выключатель дифференциального тока (АВДТ) DS201 C32, 100 мА, тип A (артикул 2CSR255180R2324) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>4</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">2CSR255180R2324</param>
       </offer>
       <offer id="1SBL921074R8010" available="true">
         <name>Контактор AX18-30-10-80, 18 А (AC-3), катушка управления 220–230 В AC</name>
@@ -5946,6 +5988,76 @@
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">7TCA296170R0846</param>
       </offer>
+      <offer id="00852" available="true">
+        <name>Коробка распаячная герметичная IP65, 153×110×66 мм</name>
+        <vendor>ABB</vendor>
+        <vendorCode>00852</vendorCode>
+        <url>https://abv-es.ru/tovar-00852.html</url>
+        <price>1940</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-00852.jpg</picture>
+        <description>Коробка распаячная герметичная IP65, 153×110×66 мм (артикул 00852) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>97</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">00852</param>
+      </offer>
+      <offer id="00821" available="true">
+        <name>Коробка распаячная герметичная с вводами IP55, 100×100×80 мм</name>
+        <vendor>ABB</vendor>
+        <vendorCode>00821</vendorCode>
+        <url>https://abv-es.ru/tovar-00821.html</url>
+        <price>1745</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-00821.jpg</picture>
+        <description>Коробка распаячная герметичная с вводами IP55, 100×100×80 мм (артикул 00821) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>92</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">00821</param>
+      </offer>
+      <offer id="1SPE007715F5650" available="true">
+        <name>Заглушка на 12 модулей для настенного щита Mistral41, 650 °C</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SPE007715F5650</vendorCode>
+        <url>https://abv-es.ru/tovar-1SPE007715F5650.html</url>
+        <price>806</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SPE007715F5650.jpg</picture>
+        <description>Заглушка на 12 модулей для настенного щита Mistral41, 650 °C (артикул 1SPE007715F5650) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>113</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SPE007715F5650</param>
+      </offer>
+      <offer id="1SLM004100A1921" available="true">
+        <name>Перегородка горизонтальная на 18 модулей для встраиваемого щита Mistral41</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SLM004100A1921</vendorCode>
+        <url>https://abv-es.ru/tovar-1SLM004100A1921.html</url>
+        <price>345</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SLM004100A1921.jpg</picture>
+        <description>Перегородка горизонтальная на 18 модулей для встраиваемого щита Mistral41 (артикул 1SLM004100A1921) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>95</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SLM004100A1921</param>
+      </offer>
+      <offer id="1SL0850A00" available="true">
+        <name>Коробка распаячная герметичная, пластиковые винты, IP65, 105×70×50 мм</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SL0850A00</vendorCode>
+        <url>https://abv-es.ru/tovar-1SL0850A00.html</url>
+        <price>1197</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SL0850A00.jpg</picture>
+        <description>Коробка распаячная герметичная, пластиковые винты, IP65, 105×70×50 мм (артикул 1SL0850A00) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>75</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SL0850A00</param>
+      </offer>
       <offer id="2CTB815710R5700" available="true">
         <name>Устройство защиты от импульсных перенапряжений (УЗИП) OVR H T1-T2 12.5-275s P QS</name>
         <vendor>ABB</vendor>
@@ -5959,6 +6071,20 @@
         <count>254</count>
         <manufacturer_warranty>true</manufacturer_warranty>
         <param name="Артикул">2CTB815710R5700</param>
+      </offer>
+      <offer id="1SFA619920R8053" available="true">
+        <name>Кожух защитный CA1-8053 для кнопок аварийной остановки компактной серии, жёлтый</name>
+        <vendor>ABB</vendor>
+        <vendorCode>1SFA619920R8053</vendorCode>
+        <url>https://abv-es.ru/tovar-1SFA619920R8053.html</url>
+        <price>1267</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>13</categoryId>
+        <picture>https://abv-es.ru/images/tovar-1SFA619920R8053.jpg</picture>
+        <description>Кожух защитный CA1-8053 для кнопок аварийной остановки компактной серии, жёлтый (артикул 1SFA619920R8053) — оригинальное оборудование ABB. АБВ Электросервис — сервисный центр низковольтного и средневольтного электрооборудования АББ: поставляем запасные части и комплектующие со склада в Москве и под заказ, помогаем с подбором и идентификацией аппаратов, выполняем монтаж, ремонт и обслуживание. Чтобы уточнить наличие, сроки поставки и совместимость, оставьте запрос, напишите на info@abv-es.ru или позвоните 8 (800) 250 33 92.</description>
+        <count>195</count>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <param name="Артикул">1SFA619920R8053</param>
       </offer>
     </offers>
   </shop>

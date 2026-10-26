@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<yml_catalog date="2026-10-22T16:30:00+03:00">
+<yml_catalog date="2026-10-26T14:27:42+03:00">
   <shop>
     <name>АБВ Электросервис</name>
     <company>ООО «АБВ Электросервис»</company>
@@ -491,7 +491,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1VCF339750R0321</vendorCode>
         <url>https://abv-es.ru/tovar-1VCF339750R0321.html</url>
-        <price>1585</price>
+        <price>1321</price>
         <currencyId>RUR</currencyId>
         <categoryId>5</categoryId>
         <picture>https://abv-es.ru/images/tovar-1VCF339750R0321.jpg</picture>
@@ -505,7 +505,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS211001R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS211001R0254.html</url>
-        <price>1129</price>
+        <price>941</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS211001R0254.jpg</picture>
@@ -519,7 +519,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0164.html</url>
-        <price>2039</price>
+        <price>1699</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0164.jpg</picture>
@@ -533,7 +533,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0165.html</url>
-        <price>4533</price>
+        <price>3778</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0165.jpg</picture>
@@ -547,7 +547,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS641041R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS641041R0204.html</url>
-        <price>495</price>
+        <price>413</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS641041R0204.jpg</picture>
@@ -561,7 +561,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS642041R0324</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS642041R0324.html</url>
-        <price>1268</price>
+        <price>1057</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS642041R0324.jpg</picture>
@@ -575,7 +575,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0064.html</url>
-        <price>1531</price>
+        <price>1276</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0064.jpg</picture>
@@ -589,7 +589,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS241001R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS241001R0504.html</url>
-        <price>1276</price>
+        <price>1063</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS241001R0504.jpg</picture>
@@ -603,7 +603,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0104.html</url>
-        <price>2233</price>
+        <price>1861</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0104.jpg</picture>
@@ -617,7 +617,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS241001R0634</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS241001R0634.html</url>
-        <price>1351</price>
+        <price>1126</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS241001R0634.jpg</picture>
@@ -631,7 +631,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0165.html</url>
-        <price>2243</price>
+        <price>1869</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0165.jpg</picture>
@@ -645,7 +645,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS241001R0405</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS241001R0405.html</url>
-        <price>924</price>
+        <price>770</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS241001R0405.jpg</picture>
@@ -659,7 +659,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0164.html</url>
-        <price>2700</price>
+        <price>2250</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0164.jpg</picture>
@@ -673,7 +673,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS243001R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS243001R0064.html</url>
-        <price>2402</price>
+        <price>2002</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS243001R0064.jpg</picture>
@@ -687,7 +687,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0324</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0324.html</url>
-        <price>2956</price>
+        <price>2463</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0324.jpg</picture>
@@ -701,7 +701,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0254.html</url>
-        <price>2828</price>
+        <price>2357</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0254.jpg</picture>
@@ -715,7 +715,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS642041R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS642041R0064.html</url>
-        <price>1298</price>
+        <price>1082</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS642041R0064.jpg</picture>
@@ -729,7 +729,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS244001R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS244001R0164.html</url>
-        <price>3340</price>
+        <price>2783</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS244001R0164.jpg</picture>
@@ -743,7 +743,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS244001R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS244001R0104.html</url>
-        <price>3340</price>
+        <price>2783</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS244001R0104.jpg</picture>
@@ -757,7 +757,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0634</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0634.html</url>
-        <price>3003</price>
+        <price>2503</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0634.jpg</picture>
@@ -771,7 +771,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS642041R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS642041R0504.html</url>
-        <price>1763</price>
+        <price>1469</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS642041R0504.jpg</picture>
@@ -785,7 +785,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS243001R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS243001R0504.html</url>
-        <price>4054</price>
+        <price>3378</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS243001R0504.jpg</picture>
@@ -799,7 +799,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0065</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0065.html</url>
-        <price>5434</price>
+        <price>4528</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0065.jpg</picture>
@@ -813,7 +813,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS641041R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS641041R0504.html</url>
-        <price>745</price>
+        <price>621</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS641041R0504.jpg</picture>
@@ -827,7 +827,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0064.html</url>
-        <price>13435</price>
+        <price>11196</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0064.jpg</picture>
@@ -841,7 +841,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0165.html</url>
-        <price>19658</price>
+        <price>16382</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0165.jpg</picture>
@@ -855,7 +855,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0164.html</url>
-        <price>5211</price>
+        <price>4343</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0164.jpg</picture>
@@ -869,7 +869,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS244001R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS244001R0204.html</url>
-        <price>3507</price>
+        <price>2923</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS244001R0204.jpg</picture>
@@ -883,7 +883,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0105.html</url>
-        <price>4533</price>
+        <price>3778</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0105.jpg</picture>
@@ -897,7 +897,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS211001R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS211001R0024.html</url>
-        <price>1716</price>
+        <price>1430</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS211001R0024.jpg</picture>
@@ -911,7 +911,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0204.html</url>
-        <price>2764</price>
+        <price>2303</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0204.jpg</picture>
@@ -925,7 +925,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253103R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253103R0164.html</url>
-        <price>4802</price>
+        <price>4002</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253103R0164.jpg</picture>
@@ -939,7 +939,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0024.html</url>
-        <price>7490</price>
+        <price>6242</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0024.jpg</picture>
@@ -953,7 +953,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS282001R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS282001R0164.html</url>
-        <price>13860</price>
+        <price>11550</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS282001R0164.jpg</picture>
@@ -967,7 +967,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0065</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0065.html</url>
-        <price>6086</price>
+        <price>5072</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0065.jpg</picture>
@@ -981,7 +981,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0104.html</url>
-        <price>5211</price>
+        <price>4343</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0104.jpg</picture>
@@ -995,7 +995,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0044.html</url>
-        <price>4541</price>
+        <price>3784</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0044.jpg</picture>
@@ -1009,7 +1009,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0104.html</url>
-        <price>9661</price>
+        <price>8051</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0104.jpg</picture>
@@ -1023,7 +1023,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0065</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0065.html</url>
-        <price>7420</price>
+        <price>6183</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0065.jpg</picture>
@@ -1037,7 +1037,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0255</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0255.html</url>
-        <price>15450</price>
+        <price>12875</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0255.jpg</picture>
@@ -1051,7 +1051,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS243001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS243001R0165.html</url>
-        <price>2633</price>
+        <price>2194</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS243001R0165.jpg</picture>
@@ -1065,7 +1065,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS244001R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS244001R0504.html</url>
-        <price>6263</price>
+        <price>5219</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS244001R0504.jpg</picture>
@@ -1079,7 +1079,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA281799R0361</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA281799R0361.html</url>
-        <price>7087</price>
+        <price>5906</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA281799R0361.jpg</picture>
@@ -1093,7 +1093,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0255</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0255.html</url>
-        <price>17316</price>
+        <price>14430</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0255.jpg</picture>
@@ -1107,7 +1107,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0165.html</url>
-        <price>27741</price>
+        <price>23118</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0165.jpg</picture>
@@ -1121,7 +1121,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0165.html</url>
-        <price>14430</price>
+        <price>12025</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0165.jpg</picture>
@@ -1135,7 +1135,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0034</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0034.html</url>
-        <price>7490</price>
+        <price>6242</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0034.jpg</picture>
@@ -1149,7 +1149,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0984</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0984.html</url>
-        <price>7760</price>
+        <price>6467</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0984.jpg</picture>
@@ -1163,7 +1163,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0205</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0205.html</url>
-        <price>14163</price>
+        <price>11803</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0205.jpg</picture>
@@ -1177,7 +1177,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0044.html</url>
-        <price>6261</price>
+        <price>5218</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0044.jpg</picture>
@@ -1191,7 +1191,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0105.html</url>
-        <price>1727</price>
+        <price>1439</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0105.jpg</picture>
@@ -1205,7 +1205,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0131</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0131.html</url>
-        <price>5268</price>
+        <price>4390</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0131.jpg</picture>
@@ -1219,7 +1219,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0105.html</url>
-        <price>3590</price>
+        <price>2992</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0105.jpg</picture>
@@ -1233,7 +1233,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0105.html</url>
-        <price>14430</price>
+        <price>12025</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0105.jpg</picture>
@@ -1247,7 +1247,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0014.html</url>
-        <price>8732</price>
+        <price>7277</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0014.jpg</picture>
@@ -1261,7 +1261,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0504.html</url>
-        <price>4061</price>
+        <price>3384</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0504.jpg</picture>
@@ -1275,7 +1275,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0084</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0084.html</url>
-        <price>5532</price>
+        <price>4610</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0084.jpg</picture>
@@ -1289,7 +1289,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0165.html</url>
-        <price>1727</price>
+        <price>1439</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0165.jpg</picture>
@@ -1303,7 +1303,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0065</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0065.html</url>
-        <price>16306</price>
+        <price>13588</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0065.jpg</picture>
@@ -1317,7 +1317,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0014.html</url>
-        <price>6745</price>
+        <price>5621</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0014.jpg</picture>
@@ -1331,7 +1331,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0104.html</url>
-        <price>13118</price>
+        <price>10932</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0104.jpg</picture>
@@ -1345,7 +1345,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0804</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0804.html</url>
-        <price>9349</price>
+        <price>7791</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0804.jpg</picture>
@@ -1359,7 +1359,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0134</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0134.html</url>
-        <price>6442</price>
+        <price>5368</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0134.jpg</picture>
@@ -1373,7 +1373,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0201</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0201.html</url>
-        <price>6311</price>
+        <price>5259</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0201.jpg</picture>
@@ -1387,7 +1387,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0064.html</url>
-        <price>14824</price>
+        <price>12353</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0064.jpg</picture>
@@ -1401,7 +1401,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0324</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0324.html</url>
-        <price>15742</price>
+        <price>13118</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0324.jpg</picture>
@@ -1415,7 +1415,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0321</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0321.html</url>
-        <price>5153</price>
+        <price>4294</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0321.jpg</picture>
@@ -1429,7 +1429,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0974</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0974.html</url>
-        <price>4093</price>
+        <price>3411</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0974.jpg</picture>
@@ -1443,7 +1443,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0278</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0278.html</url>
-        <price>13097</price>
+        <price>10914</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0278.jpg</picture>
@@ -1457,7 +1457,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0024.html</url>
-        <price>14824</price>
+        <price>12353</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0024.jpg</picture>
@@ -1471,7 +1471,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0504.html</url>
-        <price>22018</price>
+        <price>18348</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0504.jpg</picture>
@@ -1485,7 +1485,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS243001R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS243001R0104.html</url>
-        <price>2290</price>
+        <price>1908</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS243001R0104.jpg</picture>
@@ -1499,7 +1499,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0105.html</url>
-        <price>2456</price>
+        <price>2047</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0105.jpg</picture>
@@ -1513,7 +1513,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0135</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0135.html</url>
-        <price>16094</price>
+        <price>13412</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0135.jpg</picture>
@@ -1527,7 +1527,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA281799R0101</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA281799R0101.html</url>
-        <price>5899</price>
+        <price>4916</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA281799R0101.jpg</picture>
@@ -1541,7 +1541,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0404</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0404.html</url>
-        <price>3090</price>
+        <price>2575</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0404.jpg</picture>
@@ -1555,7 +1555,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0467</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0467.html</url>
-        <price>19016</price>
+        <price>15847</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0467.jpg</picture>
@@ -1569,7 +1569,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS274001R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS274001R0164.html</url>
-        <price>23316</price>
+        <price>19430</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS274001R0164.jpg</picture>
@@ -1583,7 +1583,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0254.html</url>
-        <price>15742</price>
+        <price>13118</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0254.jpg</picture>
@@ -1597,7 +1597,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0634</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0634.html</url>
-        <price>2539</price>
+        <price>2116</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0634.jpg</picture>
@@ -1611,7 +1611,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS282001R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS282001R0064.html</url>
-        <price>14334</price>
+        <price>11945</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS282001R0064.jpg</picture>
@@ -1625,7 +1625,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0428</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0428.html</url>
-        <price>3905</price>
+        <price>3254</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0428.jpg</picture>
@@ -1639,7 +1639,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0064.html</url>
-        <price>21786</price>
+        <price>18155</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0064.jpg</picture>
@@ -1653,7 +1653,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0014.html</url>
-        <price>15115</price>
+        <price>12596</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0014.jpg</picture>
@@ -1667,7 +1667,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0321</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0321.html</url>
-        <price>38045</price>
+        <price>31704</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0321.jpg</picture>
@@ -1681,7 +1681,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0131</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0131.html</url>
-        <price>23125</price>
+        <price>19271</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0131.jpg</picture>
@@ -1695,7 +1695,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0254.html</url>
-        <price>6261</price>
+        <price>5218</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0254.jpg</picture>
@@ -1709,7 +1709,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0338</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0338.html</url>
-        <price>26981</price>
+        <price>22484</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0338.jpg</picture>
@@ -1723,7 +1723,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS254001R0161</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS254001R0161.html</url>
-        <price>19896</price>
+        <price>16580</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS254001R0161.jpg</picture>
@@ -1737,7 +1737,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0504</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0504.html</url>
-        <price>21272</price>
+        <price>17727</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0504.jpg</picture>
@@ -1751,7 +1751,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0014.html</url>
-        <price>8852</price>
+        <price>7377</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0014.jpg</picture>
@@ -1765,7 +1765,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0631</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0631.html</url>
-        <price>79260</price>
+        <price>66050</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0631.jpg</picture>
@@ -1779,7 +1779,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0427</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0427.html</url>
-        <price>19016</price>
+        <price>15847</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0427.jpg</picture>
@@ -1793,7 +1793,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0101</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0101.html</url>
-        <price>33923</price>
+        <price>28269</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0101.jpg</picture>
@@ -1807,7 +1807,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS211001R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS211001R0044.html</url>
-        <price>1715</price>
+        <price>1429</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS211001R0044.jpg</picture>
@@ -1821,7 +1821,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0044.html</url>
-        <price>21367</price>
+        <price>17806</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0044.jpg</picture>
@@ -1835,7 +1835,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0161</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0161.html</url>
-        <price>21367</price>
+        <price>17806</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0161.jpg</picture>
@@ -1849,7 +1849,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0161</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0161.html</url>
-        <price>18129</price>
+        <price>15108</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0161.jpg</picture>
@@ -1863,7 +1863,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0204.html</url>
-        <price>19658</price>
+        <price>16382</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0204.jpg</picture>
@@ -1877,7 +1877,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0378</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0378.html</url>
-        <price>25879</price>
+        <price>21566</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0378.jpg</picture>
@@ -1891,7 +1891,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS282001R0277</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS282001R0277.html</url>
-        <price>21621</price>
+        <price>18018</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS282001R0277.jpg</picture>
@@ -1905,7 +1905,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS254001R0205</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS254001R0205.html</url>
-        <price>12415</price>
+        <price>10346</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS254001R0205.jpg</picture>
@@ -1919,7 +1919,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0024.html</url>
-        <price>21367</price>
+        <price>17806</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0024.jpg</picture>
@@ -1933,7 +1933,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0501</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0501.html</url>
-        <price>8621</price>
+        <price>7184</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0501.jpg</picture>
@@ -1947,7 +1947,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0014.html</url>
-        <price>21786</price>
+        <price>18155</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0014.jpg</picture>
@@ -1961,7 +1961,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0044.html</url>
-        <price>11604</price>
+        <price>9670</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0044.jpg</picture>
@@ -1975,7 +1975,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0024.html</url>
-        <price>4541</price>
+        <price>3784</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0024.jpg</picture>
@@ -1989,7 +1989,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0251</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0251.html</url>
-        <price>38045</price>
+        <price>31704</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0251.jpg</picture>
@@ -2003,7 +2003,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS254001R0105</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS254001R0105.html</url>
-        <price>13533</price>
+        <price>11278</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS254001R0105.jpg</picture>
@@ -2017,7 +2017,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0405</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0405.html</url>
-        <price>18759</price>
+        <price>15633</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0405.jpg</picture>
@@ -2031,7 +2031,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281103R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281103R0064.html</url>
-        <price>15979</price>
+        <price>13316</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281103R0064.jpg</picture>
@@ -2045,7 +2045,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS241001R0635</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS241001R0635.html</url>
-        <price>1554</price>
+        <price>1295</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS241001R0635.jpg</picture>
@@ -2059,7 +2059,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0251</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0251.html</url>
-        <price>21494</price>
+        <price>17912</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0251.jpg</picture>
@@ -2073,7 +2073,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJF1101903R0001</vendorCode>
         <url>https://abv-es.ru/tovar-GJF1101903R0001.html</url>
-        <price>761</price>
+        <price>634</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJF1101903R0001.jpg</picture>
@@ -2087,7 +2087,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253103R0634</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253103R0634.html</url>
-        <price>10944</price>
+        <price>9120</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253103R0634.jpg</picture>
@@ -2101,7 +2101,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0135</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0135.html</url>
-        <price>1527</price>
+        <price>1273</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0135.jpg</picture>
@@ -2115,7 +2115,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0101</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0101.html</url>
-        <price>18129</price>
+        <price>15108</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0101.jpg</picture>
@@ -2129,7 +2129,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0377</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0377.html</url>
-        <price>21648</price>
+        <price>18040</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0377.jpg</picture>
@@ -2143,7 +2143,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0321</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0321.html</url>
-        <price>25640</price>
+        <price>21367</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0321.jpg</picture>
@@ -2157,7 +2157,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0031</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0031.html</url>
-        <price>30007</price>
+        <price>25006</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0031.jpg</picture>
@@ -2171,7 +2171,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0317</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0317.html</url>
-        <price>21648</price>
+        <price>18040</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0317.jpg</picture>
@@ -2185,7 +2185,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271065R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271065R0164.html</url>
-        <price>11103</price>
+        <price>9253</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271065R0164.jpg</picture>
@@ -2199,7 +2199,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0984</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0984.html</url>
-        <price>17474</price>
+        <price>14562</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0984.jpg</picture>
@@ -2213,7 +2213,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0324</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0324.html</url>
-        <price>8732</price>
+        <price>7277</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0324.jpg</picture>
@@ -2227,7 +2227,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0024.html</url>
-        <price>34346</price>
+        <price>28622</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0024.jpg</picture>
@@ -2241,7 +2241,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0021</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0021.html</url>
-        <price>18893</price>
+        <price>15744</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0021.jpg</picture>
@@ -2255,7 +2255,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0254.html</url>
-        <price>2441</price>
+        <price>2034</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0254.jpg</picture>
@@ -2269,7 +2269,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0318</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0318.html</url>
-        <price>25879</price>
+        <price>21566</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0318.jpg</picture>
@@ -2283,7 +2283,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273001R0501</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273001R0501.html</url>
-        <price>40597</price>
+        <price>33831</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273001R0501.jpg</picture>
@@ -2297,7 +2297,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0084</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0084.html</url>
-        <price>3737</price>
+        <price>3114</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0084.jpg</picture>
@@ -2311,7 +2311,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0401</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0401.html</url>
-        <price>13537</price>
+        <price>11281</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0401.jpg</picture>
@@ -2325,7 +2325,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0164</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0164.html</url>
-        <price>18155</price>
+        <price>15129</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0164.jpg</picture>
@@ -2339,7 +2339,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS254001R0165</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS254001R0165.html</url>
-        <price>12415</price>
+        <price>10346</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS254001R0165.jpg</picture>
@@ -2353,7 +2353,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0034</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0034.html</url>
-        <price>14824</price>
+        <price>12353</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0034.jpg</picture>
@@ -2367,7 +2367,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS644041R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS644041R0104.html</url>
-        <price>2700</price>
+        <price>2250</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS644041R0104.jpg</picture>
@@ -2381,7 +2381,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273061R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273061R0024.html</url>
-        <price>23608</price>
+        <price>19673</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273061R0024.jpg</picture>
@@ -2395,7 +2395,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0014</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0014.html</url>
-        <price>4541</price>
+        <price>3784</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0014.jpg</picture>
@@ -2409,7 +2409,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS282001R0377</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS282001R0377.html</url>
-        <price>21621</price>
+        <price>18018</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS282001R0377.jpg</picture>
@@ -2423,7 +2423,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0278</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0278.html</url>
-        <price>41839</price>
+        <price>34866</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0278.jpg</picture>
@@ -2437,7 +2437,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0011</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0011.html</url>
-        <price>5268</price>
+        <price>4390</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0011.jpg</picture>
@@ -2451,7 +2451,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273061R0337</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273061R0337.html</url>
-        <price>32759</price>
+        <price>27299</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273061R0337.jpg</picture>
@@ -2465,7 +2465,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272061R0577</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272061R0577.html</url>
-        <price>51162</price>
+        <price>42635</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272061R0577.jpg</picture>
@@ -2479,7 +2479,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0501</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0501.html</url>
-        <price>27202</price>
+        <price>22668</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0501.jpg</picture>
@@ -2493,7 +2493,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0205</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0205.html</url>
-        <price>1813</price>
+        <price>1511</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0205.jpg</picture>
@@ -2507,7 +2507,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0258</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0258.html</url>
-        <price>21505</price>
+        <price>17921</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0258.jpg</picture>
@@ -2521,7 +2521,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0204.html</url>
-        <price>5969</price>
+        <price>4974</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0204.jpg</picture>
@@ -2535,7 +2535,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0021</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0021.html</url>
-        <price>30833</price>
+        <price>25694</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0021.jpg</picture>
@@ -2549,7 +2549,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271001R0255</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271001R0255.html</url>
-        <price>6745</price>
+        <price>5621</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271001R0255.jpg</picture>
@@ -2563,7 +2563,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS283001R0201</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS283001R0201.html</url>
-        <price>36459</price>
+        <price>30383</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS283001R0201.jpg</picture>
@@ -2577,7 +2577,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0255</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0255.html</url>
-        <price>9168</price>
+        <price>7640</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0255.jpg</picture>
@@ -2591,7 +2591,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0064.html</url>
-        <price>6745</price>
+        <price>5621</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0064.jpg</picture>
@@ -2605,7 +2605,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0104</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0104.html</url>
-        <price>5969</price>
+        <price>4974</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0104.jpg</picture>
@@ -2619,7 +2619,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0024</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0024.html</url>
-        <price>11604</price>
+        <price>9670</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0024.jpg</picture>
@@ -2633,7 +2633,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251103R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251103R0064.html</url>
-        <price>2802</price>
+        <price>2335</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251103R0064.jpg</picture>
@@ -2647,7 +2647,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS253001R0041</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS253001R0041.html</url>
-        <price>30833</price>
+        <price>25694</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS253001R0041.jpg</picture>
@@ -2661,7 +2661,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS251001R0021</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS251001R0021.html</url>
-        <price>2902</price>
+        <price>2418</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS251001R0021.jpg</picture>
@@ -2675,7 +2675,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDD643051R0063</vendorCode>
         <url>https://abv-es.ru/tovar-2CDD643051R0063.html</url>
-        <price>4521</price>
+        <price>3768</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDD643051R0063.jpg</picture>
@@ -2689,7 +2689,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS273061R0044</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS273061R0044.html</url>
-        <price>23608</price>
+        <price>19673</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS273061R0044.jpg</picture>
@@ -2703,7 +2703,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS281001R0404</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS281001R0404.html</url>
-        <price>10672</price>
+        <price>8893</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS281001R0404.jpg</picture>
@@ -2717,7 +2717,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0325</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0325.html</url>
-        <price>2365</price>
+        <price>1971</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0325.jpg</picture>
@@ -2731,7 +2731,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS282001R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS282001R0254.html</url>
-        <price>17325</price>
+        <price>14438</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS282001R0254.jpg</picture>
@@ -2745,7 +2745,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDD642051R0063</vendorCode>
         <url>https://abv-es.ru/tovar-2CDD642051R0063.html</url>
-        <price>3827</price>
+        <price>3189</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDD642051R0063.jpg</picture>
@@ -2759,7 +2759,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS272001R0065</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS272001R0065.html</url>
-        <price>15450</price>
+        <price>12875</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS272001R0065.jpg</picture>
@@ -2773,7 +2773,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDD641051R0063</vendorCode>
         <url>https://abv-es.ru/tovar-2CDD641051R0063.html</url>
-        <price>2341</price>
+        <price>1951</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDD641051R0063.jpg</picture>
@@ -2787,7 +2787,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0321</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0321.html</url>
-        <price>22666</price>
+        <price>18888</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0321.jpg</picture>
@@ -2801,7 +2801,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDD644051R0016</vendorCode>
         <url>https://abv-es.ru/tovar-2CDD644051R0016.html</url>
-        <price>3475</price>
+        <price>2896</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDD644051R0016.jpg</picture>
@@ -2815,7 +2815,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0824</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0824.html</url>
-        <price>20592</price>
+        <price>17160</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0824.jpg</picture>
@@ -2829,7 +2829,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS252001R0501</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS252001R0501.html</url>
-        <price>18467</price>
+        <price>15389</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS252001R0501.jpg</picture>
@@ -2843,7 +2843,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271061R0254</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271061R0254.html</url>
-        <price>7163</price>
+        <price>5969</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271061R0254.jpg</picture>
@@ -2857,7 +2857,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0361</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0361.html</url>
-        <price>21760</price>
+        <price>18133</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0361.jpg</picture>
@@ -2871,7 +2871,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS274001R0634</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS274001R0634.html</url>
-        <price>48964</price>
+        <price>40803</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS274001R0634.jpg</picture>
@@ -2885,7 +2885,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDD643051R0016</vendorCode>
         <url>https://abv-es.ru/tovar-2CDD643051R0016.html</url>
-        <price>2593</price>
+        <price>2161</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDD643051R0016.jpg</picture>
@@ -2899,7 +2899,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDA283799R0401</vendorCode>
         <url>https://abv-es.ru/tovar-2CDA283799R0401.html</url>
-        <price>23571</price>
+        <price>19643</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDA283799R0401.jpg</picture>
@@ -2913,7 +2913,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS254001R0034</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS254001R0034.html</url>
-        <price>19028</price>
+        <price>15857</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS254001R0034.jpg</picture>
@@ -2927,7 +2927,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS242001R0255</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS242001R0255.html</url>
-        <price>1727</price>
+        <price>1439</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS242001R0255.jpg</picture>
@@ -2941,7 +2941,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CDS271103R0204</vendorCode>
         <url>https://abv-es.ru/tovar-2CDS271103R0204.html</url>
-        <price>10733</price>
+        <price>8944</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CDS271103R0204.jpg</picture>
@@ -2955,7 +2955,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSM200983R1801</vendorCode>
         <url>https://abv-es.ru/tovar-2CSM200983R1801.html</url>
-        <price>1463</price>
+        <price>1219</price>
         <currencyId>RUR</currencyId>
         <categoryId>6</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSM200983R1801.jpg</picture>
@@ -2969,7 +2969,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF602041R1250</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF602041R1250.html</url>
-        <price>4016</price>
+        <price>3347</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF602041R1250.jpg</picture>
@@ -2983,7 +2983,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR645041R1204</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR645041R1204.html</url>
-        <price>4736</price>
+        <price>3947</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR645041R1204.jpg</picture>
@@ -2997,7 +2997,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF202001R3630</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF202001R3630.html</url>
-        <price>16894</price>
+        <price>14078</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF202001R3630.jpg</picture>
@@ -3011,7 +3011,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R2104</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R2104.html</url>
-        <price>20770</price>
+        <price>17308</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R2104.jpg</picture>
@@ -3025,7 +3025,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR245180R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR245180R0064.html</url>
-        <price>17919</price>
+        <price>14933</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR245180R0064.jpg</picture>
@@ -3039,7 +3039,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR245140R0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR245140R0064.html</url>
-        <price>13762</price>
+        <price>11468</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR245140R0064.jpg</picture>
@@ -3053,7 +3053,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R1165</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R1165.html</url>
-        <price>24426</price>
+        <price>20355</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R1165.jpg</picture>
@@ -3067,7 +3067,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R1105</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R1105.html</url>
-        <price>24426</price>
+        <price>20355</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R1105.jpg</picture>
@@ -3081,7 +3081,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR245080R3064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR245080R3064.html</url>
-        <price>21444</price>
+        <price>17870</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR245080R3064.jpg</picture>
@@ -3095,7 +3095,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR272140R1104</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR272140R1104.html</url>
-        <price>29422</price>
+        <price>24518</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR272140R1104.jpg</picture>
@@ -3109,7 +3109,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255080R1105</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255080R1105.html</url>
-        <price>19961</price>
+        <price>16634</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255080R1105.jpg</picture>
@@ -3123,7 +3123,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR245080R1064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR245080R1064.html</url>
-        <price>14687</price>
+        <price>12239</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR245080R1064.jpg</picture>
@@ -3137,7 +3137,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF602042R2250</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF602042R2250.html</url>
-        <price>9057</price>
+        <price>7548</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF602042R2250.jpg</picture>
@@ -3151,7 +3151,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF604041R1630</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF604041R1630.html</url>
-        <price>10545</price>
+        <price>8788</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF604041R1630.jpg</picture>
@@ -3165,7 +3165,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF202201R3630</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF202201R3630.html</url>
-        <price>25256</price>
+        <price>21047</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF202201R3630.jpg</picture>
@@ -3179,7 +3179,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF602043R3250</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF602043R3250.html</url>
-        <price>7866</price>
+        <price>6555</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF602043R3250.jpg</picture>
@@ -3193,7 +3193,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255150R1204</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255150R1204.html</url>
-        <price>11838</price>
+        <price>9865</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255150R1204.jpg</picture>
@@ -3207,7 +3207,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR272140R1064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR272140R1064.html</url>
-        <price>31654</price>
+        <price>26378</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR272140R1064.jpg</picture>
@@ -3221,7 +3221,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R1205</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R1205.html</url>
-        <price>24426</price>
+        <price>20355</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R1205.jpg</picture>
@@ -3235,7 +3235,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF202001R2250</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF202001R2250.html</url>
-        <price>10458</price>
+        <price>8715</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF202001R2250.jpg</picture>
@@ -3249,7 +3249,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255080R1065</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255080R1065.html</url>
-        <price>19961</price>
+        <price>16634</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255080R1065.jpg</picture>
@@ -3263,7 +3263,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR245072R1404</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR245072R1404.html</url>
-        <price>11762</price>
+        <price>9802</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR245072R1404.jpg</picture>
@@ -3277,7 +3277,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR645041R1064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR645041R1064.html</url>
-        <price>6259</price>
+        <price>5216</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR645041R1064.jpg</picture>
@@ -3291,7 +3291,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA255103R1164</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA255103R1164.html</url>
-        <price>42144</price>
+        <price>35120</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA255103R1164.jpg</picture>
@@ -3305,7 +3305,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF202201R3900</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF202201R3900.html</url>
-        <price>40251</price>
+        <price>33543</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF202201R3900.jpg</picture>
@@ -3319,7 +3319,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR246440R1254</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR246440R1254.html</url>
-        <price>57002</price>
+        <price>47502</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR246440R1254.jpg</picture>
@@ -3333,7 +3333,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA255103R1165</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA255103R1165.html</url>
-        <price>44671</price>
+        <price>37226</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA255103R1165.jpg</picture>
@@ -3347,7 +3347,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA275103R1164</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA275103R1164.html</url>
-        <price>50576</price>
+        <price>42147</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA275103R1164.jpg</picture>
@@ -3361,7 +3361,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA275103R1165</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA275103R1165.html</url>
-        <price>53609</price>
+        <price>44674</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA275103R1165.jpg</picture>
@@ -3375,7 +3375,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R1044</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R1044.html</url>
-        <price>30544</price>
+        <price>25453</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R1044.jpg</picture>
@@ -3389,7 +3389,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSF202201R2630</vendorCode>
         <url>https://abv-es.ru/tovar-2CSF202201R2630.html</url>
-        <price>24053</price>
+        <price>20044</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSF202201R2630.jpg</picture>
@@ -3403,7 +3403,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA255103R1104</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA255103R1104.html</url>
-        <price>42144</price>
+        <price>35120</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA255103R1104.jpg</picture>
@@ -3417,7 +3417,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA255103R1105</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA255103R1105.html</url>
-        <price>44671</price>
+        <price>37226</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA255103R1105.jpg</picture>
@@ -3431,7 +3431,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA275103R1104</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA275103R1104.html</url>
-        <price>50576</price>
+        <price>42147</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA275103R1104.jpg</picture>
@@ -3445,7 +3445,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R3165</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R3165.html</url>
-        <price>32242</price>
+        <price>26868</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R3165.jpg</picture>
@@ -3459,7 +3459,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR274001R1164</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR274001R1164.html</url>
-        <price>77500</price>
+        <price>64583</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR274001R1164.jpg</picture>
@@ -3473,7 +3473,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255188R1105</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255188R1105.html</url>
-        <price>31094</price>
+        <price>25912</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255188R1105.jpg</picture>
@@ -3487,7 +3487,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSA255103R1204</vendorCode>
         <url>https://abv-es.ru/tovar-2CSA255103R1204.html</url>
-        <price>42144</price>
+        <price>35120</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSA255103R1204.jpg</picture>
@@ -3501,7 +3501,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR252140R3164</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR252140R3164.html</url>
-        <price>32326</price>
+        <price>26938</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR252140R3164.jpg</picture>
@@ -3515,7 +3515,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255080R1205</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255080R1205.html</url>
-        <price>19961</price>
+        <price>16634</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255080R1205.jpg</picture>
@@ -3529,7 +3529,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR275080R1064</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR275080R1064.html</url>
-        <price>23867</price>
+        <price>19889</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR275080R1064.jpg</picture>
@@ -3543,7 +3543,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR275180R1105</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR275180R1105.html</url>
-        <price>31211</price>
+        <price>26009</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR275180R1105.jpg</picture>
@@ -3557,7 +3557,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CSR255180R2324</vendorCode>
         <url>https://abv-es.ru/tovar-2CSR255180R2324.html</url>
-        <price>27593</price>
+        <price>22994</price>
         <currencyId>RUR</currencyId>
         <categoryId>7</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CSR255180R2324.jpg</picture>
@@ -3571,7 +3571,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL921074R8010</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL921074R8010.html</url>
-        <price>5884</price>
+        <price>4903</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL921074R8010.jpg</picture>
@@ -3585,7 +3585,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL931074R8410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL931074R8410.html</url>
-        <price>11735</price>
+        <price>9779</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL931074R8410.jpg</picture>
@@ -3599,7 +3599,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL901074R8010</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL901074R8010.html</url>
-        <price>4461</price>
+        <price>3718</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL901074R8010.jpg</picture>
@@ -3613,7 +3613,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL921074R8410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL921074R8410.html</url>
-        <price>7220</price>
+        <price>6017</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL921074R8410.jpg</picture>
@@ -3627,7 +3627,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL137501R1300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL137501R1300.html</url>
-        <price>9523</price>
+        <price>7936</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL137501R1300.jpg</picture>
@@ -3641,7 +3641,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJL1211201R8000</vendorCode>
         <url>https://abv-es.ru/tovar-GJL1211201R8000.html</url>
-        <price>6368</price>
+        <price>5307</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJL1211201R8000.jpg</picture>
@@ -3655,7 +3655,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJL1211001R8100</vendorCode>
         <url>https://abv-es.ru/tovar-GJL1211001R8100.html</url>
-        <price>4877</price>
+        <price>4064</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJL1211001R8100.jpg</picture>
@@ -3669,7 +3669,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBH137001R1340</vendorCode>
         <url>https://abv-es.ru/tovar-1SBH137001R1340.html</url>
-        <price>7209</price>
+        <price>6008</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBH137001R1340.jpg</picture>
@@ -3683,7 +3683,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL176560R2200</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL176560R2200.html</url>
-        <price>25574</price>
+        <price>21312</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL176560R2200.jpg</picture>
@@ -3697,7 +3697,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL176561R2100</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL176561R2100.html</url>
-        <price>23253</price>
+        <price>19378</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL176561R2100.jpg</picture>
@@ -3711,7 +3711,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJH1211001R8220</vendorCode>
         <url>https://abv-es.ru/tovar-GJH1211001R8220.html</url>
-        <price>4830</price>
+        <price>4025</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJH1211001R8220.jpg</picture>
@@ -3725,7 +3725,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL156001R2301</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL156001R2301.html</url>
-        <price>12337</price>
+        <price>10281</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL156001R2301.jpg</picture>
@@ -3739,7 +3739,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL237081R1300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL237081R1300.html</url>
-        <price>3868</price>
+        <price>3223</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL237081R1300.jpg</picture>
@@ -3753,7 +3753,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJH1213001R0405</vendorCode>
         <url>https://abv-es.ru/tovar-GJH1213001R0405.html</url>
-        <price>5491</price>
+        <price>4576</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJH1213001R0405.jpg</picture>
@@ -3767,7 +3767,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL321074R8410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL321074R8410.html</url>
-        <price>21151</price>
+        <price>17626</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL321074R8410.jpg</picture>
@@ -3781,7 +3781,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL347001R1300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL347001R1300.html</url>
-        <price>26937</price>
+        <price>22448</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL347001R1300.jpg</picture>
@@ -3795,7 +3795,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL136061R2110</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL136061R2110.html</url>
-        <price>13740</price>
+        <price>11450</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL136061R2110.jpg</picture>
@@ -3809,7 +3809,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL177281R1300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL177281R1300.html</url>
-        <price>6045</price>
+        <price>5038</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL177281R1300.jpg</picture>
@@ -3823,7 +3823,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL281074R8410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL281074R8410.html</url>
-        <price>13995</price>
+        <price>11663</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL281074R8410.jpg</picture>
@@ -3837,7 +3837,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL176001R2310</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL176001R2310.html</url>
-        <price>16423</price>
+        <price>13686</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL176001R2310.jpg</picture>
@@ -3851,7 +3851,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL136061R2101</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL136061R2101.html</url>
-        <price>14047</price>
+        <price>11706</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL136061R2101.jpg</picture>
@@ -3865,7 +3865,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL136260R2200</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL136260R2200.html</url>
-        <price>15669</price>
+        <price>13058</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL136260R2200.jpg</picture>
@@ -3879,7 +3879,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL137501R1100</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL137501R1100.html</url>
-        <price>9704</price>
+        <price>8087</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL137501R1100.jpg</picture>
@@ -3893,7 +3893,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL137001R1410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL137001R1410.html</url>
-        <price>6245</price>
+        <price>5204</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL137001R1410.jpg</picture>
@@ -3907,7 +3907,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJH1211001R8225</vendorCode>
         <url>https://abv-es.ru/tovar-GJH1211001R8225.html</url>
-        <price>4900</price>
+        <price>4083</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJH1211001R8225.jpg</picture>
@@ -3921,7 +3921,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL236060R2200</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL236060R2200.html</url>
-        <price>30302</price>
+        <price>25252</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL236060R2200.jpg</picture>
@@ -3935,7 +3935,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL157001R1410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL157001R1410.html</url>
-        <price>10881</price>
+        <price>9068</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL157001R1410.jpg</picture>
@@ -3949,7 +3949,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL136060R2210</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL136060R2210.html</url>
-        <price>15040</price>
+        <price>12533</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL136060R2210.jpg</picture>
@@ -3963,7 +3963,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL347001R1311</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL347001R1311.html</url>
-        <price>31109</price>
+        <price>25924</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL347001R1311.jpg</picture>
@@ -3977,7 +3977,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL177001R1410</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL177001R1410.html</url>
-        <price>10834</price>
+        <price>9028</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL177001R1410.jpg</picture>
@@ -3991,7 +3991,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL177201R1300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL177201R1300.html</url>
-        <price>11253</price>
+        <price>9378</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL177201R1300.jpg</picture>
@@ -4005,7 +4005,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJL1211901R8100</vendorCode>
         <url>https://abv-es.ru/tovar-GJL1211901R8100.html</url>
-        <price>10389</price>
+        <price>8658</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJL1211901R8100.jpg</picture>
@@ -4019,7 +4019,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJL1211001R0011</vendorCode>
         <url>https://abv-es.ru/tovar-GJL1211001R0011.html</url>
-        <price>4923</price>
+        <price>4103</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJL1211001R0011.jpg</picture>
@@ -4033,7 +4033,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL176501R2100</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL176501R2100.html</url>
-        <price>20415</price>
+        <price>17013</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL176501R2100.jpg</picture>
@@ -4047,7 +4047,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL296060R2300</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL296060R2300.html</url>
-        <price>46655</price>
+        <price>38879</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL296060R2300.jpg</picture>
@@ -4061,7 +4061,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SAM201911R1010</vendorCode>
         <url>https://abv-es.ru/tovar-1SAM201911R1010.html</url>
-        <price>4192</price>
+        <price>3493</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SAM201911R1010.jpg</picture>
@@ -4075,7 +4075,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBL157001R1101</vendorCode>
         <url>https://abv-es.ru/tovar-1SBL157001R1101.html</url>
-        <price>11273</price>
+        <price>9394</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBL157001R1101.jpg</picture>
@@ -4089,7 +4089,7 @@
         <vendor>ABB</vendor>
         <vendorCode>GJL1211001R0101</vendorCode>
         <url>https://abv-es.ru/tovar-GJL1211001R0101.html</url>
-        <price>4923</price>
+        <price>4103</price>
         <currencyId>RUR</currencyId>
         <categoryId>8</categoryId>
         <picture>https://abv-es.ru/images/tovar-GJL1211001R0101.jpg</picture>
@@ -4103,7 +4103,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6018</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6018.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6018.jpg</picture>
@@ -4117,7 +4117,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6068</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6068.html</url>
-        <price>1015</price>
+        <price>846</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6068.jpg</picture>
@@ -4131,7 +4131,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6001.html</url>
-        <price>1534</price>
+        <price>1278</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6001.jpg</picture>
@@ -4145,7 +4145,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6001.html</url>
-        <price>658</price>
+        <price>548</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6001.jpg</picture>
@@ -4159,7 +4159,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6017.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6017.jpg</picture>
@@ -4173,7 +4173,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6017.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6017.jpg</picture>
@@ -4187,7 +4187,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6001.html</url>
-        <price>2146</price>
+        <price>1788</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6001.jpg</picture>
@@ -4201,7 +4201,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6003</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6003.html</url>
-        <price>658</price>
+        <price>548</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6003.jpg</picture>
@@ -4215,7 +4215,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6017.html</url>
-        <price>1495</price>
+        <price>1246</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6017.jpg</picture>
@@ -4229,7 +4229,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6016.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6016.jpg</picture>
@@ -4243,7 +4243,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2139</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2139.html</url>
-        <price>710</price>
+        <price>592</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2139.jpg</picture>
@@ -4257,7 +4257,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6017.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6017.jpg</picture>
@@ -4271,7 +4271,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6062.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6062.jpg</picture>
@@ -4285,7 +4285,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580151C4500</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580151C4500.html</url>
-        <price>1070</price>
+        <price>892</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580151C4500.jpg</picture>
@@ -4299,7 +4299,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6016.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6016.jpg</picture>
@@ -4313,7 +4313,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6001.html</url>
-        <price>1083</price>
+        <price>903</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6001.jpg</picture>
@@ -4327,7 +4327,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6062.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6062.jpg</picture>
@@ -4341,7 +4341,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2153</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2153.html</url>
-        <price>1706</price>
+        <price>1422</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2153.jpg</picture>
@@ -4355,7 +4355,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6018</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6018.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6018.jpg</picture>
@@ -4369,7 +4369,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6068</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6068.html</url>
-        <price>1671</price>
+        <price>1393</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6068.jpg</picture>
@@ -4383,7 +4383,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4065</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4065.html</url>
-        <price>47</price>
+        <price>39</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4065.jpg</picture>
@@ -4397,7 +4397,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6003</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6003.html</url>
-        <price>1083</price>
+        <price>903</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6003.jpg</picture>
@@ -4411,7 +4411,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2141</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2141.html</url>
-        <price>1174</price>
+        <price>978</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2141.jpg</picture>
@@ -4425,7 +4425,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4067</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4067.html</url>
-        <price>48</price>
+        <price>40</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4067.jpg</picture>
@@ -4439,7 +4439,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580654C4500</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580654C4500.html</url>
-        <price>1529</price>
+        <price>1274</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580654C4500.jpg</picture>
@@ -4453,7 +4453,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6001.html</url>
-        <price>1289</price>
+        <price>1074</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6001.jpg</picture>
@@ -4467,7 +4467,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6062.html</url>
-        <price>1495</price>
+        <price>1246</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6062.jpg</picture>
@@ -4481,7 +4481,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6063</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6063.html</url>
-        <price>1015</price>
+        <price>846</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6063.jpg</picture>
@@ -4495,7 +4495,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6069</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6069.html</url>
-        <price>1015</price>
+        <price>846</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6069.jpg</picture>
@@ -4509,7 +4509,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6062.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6062.jpg</picture>
@@ -4523,7 +4523,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN582552C4500</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN582552C4500.html</url>
-        <price>1440</price>
+        <price>1200</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN582552C4500.jpg</picture>
@@ -4537,7 +4537,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6016.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6016.jpg</picture>
@@ -4551,7 +4551,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6062.html</url>
-        <price>2489</price>
+        <price>2074</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6062.jpg</picture>
@@ -4565,7 +4565,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6063</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6063.html</url>
-        <price>2368</price>
+        <price>1973</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6063.jpg</picture>
@@ -4579,7 +4579,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6070</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6070.html</url>
-        <price>2368</price>
+        <price>1973</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6070.jpg</picture>
@@ -4593,7 +4593,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6064</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6064.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6064.jpg</picture>
@@ -4607,7 +4607,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6070</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6070.html</url>
-        <price>1015</price>
+        <price>846</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6070.jpg</picture>
@@ -4621,7 +4621,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6017.html</url>
-        <price>2489</price>
+        <price>2074</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6017.jpg</picture>
@@ -4635,7 +4635,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580551C4500</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580551C4500.html</url>
-        <price>1303</price>
+        <price>1086</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580551C4500.jpg</picture>
@@ -4649,7 +4649,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580151C4517</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580151C4517.html</url>
-        <price>1180</price>
+        <price>983</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580151C4517.jpg</picture>
@@ -4663,7 +4663,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6063</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6063.html</url>
-        <price>1671</price>
+        <price>1393</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6063.jpg</picture>
@@ -4677,7 +4677,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6065</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6065.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6065.jpg</picture>
@@ -4691,7 +4691,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6069</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6069.html</url>
-        <price>1671</price>
+        <price>1393</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6069.jpg</picture>
@@ -4705,7 +4705,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6070</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6070.html</url>
-        <price>1671</price>
+        <price>1393</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6070.jpg</picture>
@@ -4719,7 +4719,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6016.html</url>
-        <price>2489</price>
+        <price>2074</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6016.jpg</picture>
@@ -4733,7 +4733,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6018</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6018.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6018.jpg</picture>
@@ -4747,7 +4747,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6016.html</url>
-        <price>1495</price>
+        <price>1246</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6016.jpg</picture>
@@ -4761,7 +4761,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6069</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6069.html</url>
-        <price>2368</price>
+        <price>1973</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6069.jpg</picture>
@@ -4775,7 +4775,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4016</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4016.html</url>
-        <price>50</price>
+        <price>42</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4016.jpg</picture>
@@ -4789,7 +4789,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6066</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6066.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6066.jpg</picture>
@@ -4803,7 +4803,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN582552C4517</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN582552C4517.html</url>
-        <price>1584</price>
+        <price>1320</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN582552C4517.jpg</picture>
@@ -4817,7 +4817,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6066</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6066.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6066.jpg</picture>
@@ -4831,7 +4831,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4017</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4017.html</url>
-        <price>49</price>
+        <price>41</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4017.jpg</picture>
@@ -4845,7 +4845,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580654C4517</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580654C4517.html</url>
-        <price>1680</price>
+        <price>1400</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580654C4517.jpg</picture>
@@ -4859,7 +4859,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6068</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6068.html</url>
-        <price>2368</price>
+        <price>1973</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6068.jpg</picture>
@@ -4873,7 +4873,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4001</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4001.html</url>
-        <price>40</price>
+        <price>33</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4001.jpg</picture>
@@ -4887,7 +4887,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6065</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6065.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6065.jpg</picture>
@@ -4901,7 +4901,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4068</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4068.html</url>
-        <price>114</price>
+        <price>95</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4068.jpg</picture>
@@ -4915,7 +4915,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4018</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4018.html</url>
-        <price>48</price>
+        <price>40</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4018.jpg</picture>
@@ -4929,7 +4929,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4062</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4062.html</url>
-        <price>47</price>
+        <price>39</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4062.jpg</picture>
@@ -4943,7 +4943,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2110</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2110.html</url>
-        <price>1271</price>
+        <price>1059</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2110.jpg</picture>
@@ -4957,7 +4957,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN580551C4517</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN580551C4517.html</url>
-        <price>1433</price>
+        <price>1194</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN580551C4517.jpg</picture>
@@ -4971,7 +4971,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2131</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2131.html</url>
-        <price>1385</price>
+        <price>1154</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2131.jpg</picture>
@@ -4985,7 +4985,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2184</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2184.html</url>
-        <price>897</price>
+        <price>748</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2184.jpg</picture>
@@ -4999,7 +4999,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590145A6067</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590145A6067.html</url>
-        <price>763</price>
+        <price>636</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590145A6067.jpg</picture>
@@ -5013,7 +5013,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590146A6064</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590146A6064.html</url>
-        <price>1780</price>
+        <price>1483</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590146A6064.jpg</picture>
@@ -5027,7 +5027,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590652A4069</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590652A4069.html</url>
-        <price>232</price>
+        <price>193</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590652A4069.jpg</picture>
@@ -5041,7 +5041,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6063</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6063.html</url>
-        <price>3250</price>
+        <price>2708</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6063.jpg</picture>
@@ -5055,7 +5055,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2144</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2144.html</url>
-        <price>3246</price>
+        <price>2705</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2144.jpg</picture>
@@ -5069,7 +5069,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4066</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4066.html</url>
-        <price>49</price>
+        <price>41</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4066.jpg</picture>
@@ -5083,7 +5083,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4069</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4069.html</url>
-        <price>114</price>
+        <price>95</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4069.jpg</picture>
@@ -5097,7 +5097,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6018</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6018.html</url>
-        <price>1495</price>
+        <price>1246</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6018.jpg</picture>
@@ -5111,7 +5111,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6070</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6070.html</url>
-        <price>3250</price>
+        <price>2708</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6070.jpg</picture>
@@ -5125,7 +5125,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2109</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2109.html</url>
-        <price>2414</price>
+        <price>2012</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2109.jpg</picture>
@@ -5139,7 +5139,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6064</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6064.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6064.jpg</picture>
@@ -5153,7 +5153,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001751A3083</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001751A3083.html</url>
-        <price>843</price>
+        <price>703</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001751A3083.jpg</picture>
@@ -5167,7 +5167,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590651A4070</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590651A4070.html</url>
-        <price>118</price>
+        <price>98</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590651A4070.jpg</picture>
@@ -5181,7 +5181,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2179</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2179.html</url>
-        <price>1209</price>
+        <price>1008</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2179.jpg</picture>
@@ -5195,7 +5195,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHX590545A4000</vendorCode>
         <url>https://abv-es.ru/tovar-2CHX590545A4000.html</url>
-        <price>285</price>
+        <price>238</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHX590545A4000.jpg</picture>
@@ -5209,7 +5209,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHN588652C4500</vendorCode>
         <url>https://abv-es.ru/tovar-2CHN588652C4500.html</url>
-        <price>1509</price>
+        <price>1258</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHN588652C4500.jpg</picture>
@@ -5223,7 +5223,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001751A3075</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001751A3075.html</url>
-        <price>2127</price>
+        <price>1773</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001751A3075.jpg</picture>
@@ -5237,7 +5237,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001731A1889</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001731A1889.html</url>
-        <price>421</price>
+        <price>351</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001731A1889.jpg</picture>
@@ -5251,7 +5251,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590646A6068</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590646A6068.html</url>
-        <price>3250</price>
+        <price>2708</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590646A6068.jpg</picture>
@@ -5265,7 +5265,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2145</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2145.html</url>
-        <price>2498</price>
+        <price>2082</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2145.jpg</picture>
@@ -5279,7 +5279,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2151</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2151.html</url>
-        <price>3246</price>
+        <price>2705</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2151.jpg</picture>
@@ -5293,7 +5293,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001751A3079</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001751A3079.html</url>
-        <price>1705</price>
+        <price>1421</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001751A3079.jpg</picture>
@@ -5307,7 +5307,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590545A6067</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590545A6067.html</url>
-        <price>1256</price>
+        <price>1047</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590545A6067.jpg</picture>
@@ -5321,7 +5321,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001753A9976</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001753A9976.html</url>
-        <price>2832</price>
+        <price>2360</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001753A9976.jpg</picture>
@@ -5335,7 +5335,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001751A3089</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001751A3089.html</url>
-        <price>2056</price>
+        <price>1713</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001751A3089.jpg</picture>
@@ -5349,7 +5349,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2169</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2169.html</url>
-        <price>2555</price>
+        <price>2129</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2169.jpg</picture>
@@ -5363,7 +5363,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001751A3094</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001751A3094.html</url>
-        <price>2332</price>
+        <price>1943</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001751A3094.jpg</picture>
@@ -5377,7 +5377,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2181</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2181.html</url>
-        <price>4223</price>
+        <price>3519</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2181.jpg</picture>
@@ -5391,7 +5391,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2157</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2157.html</url>
-        <price>2711</price>
+        <price>2259</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2157.jpg</picture>
@@ -5405,7 +5405,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2174</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2174.html</url>
-        <price>924</price>
+        <price>770</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2174.jpg</picture>
@@ -5419,7 +5419,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001753A0064</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001753A0064.html</url>
-        <price>3555</price>
+        <price>2963</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001753A0064.jpg</picture>
@@ -5433,7 +5433,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CHH590745A6003</vendorCode>
         <url>https://abv-es.ru/tovar-2CHH590745A6003.html</url>
-        <price>1289</price>
+        <price>1074</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CHH590745A6003.jpg</picture>
@@ -5447,7 +5447,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CKA001012A2164</vendorCode>
         <url>https://abv-es.ru/tovar-2CKA001012A2164.html</url>
-        <price>2485</price>
+        <price>2071</price>
         <currencyId>RUR</currencyId>
         <categoryId>9</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CKA001012A2164.jpg</picture>
@@ -5461,7 +5461,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CMA167756R1000</vendorCode>
         <url>https://abv-es.ru/tovar-2CMA167756R1000.html</url>
-        <price>61401</price>
+        <price>51168</price>
         <currencyId>RUR</currencyId>
         <categoryId>10</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CMA167756R1000.jpg</picture>
@@ -5475,7 +5475,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405658R1000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405658R1000.html</url>
-        <price>18</price>
+        <price>15</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405658R1000.jpg</picture>
@@ -5489,7 +5489,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405651R0000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405651R0000.html</url>
-        <price>249</price>
+        <price>208</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405651R0000.jpg</picture>
@@ -5503,7 +5503,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405600R4000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405600R4000.html</url>
-        <price>637</price>
+        <price>531</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405600R4000.jpg</picture>
@@ -5517,7 +5517,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405656R2000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405656R2000.html</url>
-        <price>595</price>
+        <price>496</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405656R2000.jpg</picture>
@@ -5531,7 +5531,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405613R9000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405613R9000.html</url>
-        <price>1784</price>
+        <price>1487</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405613R9000.jpg</picture>
@@ -5545,7 +5545,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TAZ312000R2041</vendorCode>
         <url>https://abv-es.ru/tovar-2TAZ312000R2041.html</url>
-        <price>6314</price>
+        <price>5262</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TAZ312000R2041.jpg</picture>
@@ -5559,7 +5559,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405651R1000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405651R1000.html</url>
-        <price>819</price>
+        <price>683</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405651R1000.jpg</picture>
@@ -5573,7 +5573,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405501R4010</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405501R4010.html</url>
-        <price>981</price>
+        <price>818</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405501R4010.jpg</picture>
@@ -5587,7 +5587,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405651R1100</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405651R1100.html</url>
-        <price>735</price>
+        <price>613</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405651R1100.jpg</picture>
@@ -5601,7 +5601,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBE121111R0602</vendorCode>
         <url>https://abv-es.ru/tovar-1SBE121111R0602.html</url>
-        <price>7869</price>
+        <price>6558</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBE121111R0602.jpg</picture>
@@ -5615,7 +5615,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SAE901901R1020</vendorCode>
         <url>https://abv-es.ru/tovar-1SAE901901R1020.html</url>
-        <price>3748</price>
+        <price>3123</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SAE901901R1020.jpg</picture>
@@ -5629,7 +5629,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405541R7110</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405541R7110.html</url>
-        <price>2919</price>
+        <price>2433</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405541R7110.jpg</picture>
@@ -5643,7 +5643,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SBE122111R0120</vendorCode>
         <url>https://abv-es.ru/tovar-1SBE122111R0120.html</url>
-        <price>9563</price>
+        <price>7969</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SBE122111R0120.jpg</picture>
@@ -5657,7 +5657,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405652R9000</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405652R9000.html</url>
-        <price>512</price>
+        <price>427</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405652R9000.jpg</picture>
@@ -5671,7 +5671,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SAE231111R0604</vendorCode>
         <url>https://abv-es.ru/tovar-1SAE231111R0604.html</url>
-        <price>11118</price>
+        <price>9265</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SAE231111R0604.jpg</picture>
@@ -5685,7 +5685,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SVR405613R9100</vendorCode>
         <url>https://abv-es.ru/tovar-1SVR405613R9100.html</url>
-        <price>2051</price>
+        <price>1709</price>
         <currencyId>RUR</currencyId>
         <categoryId>11</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SVR405613R9100.jpg</picture>
@@ -5699,7 +5699,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130027G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130027G1.html</url>
-        <price>619</price>
+        <price>516</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130027G1.jpg</picture>
@@ -5713,7 +5713,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00810</vendorCode>
         <url>https://abv-es.ru/tovar-00810.html</url>
-        <price>687</price>
+        <price>573</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00810.jpg</picture>
@@ -5727,7 +5727,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130029G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130029G1.html</url>
-        <price>271</price>
+        <price>226</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130029G1.jpg</picture>
@@ -5741,7 +5741,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00816</vendorCode>
         <url>https://abv-es.ru/tovar-00816.html</url>
-        <price>1509</price>
+        <price>1258</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00816.jpg</picture>
@@ -5755,7 +5755,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA003967G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA003967G1.html</url>
-        <price>1318</price>
+        <price>1098</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA003967G1.jpg</picture>
@@ -5769,7 +5769,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130031G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130031G1.html</url>
-        <price>568</price>
+        <price>473</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130031G1.jpg</picture>
@@ -5783,7 +5783,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00051</vendorCode>
         <url>https://abv-es.ru/tovar-00051.html</url>
-        <price>99</price>
+        <price>83</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00051.jpg</picture>
@@ -5797,7 +5797,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA140010G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA140010G1.html</url>
-        <price>933</price>
+        <price>778</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA140010G1.jpg</picture>
@@ -5811,7 +5811,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA140014G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA140014G1.html</url>
-        <price>600</price>
+        <price>500</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA140014G1.jpg</picture>
@@ -5825,7 +5825,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130046G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130046G1.html</url>
-        <price>225</price>
+        <price>188</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130046G1.jpg</picture>
@@ -5839,7 +5839,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130033G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130033G1.html</url>
-        <price>824</price>
+        <price>687</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130033G1.jpg</picture>
@@ -5853,7 +5853,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA001744G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA001744G1.html</url>
-        <price>728</price>
+        <price>607</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA001744G1.jpg</picture>
@@ -5867,7 +5867,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SL0816A00</vendorCode>
         <url>https://abv-es.ru/tovar-1SL0816A00.html</url>
-        <price>1485</price>
+        <price>1238</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SL0816A00.jpg</picture>
@@ -5881,7 +5881,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SL0846A00</vendorCode>
         <url>https://abv-es.ru/tovar-1SL0846A00.html</url>
-        <price>1416</price>
+        <price>1180</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SL0846A00.jpg</picture>
@@ -5895,7 +5895,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SL0822A00</vendorCode>
         <url>https://abv-es.ru/tovar-1SL0822A00.html</url>
-        <price>2356</price>
+        <price>1963</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SL0822A00.jpg</picture>
@@ -5909,7 +5909,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00846</vendorCode>
         <url>https://abv-es.ru/tovar-00846.html</url>
-        <price>1429</price>
+        <price>1191</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00846.jpg</picture>
@@ -5923,7 +5923,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA130020G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA130020G1.html</url>
-        <price>511</price>
+        <price>426</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA130020G1.jpg</picture>
@@ -5937,7 +5937,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SL0856A00</vendorCode>
         <url>https://abv-es.ru/tovar-1SL0856A00.html</url>
-        <price>3674</price>
+        <price>3062</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SL0856A00.jpg</picture>
@@ -5951,7 +5951,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2TKA140003G1</vendorCode>
         <url>https://abv-es.ru/tovar-2TKA140003G1.html</url>
-        <price>932</price>
+        <price>777</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-2TKA140003G1.jpg</picture>
@@ -5965,7 +5965,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00851</vendorCode>
         <url>https://abv-es.ru/tovar-00851.html</url>
-        <price>1519</price>
+        <price>1266</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00851.jpg</picture>
@@ -5979,7 +5979,7 @@
         <vendor>ABB</vendor>
         <vendorCode>7TCA296170R0846</vendorCode>
         <url>https://abv-es.ru/tovar-7TCA296170R0846.html</url>
-        <price>3281</price>
+        <price>2734</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-7TCA296170R0846.jpg</picture>
@@ -5993,7 +5993,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00852</vendorCode>
         <url>https://abv-es.ru/tovar-00852.html</url>
-        <price>1940</price>
+        <price>1617</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00852.jpg</picture>
@@ -6007,7 +6007,7 @@
         <vendor>ABB</vendor>
         <vendorCode>00821</vendorCode>
         <url>https://abv-es.ru/tovar-00821.html</url>
-        <price>1745</price>
+        <price>1454</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-00821.jpg</picture>
@@ -6021,7 +6021,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SPE007715F5650</vendorCode>
         <url>https://abv-es.ru/tovar-1SPE007715F5650.html</url>
-        <price>806</price>
+        <price>672</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SPE007715F5650.jpg</picture>
@@ -6035,7 +6035,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SLM004100A1921</vendorCode>
         <url>https://abv-es.ru/tovar-1SLM004100A1921.html</url>
-        <price>345</price>
+        <price>288</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SLM004100A1921.jpg</picture>
@@ -6049,7 +6049,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SL0850A00</vendorCode>
         <url>https://abv-es.ru/tovar-1SL0850A00.html</url>
-        <price>1197</price>
+        <price>998</price>
         <currencyId>RUR</currencyId>
         <categoryId>12</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SL0850A00.jpg</picture>
@@ -6063,7 +6063,7 @@
         <vendor>ABB</vendor>
         <vendorCode>2CTB815710R5700</vendorCode>
         <url>https://abv-es.ru/tovar-2CTB815710R5700.html</url>
-        <price>20009</price>
+        <price>16674</price>
         <currencyId>RUR</currencyId>
         <categoryId>13</categoryId>
         <picture>https://abv-es.ru/images/tovar-2CTB815710R5700.jpg</picture>
@@ -6077,7 +6077,7 @@
         <vendor>ABB</vendor>
         <vendorCode>1SFA619920R8053</vendorCode>
         <url>https://abv-es.ru/tovar-1SFA619920R8053.html</url>
-        <price>1267</price>
+        <price>1056</price>
         <currencyId>RUR</currencyId>
         <categoryId>13</categoryId>
         <picture>https://abv-es.ru/images/tovar-1SFA619920R8053.jpg</picture>

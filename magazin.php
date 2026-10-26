@@ -20,7 +20,10 @@ function abv_send(string $type, string $body, array $d): void
     }
     header('ETag: ' . $etag);
     header('Cache-Control: no-cache');
-    if (trim($_SERVER['HTTP_IF_NONE_MATCH'] ?? '') === $etag) {
+    $ims = isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) && is_string($_SERVER['HTTP_IF_MODIFIED_SINCE'])
+        ? strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) : false;
+    $inm = isset($_SERVER['HTTP_IF_NONE_MATCH']) && is_string($_SERVER['HTTP_IF_NONE_MATCH']) ? trim($_SERVER['HTTP_IF_NONE_MATCH']) : '';
+    if ($inm !== '' ? $inm === $etag : ($ims !== false && $m && $m <= $ims)) {
         http_response_code(304);
         return;
     }
@@ -31,15 +34,28 @@ function abv_send(string $type, string $body, array $d): void
 
 try {
     $d = abv_data();
-    $r = (string)($_GET['r'] ?? '');
+    $r = is_string($_GET['r'] ?? null) ? $_GET['r'] : '';
     if ($r === 'sklad') {
         abv_send('text/html', abv_render_sklad($d), $d);
     } elseif ($r === 'tovar') {
-        $sku = (string)($_GET['sku'] ?? '');
+        $sku = is_string($_GET['sku'] ?? null) ? $_GET['sku'] : '';
         $i = preg_match(ABV_SKU_RE, $sku) ? abv_find($d['tovary'], $sku) : null;
-        if ($i === null) {
-            // товара нет (снят с продажи) — как раньше, постоянная переадресация в каталог
+        if ($i === null && in_array($sku, $d['snyaty'], true)) {
+            // товар снят в админке — как раньше, постоянная переадресация в каталог; без кеша в браузере,
+            // чтобы товар, возвращённый через «Историю», снова открывался у тех, кто уже заходил
+            header('Cache-Control: no-store');
             header('Location: ' . ABV_SITE . 'sklad.html', true, 301);
+            exit;
+        }
+        if ($i === null) {
+            // такого артикула на складе не было — «не найдено», а не переадресация
+            http_response_code(404);
+            header('Content-Type: text/html; charset=UTF-8');
+            echo '<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="robots" content="noindex">'
+                . '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Товар не найден — АБВ Электросервис</title>'
+                . '<p style="font:16px/1.5 sans-serif;margin:40px 20px">Такого товара нет на складе. '
+                . '<a href="/sklad.html">Перейти в каталог склада</a> или напишите на '
+                . '<a href="mailto:info@abv-es.ru">info@abv-es.ru</a> — подберём нужную позицию.</p></html>';
             exit;
         }
         abv_send('text/html', abv_render_page($d['tovary'][$i], $d), $d);

@@ -293,18 +293,23 @@ fi
 code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$SITE/?deploy=$(date +%s)" || true)
 [ "$code" = 200 ] || { say "❌ Главная страница отвечает кодом ${code:-нет ответа}"; ok=0; }
 # 5г. Изменённые страницы открываются. Несовпадение содержимого — только замечание (кеш хостинга).
+n301=0   # карточки, уводящие в каталог (сняты в админке); массово — значит, пропали данные склада
 while read -r op path; do
   [ "$op" = M ] || continue
   case "$path" in *.html|*.css|*.js|*.xml)
     url="$SITE/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$path")?deploy=$(date +%s)"
     c=$(curl -s -o "$WORK/live.tmp" -w '%{http_code}' --max-time 20 "$url" || true)
     if [ "$c" = 301 ] && [[ "$path" == tovar-*.html ]]; then
+      n301=$((n301+1))
       say "⚠️ $path: переадресация в каталог — товар снят в админке, страница из репозитория служит только шаблоном/запасом"
     elif [ "$c" != 200 ]; then say "❌ $path отвечает кодом ${c:-нет ответа}"; ok=0
     elif ! cmp -s "$path" "$WORK/live.tmp"; then say "⚠️ $path: сайт пока отдаёт другую версию (вероятно, кеш)"; fi;;
   esac
 done < "$WORK/plan.txt"
 
+if [ "$n301" -gt 10 ]; then
+  say "❌ $n301 карточек товаров уводят в каталог — похоже, данные склада на хостинге пропали (admin-data/). Проверьте админку."; ok=0
+fi
 [ "$ok" = 1 ] || false   # → on_exit → откат
 FINISHED=1
 say "✅ Проверка пройдена: главная отвечает 200, на сервере ровно загруженные файлы, удалённых нет."

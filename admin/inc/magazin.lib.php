@@ -138,6 +138,8 @@ function abv_norm(array $d): array
     $d['feed_date'] = (string)($d['feed_date'] ?? date('c'));
     $d['feed_cats'] = is_array($d['feed_cats'] ?? null) ? $d['feed_cats'] : [];
     $d['izmeneno'] = (string)($d['izmeneno'] ?? '');
+    // артикулы, снятые в админке: их страницы ведут (301) в каталог; артикулов, которых не было, — 404
+    $d['snyaty'] = array_values(array_unique(array_filter(array_map('strval', is_array($d['snyaty'] ?? null) ? $d['snyaty'] : []))));
     return $d;
 }
 
@@ -163,14 +165,20 @@ function abv_data(bool $fresh = false): array
         return $cache;
     }
     clearstatcache();
-    $d = null;
     if (is_file(abv_data_file())) {
+        // файл есть, но не читается — последняя копия; если и её нет — ошибка, а не молчаливый откат к стартовым данным
         $d = abv_read_guarded(abv_data_file()) ?? abv_latest_kopiya();
-    }
-    if (!$d) {
-        $d = json_decode(abv_file('admin/inc/tovary-start.json'), true);
-        if (!is_array($d)) {
-            throw new RuntimeException('стартовый файл товаров повреждён');
+        if (!$d) {
+            throw new RuntimeException('файл данных склада повреждён, резервных копий нет');
+        }
+    } else {
+        // файла нет (первый запуск или его удалили) — последняя копия, и только без копий — стартовые данные
+        $d = abv_latest_kopiya();
+        if (!$d) {
+            $d = json_decode(abv_file('admin/inc/tovary-start.json'), true);
+            if (!is_array($d)) {
+                throw new RuntimeException('стартовый файл товаров повреждён');
+            }
         }
     }
     return $cache = abv_norm($d);
@@ -199,10 +207,14 @@ function abv_save(array $d, string $note, ?string $expected = null): void
             throw new AbvConflict('Пока вы редактировали, данные изменились (другая вкладка или другой человек). '
                 . 'Откройте страницу заново и повторите правку.');
         }
-        if (!is_file(abv_data_file())) {          // первый запуск: сохранить исходное состояние как копию
-            abv_snapshot($cur, 'Исходное состояние склада (до первой правки в админке)');
+        if (!is_file(abv_data_file()) && !abv_latest_kopiya()) {   // первый запуск: исходное состояние — отдельной копией
+            $cur['izmeneno'] = date('c');
+            abv_snapshot($cur, 'Исходное состояние склада (до первой правки в админке)', true);
         }
         $d = abv_norm($d);
+        $now = array_column($d['tovary'], 'sku');
+        $gone = array_diff(array_column($cur['tovary'], 'sku'), $now);
+        $d['snyaty'] = array_values(array_diff(array_unique(array_merge($cur['snyaty'], $d['snyaty'], $gone)), $now));
         $d['feed_date'] = date('c');
         $d['izmeneno'] = date('c');
         foreach ($d['tovary'] as $t) {           // новые категории — новые id в фиде (старые не меняются)
@@ -222,13 +234,17 @@ function abv_save(array $d, string $note, ?string $expected = null): void
 class AbvConflict extends RuntimeException {}
 
 /** Резервная копия состояния + строка журнала; старые копии сверх ABV_KOPII_MAX удаляются. */
-function abv_snapshot(array $d, string $note): void
+const ABV_ISHODNAYA = 'tovary-00000000-000000-000000.php';   // исходное состояние — не удаляется при чистке
+
+function abv_snapshot(array $d, string $note, bool $ishodnaya = false): void
 {
     $t = microtime(true);   // в имени — время до микросекунд, чтобы копии сортировались по порядку
-    $name = 'tovary-' . date('Ymd-His', (int)$t) . '-' . sprintf('%06d', (int)(($t - floor($t)) * 1e6)) . '.php';
+    $name = $ishodnaya ? ABV_ISHODNAYA
+        : 'tovary-' . date('Ymd-His', (int)$t) . '-' . sprintf('%06d', (int)(($t - floor($t)) * 1e6)) . '.php';
     $d['kopiya_note'] = $note;
     abv_write_guarded(abv_kopii_dir() . '/' . $name, $d);
-    $files = glob(abv_kopii_dir() . '/tovary-*.php') ?: [];
+    $files = array_values(array_filter(glob(abv_kopii_dir() . '/tovary-*.php') ?: [],
+        function ($f) { return basename($f) !== ABV_ISHODNAYA; }));
     sort($files, SORT_STRING);
     while (count($files) > ABV_KOPII_MAX) {
         @unlink(array_shift($files));
@@ -580,14 +596,27 @@ function abv_render_offer(array $it, int $cid, string $nl): string
         '        <price>' . $it['price'] . '</price>',
         '        <currencyId>RUR</currencyId>',
         '        <categoryId>' . $cid . '</categoryId>',
-        '        <picture>' . abv_x(ABV_SITE . explode('?', $it['img'])[0]) . '</picture>',
+        abv_net_foto($it) ? null : '        <picture>' . abv_x(ABV_SITE . explode('?', $it['img'])[0]) . '</picture>',
         '        <description>' . abv_x($desc) . '</description>',
         '        <count>' . $it['qty'] . '</count>',
         '        <manufacturer_warranty>true</manufacturer_warranty>',
         '        <param name="Артикул">' . $it['sku'] . '</param>',
         '      </offer>',
     ];
-    return implode($nl, $rows) . $nl;
+    return implode($nl, array_filter($rows, 'is_string')) . $nl;
+}
+
+/** У товара заглушка вместо фото — такую картинку в фид Яндекса не отдаём. */
+function abv_net_foto(array $it): bool
+{
+    return explode('?', $it['img'])[0] === 'images/net-foto.jpg';
+}
+
+/** Включены ли на сайте правила «Склад из админки» (шаг 2): иначе сайт показывает обычные файлы. */
+function abv_live(): bool
+{
+    $h = (string)@file_get_contents(abv_root() . '/.htaccess');
+    return (bool)preg_match('~^[ \t]*RewriteRule[ \t]+\^sklad\\\.html\$[ \t]+/magazin\.php~m', $h);
 }
 
 function abv_render_feed(?array $d = null): string

@@ -25,6 +25,18 @@ function abv_session(): void
         return;
     }
     session_name('abv_admin');
+    // свои файлы сессий в закрытой папке и срок жизни под ABV_IDLE_HOURS (иначе общий «сборщик» удалит сессию через ~24 мин)
+    try {
+        abv_prepare_dirs();
+        $sd = abv_dir() . '/sessii';
+        if (is_dir($sd) || @mkdir($sd, 0700)) {
+            session_save_path($sd);
+        }
+    } catch (Throwable $e) {
+        // нет прав на запись — остаётся общая папка сессий хостинга
+    }
+    @ini_set('session.gc_maxlifetime', (string)(ABV_IDLE_HOURS * 3600));
+    @ini_set('session.use_strict_mode', '1');
     session_set_cookie_params(['lifetime' => 0, 'path' => '/admin/', 'secure' => abv_https(),
         'httponly' => true, 'samesite' => 'Strict']);
     session_start();
@@ -38,7 +50,24 @@ function abv_session(): void
     }
 }
 
-function abv_logged_in(): bool { return !empty($_SESSION['ok']); }
+function abv_logged_in(): bool
+{
+    // после смены пароля все прочие входы (другие браузеры, устройства) становятся недействительными
+    if (!empty($_SESSION['ok']) && ($_SESSION['pw'] ?? '') !== abv_pw_mark()) {
+        $_SESSION = ['csrf' => bin2hex(random_bytes(24))];
+        return false;
+    }
+    return !empty($_SESSION['ok']);
+}
+
+function abv_pw_mark(): string { return substr(hash('sha256', abv_password_hash()), 0, 16); }
+
+/** Строка для сообщения о сохранении: видно ли изменение клиентам сразу. */
+function abv_live_note(): string
+{
+    return abv_live() ? 'На сайте уже новые данные.'
+        : 'Клиенты увидят изменения после включения склада из админки (шаг 2 выкатки).';
+}
 
 function abv_password_hash(): string
 {
@@ -65,6 +94,23 @@ function abv_fails(?array $set = null): array
 /** null — вошёл; иначе текст ошибки. */
 function abv_try_login(string $password): ?string
 {
+    abv_prepare_dirs();
+    $lock = fopen(abv_dir() . '/.vhod.lock', 'c');      // попытки по очереди — параллельными запросами лимит не обойти
+    if ($lock) {
+        flock($lock, LOCK_EX);
+    }
+    try {
+        return abv_try_login_locked($password);
+    } finally {
+        if ($lock) {
+            flock($lock, LOCK_UN);
+            fclose($lock);
+        }
+    }
+}
+
+function abv_try_login_locked(string $password): ?string
+{
     $all = abv_fails();
     $ip = abv_ip();
     $me = $all[$ip] ?? ['n' => 0, 'until' => 0, 'last' => 0];
@@ -77,6 +123,7 @@ function abv_try_login(string $password): ?string
         abv_fails($all);
         session_regenerate_id(true);
         $_SESSION['ok'] = 1;
+        $_SESSION['pw'] = abv_pw_mark();
         $_SESSION['csrf'] = bin2hex(random_bytes(24));
         return null;
     }
@@ -281,37 +328,49 @@ function abv_save_foto(array $file, string $sku): string
     if ($info[0] * $info[1] > 40000000) {
         throw new InvalidArgumentException('Слишком большое разрешение фото — уменьшите его.');
     }
+    $fn = 'imagecreatefrom' . $types[$info[2]];
+    if (!function_exists('imagecreatetruecolor') || !function_exists($fn)) {
+        // без обработки картинок фото не принимаем: внутри остались бы EXIF (вплоть до GPS) и что угодно ещё
+        throw new InvalidArgumentException('На хостинге выключена обработка картинок (расширение GD для PHP) — '
+            . 'фото сейчас загрузить нельзя. Его включают в панели reg.ru: «Настройки PHP» → расширения → gd.');
+    }
+    // Память: раскрытая картинка занимает ~5 байт на пиксель (снимок телефона 24 Мп — около 120 МБ).
+    // Пробуем поднять лимит; если не хватит и так — понятная ошибка вместо белой страницы.
+    $need = (int)($info[0] * $info[1] * 5.5) + 24 * 1024 * 1024;
+    if (abv_mem_free() < $need) {
+        @ini_set('memory_limit', (string)max(512, (int)ceil((memory_get_usage(true) + $need) / 1048576) + 32) . 'M');
+    }
+    if (abv_mem_free() < $need) {
+        throw new InvalidArgumentException('Фото слишком большое по разрешению (' . round($info[0] * $info[1] / 1e6, 1)
+            . ' Мп) для памяти хостинга. Уменьшите его до 3000 точек по длинной стороне и загрузите снова.');
+    }
     $dir = abv_foto_dir();
     if (!is_dir($dir) && !@mkdir($dir, 0755, true) && !is_dir($dir)) {
         throw new RuntimeException('не удалось создать папку для фото');
-    }
-    $name = 'tovar-' . $sku . '-' . bin2hex(random_bytes(3)) . '.jpg';
-    $dest = $dir . '/' . $name;
-    $fn = 'imagecreatefrom' . $types[$info[2]];
-    if (!function_exists('imagecreatetruecolor') || !function_exists($fn)) {
-        // нет обработки картинок на хостинге — JPEG кладём как есть, остальное не принимаем
-        if ($info[2] !== IMAGETYPE_JPEG) {
-            throw new InvalidArgumentException('На хостинге нет обработки картинок — загрузите фото в формате JPG.');
-        }
-        if (!@move_uploaded_file((string)$file['tmp_name'], $dest)) {
-            throw new RuntimeException('не удалось сохранить фото');
-        }
-        @chmod($dest, 0644);
-        return 'foto/' . $name;
     }
     $src = @$fn((string)$file['tmp_name']);
     if (!$src) {
         throw new InvalidArgumentException('Не удалось прочитать фото. Сохраните его как JPG и попробуйте снова.');
     }
+    // Сразу уменьшаем до рабочего размера (до 1600 точек) и кладём на белый фон (прозрачные PNG/WEBP),
+    // исходник освобождаем — дальше в памяти только маленькая копия.
     $w = imagesx($src);
     $hh = imagesy($src);
-    // на белый фон (прозрачные PNG/WEBP)
-    $flat = imagecreatetruecolor($w, $hh);
+    $k = min(1, 1600 / max($w, $hh));
+    $fw = max(1, (int)round($w * $k));
+    $fh = max(1, (int)round($hh * $k));
+    $flat = imagecreatetruecolor($fw, $fh);
     imagefill($flat, 0, 0, imagecolorallocate($flat, 255, 255, 255));
-    imagecopy($flat, $src, 0, 0, 0, 0, $w, $hh);
+    imagecopyresampled($flat, $src, 0, 0, 0, 0, $fw, $fh, $w, $hh);
     imagedestroy($src);
+    // Поворот по EXIF (телефоны пишут «повернуть при показе», а не поворачивают сами пиксели)
+    if ($info[2] === IMAGETYPE_JPEG) {
+        $flat = abv_exif_orient($flat, (string)$file['tmp_name']);
+    }
+    $fw = imagesx($flat);
+    $fh = imagesy($flat);
     // обрезка почти белых полей
-    [$x0, $y0, $x1, $y1] = abv_trim_box($flat, $w, $hh);
+    [$x0, $y0, $x1, $y1] = abv_trim_box($flat, $fw, $fh);
     $cw = $x1 - $x0 + 1;
     $ch = $y1 - $y0 + 1;
     $scale = min(600 / $cw, 460 / $ch, 3.0);
@@ -321,7 +380,9 @@ function abv_save_foto(array $file, string $sku): string
     imagefill($out, 0, 0, imagecolorallocate($out, 255, 255, 255));
     imagecopyresampled($out, $flat, (int)((720 - $nw) / 2), (int)((540 - $nh) / 2), $x0, $y0, $nw, $nh, $cw, $ch);
     imagedestroy($flat);
-    imageinterlace($out, true);
+    imageinterlace($out, 1);
+    $name = 'tovar-' . $sku . '-' . bin2hex(random_bytes(3)) . '.jpg';
+    $dest = $dir . '/' . $name;
     $ok = imagejpeg($out, $dest, 85);
     imagedestroy($out);
     if (!$ok) {
@@ -329,6 +390,45 @@ function abv_save_foto(array $file, string $sku): string
     }
     @chmod($dest, 0644);
     return 'foto/' . $name;
+}
+
+/** Сколько памяти PHP ещё можно занять (байт). */
+function abv_mem_free(): int
+{
+    $l = trim((string)ini_get('memory_limit'));
+    if ($l === '' || $l === '-1') {
+        return PHP_INT_MAX;
+    }
+    $n = (int)$l;
+    $u = strtolower(substr($l, -1));
+    $n *= $u === 'g' ? 1073741824 : ($u === 'm' ? 1048576 : ($u === 'k' ? 1024 : 1));
+    return $n - memory_get_usage(true);
+}
+
+/** Разворачивает картинку по тегу EXIF Orientation (1–8). Без расширения exif — как есть. */
+function abv_exif_orient($im, string $file)
+{
+    if (!function_exists('exif_read_data')) {
+        return $im;
+    }
+    $e = @exif_read_data($file);
+    $o = is_array($e) ? (int)($e['Orientation'] ?? 1) : 1;
+    if ($o < 2 || $o > 8) {
+        return $im;
+    }
+    $flip = function_exists('imageflip');
+    if (in_array($o, [2, 4, 5, 7], true) && $flip) {
+        imageflip($im, IMG_FLIP_HORIZONTAL);
+    }
+    $angle = [3 => 180, 4 => 180, 5 => 90, 6 => 270, 7 => 270, 8 => 90][$o] ?? 0;   // imagerotate — против часовой
+    if ($angle) {
+        $r = imagerotate($im, $angle, 0xFFFFFF);
+        if ($r) {
+            imagedestroy($im);
+            $im = $r;
+        }
+    }
+    return $im;
 }
 
 /** Рамка без белых полей (порог 245). Если всё белое — вся картинка. */

@@ -8,9 +8,15 @@ declare(strict_types=1);
 require __DIR__ . '/inc/admin.lib.php';
 
 abv_session();
-$a = (string)($_GET['a'] ?? '');
+$a = is_string($_GET['a'] ?? null) ? $_GET['a'] : '';
 $post = ($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST';
 
+// Запрос больше post_max_size: PHP отбрасывает всю форму целиком — говорим про размер фото, а не «страница устарела»
+if ($post && !$_POST && !$_FILES && (int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
+    abv_flash('Файл слишком большой для хостинга (больше ' . h(ini_get('post_max_size')) . '). '
+        . 'Уменьшите фото и повторите — введённое в форму придётся заполнить заново.', 'err');
+    abv_redirect($a === 'save' ? 'a=' . (is_string($_GET['sku'] ?? null) ? 'edit&sku=' . rawurlencode($_GET['sku']) : 'new') : '');
+}
 if ($post && !abv_csrf_ok()) {
     http_response_code(400);
     abv_page_start('Ошибка', false);
@@ -95,7 +101,7 @@ try {
             }
             $n = count($notes);
             abv_save($d, 'Быстрая правка: ' . implode('; ', array_slice($notes, 0, 12)) . ($n > 12 ? '; и ещё ' . ($n - 12) : ''), $ver);
-            abv_flash("Сохранено ($n " . ($n === 1 ? 'изменение' : ($n < 5 ? 'изменения' : 'изменений')) . '). На сайте уже новые данные.');
+            abv_flash("Сохранено ($n " . ($n === 1 ? 'изменение' : ($n < 5 ? 'изменения' : 'изменений')) . '). ' . abv_live_note());
             abv_redirect();
         }
         if ($a === 'save') {                       // карточка товара: новый или правка
@@ -129,8 +135,17 @@ try {
             $d['tovary'] = abv_upsert($d['tovary'], $it);
             $note = $old ? 'Изменён товар ' . $it['sku'] . ': ' . abv_diff_note($old, $it)
                 : 'Добавлен товар ' . $it['sku'] . ' — ' . $it['name'];
-            abv_save($d, $note, $ver);
-            abv_flash(($old ? 'Товар сохранён' : 'Товар добавлен') . '. На сайте уже новые данные.');
+            try {
+                abv_save($d, $note, $ver);
+            } catch (AbvConflict $e) {
+                // данные поменялись в другой вкладке: новое фото не нужно, введённое сохраняем для повтора
+                if ($it['img'] !== ($old['img'] ?? '') && strpos($it['img'], 'foto/') === 0) {
+                    @unlink(abv_root() . '/' . $it['img']);
+                }
+                $_SESSION['form'] = ['post' => $_POST, 'err' => ['conflict' => $e->getMessage()]];
+                abv_redirect($old ? 'a=edit&sku=' . rawurlencode($old['sku']) : 'a=new');
+            }
+            abv_flash(($old ? 'Товар сохранён' : 'Товар добавлен') . '. ' . abv_live_note());
             abv_redirect('a=edit&sku=' . rawurlencode($it['sku']));
         }
         if ($a === 'delete') {
@@ -154,7 +169,7 @@ try {
                 abv_flash('Копия не найдена.', 'err');
                 abv_redirect('a=history');
             }
-            $when = $k['izmeneno'] ? date('d.m.Y H:i', strtotime($k['izmeneno'])) : '';
+            $when = $k['izmeneno'] ? date('d.m.Y H:i', strtotime($k['izmeneno'])) : 'начала работы админки';
             $was = (string)($k['kopiya_note'] ?? '');
             unset($k['kopiya_note']);
             abv_save($k, 'Возврат к состоянию от ' . $when . ($was !== '' ? ' («' . (abv_len($was) > 90 ? (function_exists('mb_substr') ? mb_substr($was, 0, 90, 'UTF-8') : substr($was, 0, 90)) . '…' : $was) . '»)' : ''), null);
@@ -174,6 +189,7 @@ try {
             } else {
                 abv_set_password($new);
                 session_regenerate_id(true);
+                $_SESSION['pw'] = abv_pw_mark();   // этот вход остаётся, остальные — нет
                 abv_flash('Пароль изменён. Запомните или запишите его.');
                 abv_redirect();
             }
@@ -212,7 +228,7 @@ try {
     if ($a === 'new' || $a === 'edit') {
         $old = null;
         if ($a === 'edit') {
-            $idx = abv_find($d['tovary'], (string)($_GET['sku'] ?? ''));
+            $idx = abv_find($d['tovary'], (is_string($_GET['sku'] ?? null) ? $_GET['sku'] : ''));
             if ($idx === null) {
                 abv_flash('Товар не найден.', 'err');
                 abv_redirect();
@@ -241,7 +257,10 @@ try {
         abv_page_start($old ? $old['sku'] : 'Новый товар');
         echo '<p class="crumbs"><a href="./">← Все товары</a></p>';
         echo '<h1>' . ($old ? h($old['name']) : 'Новый товар') . '</h1>';
-        if ($err) {
+        if (isset($err['conflict'])) {
+            echo '<div class="flash err">' . h($err['conflict']) . ' Введённое ниже сохранилось (кроме фото) — '
+                . 'проверьте и нажмите кнопку ещё раз.</div>';
+        } elseif ($err) {
             echo '<div class="flash err">Товар не сохранён — исправьте поля, отмеченные красным.</div>';
         }
         echo '<form class="box item" method="post" action="./?a=save" enctype="multipart/form-data">' . abv_csrf_field()
@@ -349,6 +368,10 @@ JS);
     $sht = array_sum(array_map(function ($t) { return $t['qty']; }, $d['tovary']));
     $summa = array_sum(array_map(function ($t) { return $t['qty'] * $t['price']; }, $d['tovary']));
     abv_page_start('Товары');
+    if (!abv_live()) {
+        echo '<div class="flash info">Админка работает, но склад на сайте пока показывает прежние страницы. '
+            . 'Правки отсюда станут видны клиентам после включения (шаг 2 выкатки).</div>';
+    }
     echo '<section class="head"><div><h1>Товары склада</h1><p class="hint">Остатки на ' . h($d['ostatki'])
         . ($d['izmeneno'] ? ' · последнее изменение ' . h(date('d.m.Y в H:i', strtotime($d['izmeneno']))) : '') . '</p></div>'
         . '<div class="headbtns"><a class="btn" href="./?a=new">Добавить товар</a><a class="btn ghost" href="./?a=csv">Скачать для Excel</a></div></section>';

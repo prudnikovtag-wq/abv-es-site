@@ -2,3 +2,9 @@ out/
 node_modules/
 .DS_Store
 *.log
+# данные админки живут только на хостинге (товары, копии, пароль, фото) — в git не класть
+admin-data/*
+!admin-data/.htaccess
+foto/*
+!foto/.htaccess
+__pycache__/

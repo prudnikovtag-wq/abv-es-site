@@ -13,7 +13,9 @@
     а карточки tovar-<артикул>.html в репозитории быть не должно;
   - удалённая промо-страница: /promo, /promo/ и всё внутри должны вести (301) на /,
     а папки promo/ в репозитории быть не должно;
-  - контрольные адреса — не должны переадресовываться.
+  - склад из админки: /sklad.html, /tovar-<артикул>.html, /feed.xml, /sitemap.xml — внутренняя подмена
+    (без переадресации браузера) на /magazin.php с нужными параметрами;
+  - контрольные адреса — не должны переадресовываться (внутренняя подмена на magazin.php — не переадресация).
 Эмуляция упрощённая: поддерживаются только условия вида «<строка> -f»
 и переменная %{DOCUMENT_ROOT} (= корень репозитория). Этого достаточно для наших правил.
 Код выхода 1, если есть ошибки.
@@ -45,6 +47,15 @@ REMOVED_TARGET = "/sklad.html"
 # Удалённая промо-страница (2026-10-19): все её адреса ведут на главную
 PROMO_URLS = ["/promo", "/promo/", "/promo/index.html", "/promo/css/style.css"]
 PROMO_TARGET = "/"
+
+# Склад из админки (2026-10): адрес → внутренняя подмена (без R=) на magazin.php
+MAGAZIN = [
+    ("/sklad.html", "/magazin.php?r=sklad"),
+    ("/tovar-1SDA058318R1.html", "/magazin.php?r=tovar&sku=1SDA058318R1"),
+    ("/tovar-NEW-01.html", "/magazin.php?r=tovar&sku=NEW-01"),
+    ("/feed.xml", "/magazin.php?r=feed"),
+    ("/sitemap.xml", "/magazin.php?r=sitemap"),
+]
 
 CONTROL = [
     "/index.html", "/sklad.html", "/tovar-1SDA058318R1.html",
@@ -165,11 +176,23 @@ def main():
         elif res[1] != "301":
             errors.append(f"{url}: код {res[1]}, ожидался 301")
 
+    for url, expected in MAGAZIN:
+        res = apply(rules, url)
+        rows.append((url, f"{res[0]} [{res[1] or 'внутренняя подмена'}]" if res else "без изменений"))
+        if not res:
+            errors.append(f"{url}: нет подмены на magazin.php")
+        elif res[0] != expected:
+            errors.append(f"{url}: ведёт на {res[0]}, ожидалось {expected}")
+        elif res[1] is not None:
+            errors.append(f"{url}: переадресация браузера {res[1]}, ожидалась внутренняя подмена")
+
     for url in CONTROL:
         res = apply(rules, url)
-        rows.append((url, f"{res[0]} [{res[1]}]" if res else "без изменений"))
-        if res:
+        rows.append((url, f"{res[0]} [{res[1] or 'внутренняя подмена'}]" if res else "без изменений"))
+        if res and res[1] is not None:
             errors.append(f"{url}: контрольный адрес переадресуется на {res[0]}")
+        elif res and not res[0].startswith("/magazin.php?"):
+            errors.append(f"{url}: контрольный адрес подменяется на {res[0]}")
 
     width = max(len(r[0]) for r in rows)
     for url, dest in rows:

@@ -12,6 +12,14 @@ RewriteRule ^(sklad/)?(tovar-)?1SDA038324R1\.html$ /sklad.html [R=301,L]
 # Промо-страница /promo/ удалена (2026-10-19): /promo, /promo/ и всё внутри -> главная
 RewriteRule ^promo(/.*)?$ / [R=301,L]
 
+# Склад из админки (2026-10): каталог, карточки, фид и sitemap собирает magazin.php из данных admin-data/.
+# Аварийно отключить — поставить # в начале 4 строк RewriteRule ниже: снова заработают обычные файлы из репозитория.
+RewriteRule ^sklad\.html$ /magazin.php?r=sklad [L]
+RewriteRule ^tovar-([0-9A-Z][0-9A-Z-]*)\.html$ /magazin.php?r=tovar&sku=$1 [L]
+RewriteRule ^feed\.xml$ /magazin.php?r=feed [L]
+RewriteRule ^sitemap\.xml$ /magazin.php?r=sitemap [L]
+# Конец блока склада из админки
+
 # Старые адреса карточек товаров -> tovar-<артикул>.html
 # Раньше в корне лежали страницы /<артикул>.html, а в их canonical стояли адреса /sklad/<артикул>.html.
 # Эти страницы удалены, рабочие карточки — /tovar-<артикул>.html.

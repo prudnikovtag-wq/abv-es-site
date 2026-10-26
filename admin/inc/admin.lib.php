@@ -380,7 +380,7 @@ function abv_save_foto(array $file, string $sku): string
     imagefill($out, 0, 0, imagecolorallocate($out, 255, 255, 255));
     imagecopyresampled($out, $flat, (int)((720 - $nw) / 2), (int)((540 - $nh) / 2), $x0, $y0, $nw, $nh, $cw, $ch);
     imagedestroy($flat);
-    imageinterlace($out, 1);
+    imageinterlace($out, PHP_VERSION_ID >= 80000 ? true : 1);   // 7.4 ждёт int, 8.x — bool (strict_types)
     $name = 'tovar-' . $sku . '-' . bin2hex(random_bytes(3)) . '.jpg';
     $dest = $dir . '/' . $name;
     $ok = imagejpeg($out, $dest, 85);

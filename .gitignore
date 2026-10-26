@@ -7,3 +7,4 @@ admin-data/*
 !admin-data/.htaccess
 foto/*
 !foto/.htaccess
+__pycache__/

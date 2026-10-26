@@ -112,7 +112,9 @@ import sys, subprocess, re
 server = {}
 for line in open(sys.argv[1], encoding="utf-8"):
     p, s = line.rstrip("\n").split("\t"); server[p] = int(s)
-skip = re.compile(r'^(CLAUDE\.md|README\.md|BOARD\.md|\.claude/|\.github/|tools/|out/|\.gitignore|\.gitattributes|package(-lock)?\.json)')
+# admin-data/ (товары, копии, пароль) и foto/ (фото из админки) ведёт админка на самом хостинге — их нет в репозитории.
+skip = re.compile(r'^(CLAUDE\.md|README\.md|BOARD\.md|\.claude/|\.github/|tools/|out/|\.gitignore|\.gitattributes|package(-lock)?\.json'
+                  r'|admin-data/(?!\.htaccess$)|foto/(?!\.htaccess$))')
 repo = {}
 out = subprocess.run(["git", "-c", "core.quotePath=false", "ls-tree", "-r", "-l", "na-saite"], capture_output=True, text=True).stdout
 for line in out.splitlines():
@@ -296,7 +298,9 @@ while read -r op path; do
   case "$path" in *.html|*.css|*.js|*.xml)
     url="$SITE/$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1]))' "$path")?deploy=$(date +%s)"
     c=$(curl -s -o "$WORK/live.tmp" -w '%{http_code}' --max-time 20 "$url" || true)
-    if [ "$c" != 200 ]; then say "❌ $path отвечает кодом ${c:-нет ответа}"; ok=0
+    if [ "$c" = 301 ] && [[ "$path" == tovar-*.html ]]; then
+      say "⚠️ $path: переадресация в каталог — товар снят в админке, страница из репозитория служит только шаблоном/запасом"
+    elif [ "$c" != 200 ]; then say "❌ $path отвечает кодом ${c:-нет ответа}"; ok=0
     elif ! cmp -s "$path" "$WORK/live.tmp"; then say "⚠️ $path: сайт пока отдаёт другую версию (вероятно, кеш)"; fi;;
   esac
 done < "$WORK/plan.txt"

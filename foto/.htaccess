@@ -1,0 +1,10 @@
+# Фото товаров, загруженные в админке. Здесь только картинки — никакие скрипты не выполняются и не отдаются.
+<FilesMatch "(?i)\.(php[0-9]?|phtml|phar|pl|py|cgi|sh|shtml|htaccess|html?)$">
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+Order allow,deny
+Deny from all
+</IfModule>
+</FilesMatch>

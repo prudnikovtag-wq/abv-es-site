@@ -540,6 +540,71 @@ def sub_once(s, rx, repl, what):
 OFFER_RE = re.compile(r'      <offer id="([^"]+)"[^>]*>.*?</offer>\r?\n', re.S)
 
 
+MOD_CATS = ("Модульные автоматические выключатели", "УЗО и дифавтоматы")
+
+
+def feed_params(name, cat):
+    """Характеристики для фида из названия товара: [(название, единица или None, значение)].
+    Та же логика — abv_feed_params() в admin/inc/magazin.lib.php (результат должен совпадать)."""
+    p = []
+    m = re.search(r"\b([1-4])-полюсный", name)
+    pol = m.group(1) + "P" if m else None
+    m = re.search(r"(?:^|[\s,])(1P\+N|3P\+N|[1-4]P(?:\+E)?)(?=[\s,]|$)", name)
+    if not pol and m:
+        pol = m.group(1)
+    if pol:
+        p.append(("Количество полюсов", None, pol))
+    tok = char = None
+    m = re.search(r"(?:^|[\s,])(\d+(?:,\d+)?) [АA](?=[\s,]|$)", name)
+    if m:
+        tok = m.group(1)
+    m = re.search(r"характеристика ([BCDKZ])\b", name)
+    if m:
+        char = m.group(1)
+    if cat in MOD_CATS:
+        m = re.search(r"(?:^|[\s,\d])([BCDKZ])(\d+(?:,\d+)?)(?:UC)?(?=[\s,]|$)", name)
+        if m:
+            char = char or m.group(1)
+            tok = tok or m.group(2)
+    if tok:
+        p.append(("Номинальный ток", "А", tok))
+    if char:
+        p.append(("Характеристика срабатывания", None, char))
+    leak = typ = None
+    m = re.search(r"(\d+(?:,\d+)?) мА\b", name)
+    if m:
+        leak = m.group(1)
+    m = re.search(r"\bтип (AC|A|APR|B|F)\b", name) or re.search(r"мА, (AC|A|APR)(?=[\s,]|$)", name)
+    if m:
+        typ = m.group(1)
+    if cat in MOD_CATS:
+        m = re.search(r"(?:^|\s)(AC|APR|A)(\d{2,3})(?=[\s,]|$)", name)
+        if m:
+            typ = typ or m.group(1)
+            leak = leak or m.group(2)
+    if leak:
+        p.append(("Ток утечки", "мА", leak))
+    if typ:
+        p.append(("Тип по току утечки", None, typ))
+    m = re.search(r"(\d+(?:,\d+)?) кА\b", name)
+    if m:
+        p.append(("Отключающая способность", "кА", m.group(1)))
+    m = re.search(r"катушк\w* (?:управления )?(\d[\d,.–-]* В (?:AC/DC|AC|DC)(?: / \d[\d,.–-]* В (?:AC|DC))?)", name)
+    if m:
+        p.append(("Напряжение катушки", None, m.group(1)))
+    m = re.search(r"\bIP(\d\d)\b", name)
+    if m:
+        p.append(("Степень защиты", None, "IP" + m.group(1)))
+    m = re.search(r"серия (\w+), ([^,]+?)(?:, упаковка|$)", name)
+    if m:
+        p.append(("Серия", None, m.group(1)))
+        p.append(("Цвет", None, m.group(2)))
+    m = re.search(r"упаковка (\d+) шт", name)
+    if m:
+        p.append(("Количество в упаковке", "шт", m.group(1)))
+    return p
+
+
 def render_offer(it, cid, nl):
     d = DESC_1.format(name=it.name, sku=it.sku) + " " + DESC_2
     rows = [
@@ -551,14 +616,59 @@ def render_offer(it, cid, nl):
         f"        <price>{it.price}</price>",
         "        <currencyId>RUR</currencyId>",
         f"        <categoryId>{cid}</categoryId>",
+        f"        <collectionId>c{cid}</collectionId>",
         f"        <picture>{x(SITE + it.img.split('?')[0])}</picture>",
+        "        <pickup>true</pickup>",
+        f"        <delivery>{'true' if it.dostavka else 'false'}</delivery>",
         f"        <description>{x(d)}</description>",
+    ]
+    if it.min_zakaz:
+        rows.append(f"        <sales_notes>Минимальный заказ от {money(it.min_zakaz, ' ')} руб. с НДС</sales_notes>")
+    rows += [
         f"        <count>{it.qty}</count>",
         "        <manufacturer_warranty>true</manufacturer_warranty>",
         f'        <param name="Артикул">{it.sku}</param>',
-        "      </offer>",
     ]
+    for k, unit, v in feed_params(it.name, it.cat):
+        u = f' unit="{a(unit)}"' if unit else ""
+        rows.append(f'        <param name="{a(k)}"{u}>{x(v)}</param>')
+    rows.append("      </offer>")
     return nl.join(rows) + nl
+
+
+def render_collections(f, nl):
+    """Блок <collections> — разделы склада как страницы каталога (по товарам, уже записанным в фид)."""
+    cats = {cid: name for name, cid in feed_categories(f).items()}
+    first = {}
+    for m in OFFER_RE.finditer(f):
+        cid = re.search(r"<categoryId>(\d+)</categoryId>", m.group(0)).group(1)
+        pic = re.search(r"<picture>(.*?)</picture>", m.group(0))
+        first.setdefault(cid, [0, None])
+        first[cid][0] += 1
+        if pic and not first[cid][1]:
+            first[cid][1] = pic.group(1)
+    out = ""
+    for cid in sorted(first, key=int):
+        name, (n, pic) = cats[cid], first[cid]
+        rows = [f'      <collection id="c{cid}">',
+                f"        <url>{SITE}sklad.html?q={quote(name.lower())}</url>",
+                f"        <name>{x(name)} ABB</name>",
+                f"        <description>{x(name)} ABB в наличии на складе в Москве, ул. Профсоюзная, 57: "
+                f"{n} {plural(n)}. Цены с НДС.</description>"]
+        if pic:
+            rows.append(f"        <picture>{pic}</picture>")
+        rows.append("      </collection>")
+        out += nl.join(rows) + nl
+    return re.sub(r"(?<=<collections>" + re.escape(nl) + r").*?(?=    </collections>)", lambda _m: out, f,
+                  count=1, flags=re.S)
+
+
+def plural(n):
+    if n % 10 == 1 and n % 100 != 11:
+        return "позиция"
+    if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14:
+        return "позиции"
+    return "позиций"
 
 
 def feed_categories(f):
@@ -589,7 +699,7 @@ def update_feed(f, new_items):
         in_cat = [m for m in offers if f"<categoryId>{cats[it.cat]}</categoryId>" in m.group(0)]
         pos = in_cat[-1].end() if in_cat else (offers[-1].end() if offers else f.index("<offers>") + 8 + len(nl))
         f = f[:pos] + offer + f[pos:]
-    return f
+    return render_collections(f, nl)
 
 
 def set_feed_date(f):
@@ -639,6 +749,9 @@ def proverka():
         if it.cat not in cats or offers.get(it.sku) != render_offer(it, cats[it.cat], nl):
             print(f"РАЗЛИЧИЕ: {FEED}, offer {it.sku}")
             bad += 1
+    if render_collections(f, nl) != f:
+        print(f"РАЗЛИЧИЕ: {FEED}, блок <collections>")
+        bad += 1
     extra = set(offers) - {it.sku for it in items}
     if extra:
         print(f"в {FEED} есть offer без плитки в {SKLAD}: {', '.join(sorted(extra))}")

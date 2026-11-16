@@ -655,15 +655,14 @@ def render_collections(f, nl):
         rows = [f'      <collection id="c{cid}">',
                 f"        <url>{SITE}sklad.html?q={quote(name.lower())}</url>",
                 f"        <name>{x(name)} ABB</name>",
-                f"        <description>{x(name)} ABB в наличии на складе в Москве, ул. Профсоюзная, 57: "
-                "цены с НДС, отгрузка со склада.</description>"]
+                f"        <description>{x(name)} ABB в наличии на складе в Москве, ул. Профсоюзная, 57. "
+                "Цены с НДС, отгрузка со склада.</description>"]
         if pic:
             rows.append(f"        <picture>{pic}</picture>")
         rows.append("      </collection>")
         out += nl.join(rows) + nl
     return re.sub(r"(?<=<collections>" + re.escape(nl) + r").*?(?=    </collections>)", lambda _m: out, f,
                   count=1, flags=re.S)
-
 
 
 def feed_categories(f):

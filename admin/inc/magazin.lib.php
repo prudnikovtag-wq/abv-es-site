@@ -674,8 +674,8 @@ function abv_render_collections(array $items, array $cats, string $nl): string
         $rows = ['      <collection id="c' . $cid . '">',
             '        <url>' . ABV_SITE . 'sklad.html?q=' . abv_quote(mb_strtolower($name, 'UTF-8')) . '</url>',
             '        <name>' . abv_x($name) . ' ABB</name>',
-            '        <description>' . abv_x($name) . ' ABB в наличии на складе в Москве, ул. Профсоюзная, 57: '
-                . 'цены с НДС, отгрузка со склада.</description>'];
+            '        <description>' . abv_x($name) . ' ABB в наличии на складе в Москве, ул. Профсоюзная, 57. '
+                . 'Цены с НДС, отгрузка со склада.</description>'];
         if ($pic) $rows[] = '        <picture>' . $pic . '</picture>';
         $rows[] = '      </collection>';
         $out .= implode($nl, $rows) . $nl;

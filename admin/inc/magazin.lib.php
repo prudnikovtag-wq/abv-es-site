@@ -596,13 +596,15 @@ function abv_feed_params(string $name, string $cat): array
     if (!$pol && preg_match('~(?:^|[\s,])(1P\+N|3P\+N|[1-4]P(?:\+E)?)(?=[\s,]|$)~u', $name, $m)) $pol = $m[1];
     if ($pol) $p[] = ['Количество полюсов', null, $pol];
     $tok = $char = null;
-    if (preg_match('~(?:^|[\s,])(\d+(?:,\d+)?) [АA](?=[\s,]|$)~u', $name, $m)) $tok = $m[1];
+    $dlya = mb_strpos($name, ' для ', 0, 'UTF-8');   // «… для Formula A1 125 А» — ток аппарата, а не товара
+    if (preg_match('~(?:^|[\s,])(\d+(?:,\d+)?) [АA](?=[\s,]|$)~u', $name, $m, PREG_OFFSET_CAPTURE)
+        && !($dlya !== false && $dlya < mb_strlen(substr($name, 0, $m[0][1]), 'UTF-8'))) $tok = $m[1][0];
     if (preg_match('~характеристика ([BCDKZ])\b~u', $name, $m)) $char = $m[1];
     if ($mod && preg_match('~(?:^|[\s,\d])([BCDKZ])(\d+(?:,\d+)?)(?:UC)?(?=[\s,]|$)~u', $name, $m)) {
         $char = $char ?? $m[1];
         $tok = $tok ?? $m[2];
     }
-    if ($tok) $p[] = ['Номинальный ток', 'А', $tok];
+    if ($tok) $p[] = ['Номинальный ток', 'А', preg_replace('~^0+(?=\d)~', '', $tok)];
     if ($char) $p[] = ['Характеристика срабатывания', null, $char];
     $leak = $typ = null;
     if (preg_match('~(\d+(?:,\d+)?) мА\b~u', $name, $m)) $leak = $m[1];
@@ -620,7 +622,7 @@ function abv_feed_params(string $name, string $cat): array
     if (preg_match('~\bIP(\d\d)\b~u', $name, $m)) $p[] = ['Степень защиты', null, 'IP' . $m[1]];
     if (preg_match('~серия (\w+), ([^,]+?)(?:, упаковка|$)~u', $name, $m)) {
         $p[] = ['Серия', null, $m[1]];
-        $p[] = ['Цвет', null, $m[2]];
+        if (strpos($m[2], 'упаковка') !== 0) $p[] = ['Цвет', null, $m[2]];
     }
     if (preg_match('~упаковка (\d+) шт~u', $name, $m)) $p[] = ['Количество в упаковке', 'шт', $m[1]];
     return $p;
@@ -656,13 +658,6 @@ function abv_render_offer(array $it, int $cid, string $nl): string
     return implode($nl, array_filter($rows, 'is_string')) . $nl;
 }
 
-function abv_plural(int $n): string
-{
-    if ($n % 10 === 1 && $n % 100 !== 11) return 'позиция';
-    if ($n % 10 >= 2 && $n % 10 <= 4 && !($n % 100 >= 12 && $n % 100 <= 14)) return 'позиции';
-    return 'позиций';
-}
-
 /** Блок <collections>: разделы склада как страницы каталога (ссылка на склад с поиском по разделу). */
 function abv_render_collections(array $items, array $cats, string $nl): string
 {
@@ -680,7 +675,7 @@ function abv_render_collections(array $items, array $cats, string $nl): string
             '        <url>' . ABV_SITE . 'sklad.html?q=' . abv_quote(mb_strtolower($name, 'UTF-8')) . '</url>',
             '        <name>' . abv_x($name) . ' ABB</name>',
             '        <description>' . abv_x($name) . ' ABB в наличии на складе в Москве, ул. Профсоюзная, 57: '
-                . $n . ' ' . abv_plural($n) . '. Цены с НДС.</description>'];
+                . 'цены с НДС, отгрузка со склада.</description>'];
         if ($pic) $rows[] = '        <picture>' . $pic . '</picture>';
         $rows[] = '      </collection>';
         $out .= implode($nl, $rows) . $nl;

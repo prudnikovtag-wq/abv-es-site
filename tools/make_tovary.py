@@ -555,8 +555,9 @@ def feed_params(name, cat):
     if pol:
         p.append(("Количество полюсов", None, pol))
     tok = char = None
+    dlya = name.find(" для ")   # «… для Formula A1 125 А» — ток аппарата, а не самого товара
     m = re.search(r"(?:^|[\s,])(\d+(?:,\d+)?) [АA](?=[\s,]|$)", name)
-    if m:
+    if m and not (0 <= dlya < m.start()):
         tok = m.group(1)
     m = re.search(r"характеристика ([BCDKZ])\b", name)
     if m:
@@ -567,7 +568,7 @@ def feed_params(name, cat):
             char = char or m.group(1)
             tok = tok or m.group(2)
     if tok:
-        p.append(("Номинальный ток", "А", tok))
+        p.append(("Номинальный ток", "А", re.sub(r"^0+(?=\d)", "", tok)))
     if char:
         p.append(("Характеристика срабатывания", None, char))
     leak = typ = None
@@ -598,7 +599,8 @@ def feed_params(name, cat):
     m = re.search(r"серия (\w+), ([^,]+?)(?:, упаковка|$)", name)
     if m:
         p.append(("Серия", None, m.group(1)))
-        p.append(("Цвет", None, m.group(2)))
+        if not m.group(2).startswith("упаковка"):
+            p.append(("Цвет", None, m.group(2)))
     m = re.search(r"упаковка (\d+) шт", name)
     if m:
         p.append(("Количество в упаковке", "шт", m.group(1)))
@@ -649,12 +651,12 @@ def render_collections(f, nl):
             first[cid][1] = pic.group(1)
     out = ""
     for cid in sorted(first, key=int):
-        name, (n, pic) = cats[cid], first[cid]
+        name, (_n, pic) = cats[cid], first[cid]
         rows = [f'      <collection id="c{cid}">',
                 f"        <url>{SITE}sklad.html?q={quote(name.lower())}</url>",
                 f"        <name>{x(name)} ABB</name>",
                 f"        <description>{x(name)} ABB в наличии на складе в Москве, ул. Профсоюзная, 57: "
-                f"{n} {plural(n)}. Цены с НДС.</description>"]
+                "цены с НДС, отгрузка со склада.</description>"]
         if pic:
             rows.append(f"        <picture>{pic}</picture>")
         rows.append("      </collection>")
@@ -662,13 +664,6 @@ def render_collections(f, nl):
     return re.sub(r"(?<=<collections>" + re.escape(nl) + r").*?(?=    </collections>)", lambda _m: out, f,
                   count=1, flags=re.S)
 
-
-def plural(n):
-    if n % 10 == 1 and n % 100 != 11:
-        return "позиция"
-    if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14:
-        return "позиции"
-    return "позиций"
 
 
 def feed_categories(f):

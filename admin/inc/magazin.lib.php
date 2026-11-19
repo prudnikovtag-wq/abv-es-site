@@ -584,6 +584,50 @@ function abv_render_page(array $it, ?array $d = null): string
 
 function abv_x(string $s): string { return abv_t($s); }
 
+const ABV_MOD_CATS = ['Модульные автоматические выключатели', 'УЗО и дифавтоматы'];
+
+/** Характеристики для фида из названия: [[название, единица|null, значение]]. Та же логика — feed_params() в tools/make_tovary.py. */
+function abv_feed_params(string $name, string $cat): array
+{
+    $p = [];
+    $mod = in_array($cat, ABV_MOD_CATS, true);
+    $pol = null;
+    if (preg_match('~\b([1-4])-полюсный~u', $name, $m)) $pol = $m[1] . 'P';
+    if (!$pol && preg_match('~(?:^|[\s,])(1P\+N|3P\+N|[1-4]P(?:\+E)?)(?=[\s,]|$)~u', $name, $m)) $pol = $m[1];
+    if ($pol) $p[] = ['Количество полюсов', null, $pol];
+    $tok = $char = null;
+    $dlya = mb_strpos($name, ' для ', 0, 'UTF-8');   // «… для Formula A1 125 А» — ток аппарата, а не товара
+    if (preg_match('~(?:^|[\s,])(\d+(?:,\d+)?) [АA](?=[\s,]|$)~u', $name, $m, PREG_OFFSET_CAPTURE)
+        && !($dlya !== false && $dlya < mb_strlen(substr($name, 0, $m[0][1]), 'UTF-8'))) $tok = $m[1][0];
+    if (preg_match('~характеристика ([BCDKZ])\b~u', $name, $m)) $char = $m[1];
+    if ($mod && preg_match('~(?:^|[\s,\d])([BCDKZ])(\d+(?:,\d+)?)(?:UC)?(?=[\s,]|$)~u', $name, $m)) {
+        $char = $char ?? $m[1];
+        $tok = $tok ?? $m[2];
+    }
+    if ($tok) $p[] = ['Номинальный ток', 'А', preg_replace('~^0+(?=\d)~', '', $tok)];
+    if ($char) $p[] = ['Характеристика срабатывания', null, $char];
+    $leak = $typ = null;
+    if (preg_match('~(\d+(?:,\d+)?) мА\b~u', $name, $m)) $leak = $m[1];
+    if (preg_match('~\bтип (AC|A|APR|B|F)\b~u', $name, $m) || preg_match('~мА, (AC|A|APR)(?=[\s,]|$)~u', $name, $m)) $typ = $m[1];
+    if ($mod && preg_match('~(?:^|\s)(AC|APR|A)(\d{2,3})(?=[\s,]|$)~u', $name, $m)) {
+        $typ = $typ ?? $m[1];
+        $leak = $leak ?? $m[2];
+    }
+    if ($leak) $p[] = ['Ток утечки', 'мА', $leak];
+    if ($typ) $p[] = ['Тип по току утечки', null, $typ];
+    if (preg_match('~(\d+(?:,\d+)?) кА\b~u', $name, $m)) $p[] = ['Отключающая способность', 'кА', $m[1]];
+    if (preg_match('~катушк\w* (?:управления )?(\d[\d,.–-]* В (?:AC/DC|AC|DC)(?: / \d[\d,.–-]* В (?:AC|DC))?)~u', $name, $m)) {
+        $p[] = ['Напряжение катушки', null, $m[1]];
+    }
+    if (preg_match('~\bIP(\d\d)\b~u', $name, $m)) $p[] = ['Степень защиты', null, 'IP' . $m[1]];
+    if (preg_match('~серия (\w+), ([^,]+?)(?:, упаковка|$)~u', $name, $m)) {
+        $p[] = ['Серия', null, $m[1]];
+        if (strpos($m[2], 'упаковка') !== 0) $p[] = ['Цвет', null, $m[2]];
+    }
+    if (preg_match('~упаковка (\d+) шт~u', $name, $m)) $p[] = ['Количество в упаковке', 'шт', $m[1]];
+    return $p;
+}
+
 function abv_render_offer(array $it, int $cid, string $nl): string
 {
     $desc = abv_desc1($it) . ' ' . ABV_DESC_2;
@@ -596,14 +640,47 @@ function abv_render_offer(array $it, int $cid, string $nl): string
         '        <price>' . $it['price'] . '</price>',
         '        <currencyId>RUR</currencyId>',
         '        <categoryId>' . $cid . '</categoryId>',
+        '        <collectionId>c' . $cid . '</collectionId>',
         abv_net_foto($it) ? null : '        <picture>' . abv_x(ABV_SITE . explode('?', $it['img'])[0]) . '</picture>',
+        '        <pickup>true</pickup>',
+        '        <delivery>' . (!empty($it['dostavka']) ? 'true' : 'false') . '</delivery>',
         '        <description>' . abv_x($desc) . '</description>',
+        !empty($it['min_zakaz']) ? '        <sales_notes>Минимальный заказ от ' . abv_money((int)$it['min_zakaz'], ' ')
+            . ' руб. с НДС</sales_notes>' : null,
         '        <count>' . $it['qty'] . '</count>',
         '        <manufacturer_warranty>true</manufacturer_warranty>',
         '        <param name="Артикул">' . $it['sku'] . '</param>',
-        '      </offer>',
     ];
+    foreach (abv_feed_params($it['name'], $it['cat']) as [$k, $unit, $v]) {
+        $rows[] = '        <param name="' . abv_a($k) . '"' . ($unit ? ' unit="' . abv_a($unit) . '"' : '') . '>' . abv_x($v) . '</param>';
+    }
+    $rows[] = '      </offer>';
     return implode($nl, array_filter($rows, 'is_string')) . $nl;
+}
+
+/** Блок <collections>: разделы склада как страницы каталога (ссылка на склад с поиском по разделу). */
+function abv_render_collections(array $items, array $cats, string $nl): string
+{
+    $first = [];
+    foreach ($items as $t) {
+        $cid = (int)$cats[$t['cat']];
+        if (!isset($first[$cid])) $first[$cid] = [0, null, $t['cat']];
+        $first[$cid][0]++;
+        if (!$first[$cid][1] && !abv_net_foto($t)) $first[$cid][1] = abv_x(ABV_SITE . explode('?', $t['img'])[0]);
+    }
+    ksort($first);
+    $out = '';
+    foreach ($first as $cid => [$n, $pic, $name]) {
+        $rows = ['      <collection id="c' . $cid . '">',
+            '        <url>' . ABV_SITE . 'sklad.html?q=' . abv_quote(mb_strtolower($name, 'UTF-8')) . '</url>',
+            '        <name>' . abv_x($name) . ' ABB</name>',
+            '        <description>' . abv_x($name) . ' ABB в наличии на складе в Москве, ул. Профсоюзная, 57. '
+                . 'Цены с НДС, отгрузка со склада.</description>'];
+        if ($pic) $rows[] = '        <picture>' . $pic . '</picture>';
+        $rows[] = '      </collection>';
+        $out .= implode($nl, $rows) . $nl;
+    }
+    return $out;
 }
 
 /** У товара заглушка вместо фото — такую картинку в фид Яндекса не отдаём. */
@@ -650,6 +727,8 @@ function abv_render_feed(?array $d = null): string
     $f = abv_sub_once($f, '~(?<=<yml_catalog date=")[^"]*(?=")~', $d['feed_date'], 'дата фида');
     $f = abv_sub_once($f, '~(?<=<categories>' . preg_quote($nl) . ').*?(?=    </categories>)~s', $catXml, 'категории фида');
     $f = abv_sub_once($f, '~(?<=<offers>' . preg_quote($nl) . ').*?(?=    </offers>)~s', $offers, 'товары фида');
+    $f = abv_sub_once($f, '~(?<=<collections>' . preg_quote($nl) . ').*?(?=    </collections>)~s',
+        abv_render_collections($d['tovary'], $cats, $nl), 'разделы фида');
     return $f;
 }
 
